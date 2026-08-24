@@ -1,0 +1,4 @@
+experiment_id,accuracy,precision,recall,f1_score,f1_macro,roc_auc,pr_auc,training_time_sec,inference_time_sec,latency_per_sample_ms
+exp01_tfidf_lr,0.9184,0.9458,0.8882,0.9161,0.9184,0.9603,0.9591,0.3764,0.0415,0.021
+exp02_tfidf_rf,0.8448,0.9199,0.7565,0.8302,0.8437,0.9092,0.9239,12.1495,0.5856,0.293
+exp07_hybrid_rf,0.981,0.983,0.979,0.981,0.981,0.9934,0.9955,2824.6849,359.1475,179.753

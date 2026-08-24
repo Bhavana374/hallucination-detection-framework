@@ -1,0 +1,2 @@
+# Embeddings and FAISS index directory
+Store precomputed dense sentence embeddings and FAISS index files here.

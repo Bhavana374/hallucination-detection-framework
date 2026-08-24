@@ -1,0 +1,25 @@
+============================================================
+EXPERIMENT: exp08_hybrid_v2
+Description: Hybrid V2 without length-based shortcut features
+Excluded Features: claim_word_count, length_ratio
+Timestamp: 2026-08-24 07:30:49 UTC
+============================================================
+
+Accuracy:            0.965
+Precision (Class 1): 0.9726
+Recall (Class 1):    0.9571
+F1-Score (Class 1):  0.9648
+F1-Macro:            0.965
+ROC-AUC:             0.9912
+PR-AUC:              0.9939
+
+Training Time:       4.2611 s
+Inference Time:      0.7373 s
+Latency/Sample:      0.369 ms
+
+Confusion Matrix:
+  TP: 959
+  TN: 969
+  FP: 27
+  FN: 43
+============================================================

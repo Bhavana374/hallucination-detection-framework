@@ -1,0 +1,25 @@
+{
+  "experiment_id": "exp05_evidence_bert",
+  "timestamp": "2026-08-23T16:48:08Z",
+  "test_metrics": {
+    "sample_count": 39,
+    "accuracy": 0.5897,
+    "precision": 0.6111,
+    "recall": 0.55,
+    "f1_score": 0.5789,
+    "f1_macro": 0.5895,
+    "roc_auc": 0.5974,
+    "pr_auc": 0.6565,
+    "confusion_matrix": {
+      "tp": 11,
+      "tn": 12,
+      "fp": 7,
+      "fn": 9
+    },
+    "false_positive_rate": 0.3684,
+    "false_negative_rate": 0.45,
+    "training_time_sec": 209.4328,
+    "inference_time_sec": 10.7527,
+    "latency_per_sample_ms": 275.71
+  }
+}

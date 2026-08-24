@@ -1,0 +1,25 @@
+{
+  "experiment_id": "exp02_tfidf_rf",
+  "timestamp": "2026-08-23T16:50:48Z",
+  "test_metrics": {
+    "sample_count": 1998,
+    "accuracy": 0.8448,
+    "precision": 0.9199,
+    "recall": 0.7565,
+    "f1_score": 0.8302,
+    "f1_macro": 0.8437,
+    "roc_auc": 0.9092,
+    "pr_auc": 0.9239,
+    "confusion_matrix": {
+      "tp": 758,
+      "tn": 930,
+      "fp": 66,
+      "fn": 244
+    },
+    "false_positive_rate": 0.0663,
+    "false_negative_rate": 0.2435,
+    "training_time_sec": 12.1495,
+    "inference_time_sec": 0.5856,
+    "latency_per_sample_ms": 0.293
+  }
+}

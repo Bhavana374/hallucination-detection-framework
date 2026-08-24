@@ -1,0 +1,13 @@
+{
+  "experiment_id": "exp08_hybrid_v2",
+  "timestamp": "2026-08-24T07:30:49Z",
+  "device": "cpu",
+  "pytorch_version": "N/A",
+  "cuda_available": false,
+  "random_seed": 42,
+  "python_version": "3.14.0 (tags/v3.14.0:ebf955d, Oct  7 2025, 10:15:03) [MSC v.1944 64 bit (AMD64)]",
+  "excluded_features": [
+    "claim_word_count",
+    "length_ratio"
+  ]
+}

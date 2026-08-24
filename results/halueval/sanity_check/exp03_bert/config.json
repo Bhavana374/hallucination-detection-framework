@@ -1,0 +1,20 @@
+{
+  "model": "Standalone BERT",
+  "model_name": "bert-base-uncased",
+  "input_type": "claim_only",
+  "epochs": 1,
+  "batch_size": 16,
+  "learning_rate": 2e-05,
+  "max_length": 256,
+  "device": "cpu",
+  "seed": 42,
+  "train_size": 161,
+  "test_size": 39,
+  "training_history": [
+    {
+      "epoch": 1,
+      "loss": 0.6184028814668241,
+      "accuracy": 0.7515527950310559
+    }
+  ]
+}

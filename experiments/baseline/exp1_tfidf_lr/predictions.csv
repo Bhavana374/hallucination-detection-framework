@@ -1,0 +1,7 @@
+claim_id,true_label,predicted_label,probability_hallucinated,is_correct
+halueval_000017_hallucinated,1,0,0.3103,0
+halueval_000019_hallucinated,1,0,0.1918,0
+halueval_000006_hallucinated,1,0,0.3934,0
+halueval_000008_factual,0,1,0.7265,0
+halueval_000003_factual,0,1,0.7096,0
+halueval_000000_factual,0,1,0.6997,0

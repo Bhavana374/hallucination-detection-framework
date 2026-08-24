@@ -1,0 +1,40 @@
+index,answer_text,true_label,predicted_label,probability,is_correct
+0,"While both hospitals have excellent reputations, MedStar Georgetown University Hospital specializes in more advanced and specialized healthcare services than Sibley Memorial Hospital.",1,1,0.665780,1
+1,"Daimler AG",0,0,0.393536,1
+2,"the Pepsi-Cola company",0,0,0.400860,1
+3,"Cheltenham",0,0,0.372398,1
+4,"The Valachi hearings were named after Joseph ""Joey Bananas"" Bonanno, a prominent Italian-American Mafia member.",1,1,0.583565,1
+5,"Pixar Animation Studios",0,0,0.396785,1
+6,"XXL was founded before The General.",1,1,0.650402,1
+7,"Adam Clayton Powell is about civil rights leader.",1,1,0.651284,1
+8,"Gordon Burns",0,0,0.356490,1
+9,"The 2010 head coach of the SMU Mustangs football team is now coaching in the NFL.",1,1,0.643427,1
+10,"born January 19, 1954",0,0,0.338782,1
+11,"Giuseppe Fortunino Francesco Verdi",0,0,0.411232,1
+12,"Yang Yun-ho has never directed a film based on a Japanese book.",1,1,0.616429,1
+13,"Derry is the birthplace of Alan Shepard",0,1,0.546452,0
+14,"The film ""Romulus, My Father"" was released in 2009.",1,1,0.628201,1
+15,"Miranda Lambert has shared the stage with Candy Coburn's ""Pink Warrior.""",1,1,0.610747,1
+16,"Omagh bombing",0,0,0.405090,1
+17,"""I'm Not Jesus"" was written before 1993.",1,1,0.574576,1
+18,"Craig McCracken created the Cartoon Network cartoon.",1,1,0.578586,1
+19,"Justin Bieber",0,0,0.377787,1
+20,"1958 was the year.",1,1,0.523233,1
+21,"The Great Illusion",0,0,0.357414,1
+22,"Jaideva Singh",0,0,0.404177,1
+23,"victory odes",0,0,0.407515,1
+24,"Clay Weiner",0,0,0.398095,1
+25,"Octopus card",0,0,0.430868,1
+26,"Bigfoot",0,0,0.405486,1
+27,"Pylon and Bullet for My Valentine are two different types of musical entities.",1,1,0.679308,1
+28,"Jeffrey Scott Martin",0,0,0.394692,1
+29,"Rashad al-Shawwa was the mayor of a city established in 5th century BC.",1,1,0.615536,1
+30,"February 14, 2016",0,0,0.334591,1
+31,"Lambic is brewed in the Cantillon Brewery in Brussels, and it's a very old brewery.",1,1,0.645510,1
+32,"Robert Charles Heaton was born in Canada.",1,1,0.577242,1
+33,"Killing Joke is actually an American rock band.",1,1,0.578654,1
+34,"Enderby Outside was actually created by a Scottish writer.",1,1,0.626137,1
+35,"Most of South Dakota is west of the longest river in North America.",1,1,0.601249,1
+36,"The person who replaced Teymuraz Gabashvili as inaugural champion has won twelve singles titles on the ATP Tour.",1,1,0.668308,1
+37,"Jordan Mintz's whistleblowing was publicized in September 2001.",1,1,0.569639,1
+38,"Carrie Underwood",0,0,0.388145,1

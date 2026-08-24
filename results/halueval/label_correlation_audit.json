@@ -1,0 +1,142 @@
+[
+  {
+    "feature": "claim_word_count",
+    "mean_factual": 2.396,
+    "mean_hallucinated": 11.278,
+    "difference": 8.882000000000001,
+    "roc_auc": 0.9586319999999999
+  },
+  {
+    "feature": "entity_overlap_ratio",
+    "mean_factual": 0.9588142857142857,
+    "mean_hallucinated": 0.634060606060606,
+    "difference": -0.32475367965367974,
+    "roc_auc": 0.18329399999999998
+  },
+  {
+    "feature": "hedge_word_count",
+    "mean_factual": 0.0,
+    "mean_hallucinated": 0.004,
+    "difference": 0.004,
+    "roc_auc": 0.502
+  },
+  {
+    "feature": "length_ratio",
+    "mean_factual": 0.04703974086175808,
+    "mean_hallucinated": 0.22631054773521286,
+    "difference": 0.17927080687345479,
+    "roc_auc": 0.94524
+  },
+  {
+    "feature": "lexical_jaccard_similarity",
+    "mean_factual": 0.0584386359874933,
+    "mean_hallucinated": 0.1674429615981621,
+    "difference": 0.1090043256106688,
+    "roc_auc": 0.842558
+  },
+  {
+    "feature": "missing_entity_count",
+    "mean_factual": 0.076,
+    "mean_hallucinated": 1.304,
+    "difference": 1.228,
+    "roc_auc": 0.832288
+  },
+  {
+    "feature": "missing_number_count",
+    "mean_factual": 0.0,
+    "mean_hallucinated": 0.12,
+    "difference": 0.12,
+    "roc_auc": 0.555
+  },
+  {
+    "feature": "nli_entailment_ratio",
+    "mean_factual": 0.2832531822027231,
+    "mean_hallucinated": -0.23336796407377552,
+    "difference": -0.5166211462764987,
+    "roc_auc": 0.311716
+  },
+  {
+    "feature": "nli_prob_contradiction",
+    "mean_factual": 0.26537282425526065,
+    "mean_hallucinated": 0.47777079196938577,
+    "difference": 0.2123979677141251,
+    "roc_auc": 0.6082380000000001
+  },
+  {
+    "feature": "nli_prob_entailment",
+    "mean_factual": 0.5486260064579838,
+    "mean_hallucinated": 0.24440282789561024,
+    "difference": -0.3042231785623735,
+    "roc_auc": 0.289472
+  },
+  {
+    "feature": "nli_prob_neutral",
+    "mean_factual": 0.18600116868092845,
+    "mean_hallucinated": 0.27782638055543246,
+    "difference": 0.09182521187450401,
+    "roc_auc": 0.500516
+  },
+  {
+    "feature": "number_match_ratio",
+    "mean_factual": 1.0,
+    "mean_hallucinated": 0.9,
+    "difference": -0.09999999999999998,
+    "roc_auc": 0.445
+  },
+  {
+    "feature": "retrieval_score",
+    "mean_factual": 0.9000000000000002,
+    "mean_hallucinated": 0.9000000000000002,
+    "difference": 0.0,
+    "roc_auc": 0.5
+  },
+  {
+    "feature": "semantic_cosine_sim",
+    "mean_factual": 0.2234735934212804,
+    "mean_hallucinated": 0.39651839523017407,
+    "difference": 0.17304480180889367,
+    "roc_auc": 0.7644000000000001
+  },
+  {
+    "feature": "semantic_dot_product",
+    "mean_factual": 0.2234735934212804,
+    "mean_hallucinated": 0.39651839523017407,
+    "difference": 0.17304480180889367,
+    "roc_auc": 0.7644000000000001
+  },
+  {
+    "feature": "semantic_embedding_magnitude_ratio",
+    "mean_factual": 0.9999999874830245,
+    "mean_hallucinated": 1.0000000038146972,
+    "difference": 1.633167268089153e-08,
+    "roc_auc": 0.5571460000000001
+  },
+  {
+    "feature": "semantic_euclidean_dist",
+    "mean_factual": 1.2378407340049744,
+    "mean_hallucinated": 1.0847000692486763,
+    "difference": -0.15314066475629806,
+    "roc_auc": 0.23591199999999998
+  },
+  {
+    "feature": "token_f1",
+    "mean_factual": 0.10642091542934178,
+    "mean_hallucinated": 0.27060799819363174,
+    "difference": 0.16418708276428995,
+    "roc_auc": 0.8424480000000001
+  },
+  {
+    "feature": "token_precision",
+    "mean_factual": 0.934,
+    "mean_hallucinated": 0.6480553145562544,
+    "difference": -0.2859446854437456,
+    "roc_auc": 0.09943599999999994
+  },
+  {
+    "feature": "token_recall",
+    "mean_factual": 0.0584386359874933,
+    "mean_hallucinated": 0.18339773507910268,
+    "difference": 0.12495909909160938,
+    "roc_auc": 0.8570300000000001
+  }
+]

@@ -1,0 +1,44 @@
+# Dataset & Preprocessing Configuration
+dataset:
+  name: "halueval"
+  supported_datasets:
+    - "halueval"
+    - "fever"
+    - "factcc"
+    - "scifact"
+  task_type: "claim_evidence_verification"  # or 'claim_classification'
+  raw_file_format: "json"
+  target_column: "label"
+  claim_column: "claim"
+  evidence_column: "evidence"
+  response_column: "response"
+  query_column: "query"
+
+labels:
+  binary_mapping:
+    factual: 0
+    hallucinated: 1
+  nli_mapping:
+    entailment: 0
+    contradiction: 1
+    neutral: 2
+  classes_binary: ["Factual", "Hallucinated"]
+  classes_nli: ["Entailment", "Contradiction", "Neutral"]
+
+split:
+  train_ratio: 0.70
+  val_ratio: 0.15
+  test_ratio: 0.15
+  stratify: true
+  random_seed: 42
+
+preprocessing:
+  preserve_case_for_transformers: true
+  strip_html_tags: true
+  normalize_whitespace: true
+  remove_duplicate_claims: true
+  min_claim_length_chars: 5
+  max_claim_length_tokens: 128
+  max_evidence_length_tokens: 384
+  max_seq_length: 512
+  handle_missing_values: "drop"  # 'drop' or 'fill'

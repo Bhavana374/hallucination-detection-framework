@@ -1,0 +1,23 @@
+# Evidence Retrieval & Dense Indexing Configuration
+embedding:
+  model_name: "sentence-transformers/all-MiniLM-L6-v2"
+  alternative_models:
+    - "BAAI/bge-small-en-v1.5"
+    - "sentence-transformers/all-mpnet-base-v2"
+  embedding_dimension: 384
+  normalize_embeddings: true
+  batch_size: 64
+  max_sequence_length: 256
+
+indexing:
+  index_type: "IndexFlatIP"  # Inner Product for normalized cosine similarity, or 'IndexIVFFlat'
+  metric: "inner_product"
+  index_path: "data/embeddings/evidence_faiss.index"
+  metadata_path: "data/embeddings/evidence_corpus.parquet"
+
+retrieval:
+  top_k: 3
+  score_threshold: 0.35
+  enable_reranking: false
+  reranker_model: "cross-encoder/ms-marco-MiniLM-L-6-v2"
+  fallback_to_unretrieved: true

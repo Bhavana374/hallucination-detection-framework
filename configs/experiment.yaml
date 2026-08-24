@@ -1,0 +1,87 @@
+# Experiment Matrix, Tracking & Ablation Configuration
+experiments:
+  - id: "exp1_tfidf_lr"
+    name: "TF-IDF + Logistic Regression Baseline"
+    type: "baseline"
+    model_key: "baselines.logistic_regression"
+    features: "tfidf"
+    grounding: false
+
+  - id: "exp2_tfidf_rf"
+    name: "TF-IDF + Random Forest Baseline"
+    type: "baseline"
+    model_key: "baselines.random_forest_baseline"
+    features: "tfidf"
+    grounding: false
+
+  - id: "exp3_bert_standalone"
+    name: "BERT Fine-Tuned (Claim Only)"
+    type: "transformer_standalone"
+    model_key: "transformers.bert"
+    features: "raw_claim"
+    grounding: false
+
+  - id: "exp4_deberta_standalone"
+    name: "DeBERTa Fine-Tuned (Claim Only)"
+    type: "transformer_standalone"
+    model_key: "transformers.deberta"
+    features: "raw_claim"
+    grounding: false
+
+  - id: "exp5_bert_grounded"
+    name: "Evidence-Grounded BERT NLI"
+    type: "transformer_grounded"
+    model_key: "nli_models.bert_nli"
+    features: "claim_and_evidence"
+    grounding: true
+
+  - id: "exp6_deberta_grounded"
+    name: "Evidence-Grounded DeBERTa NLI"
+    type: "transformer_grounded"
+    model_key: "nli_models.deberta_nli"
+    features: "claim_and_evidence"
+    grounding: true
+
+  - id: "exp7_hybrid_rf_full"
+    name: "Evidence-Grounded Hybrid Model (Full)"
+    type: "hybrid"
+    model_key: "hybrid.random_forest"
+    features: "all_hybrid"
+    grounding: true
+
+ablations:
+  - id: "ablation_a_full_hybrid"
+    name: "Full Hybrid Model (All Features)"
+    excluded_feature_groups: []
+
+  - id: "ablation_b_no_semantic"
+    name: "Hybrid w/o Dense Semantic Features"
+    excluded_feature_groups: ["semantic"]
+
+  - id: "ablation_c_no_nli"
+    name: "Hybrid w/o NLI Posteriors"
+    excluded_feature_groups: ["nli"]
+
+  - id: "ablation_d_no_linguistic"
+    name: "Hybrid w/o Linguistic Features"
+    excluded_feature_groups: ["linguistic", "lexical"]
+
+  - id: "ablation_e_transformer_only"
+    name: "Transformer Only (Claim Representation)"
+    excluded_feature_groups: ["semantic", "linguistic", "lexical", "retrieval"]
+
+evaluation:
+  metrics:
+    - "accuracy"
+    - "precision"
+    - "recall"
+    - "f1_score"
+    - "f1_macro"
+    - "f1_weighted"
+    - "roc_auc"
+    - "pr_auc"
+    - "confusion_matrix"
+    - "latency_per_sample_ms"
+    - "peak_memory_mb"
+  save_predictions: true
+  save_plots: true

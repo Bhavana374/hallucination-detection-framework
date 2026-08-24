@@ -1,0 +1,23 @@
+============================================================
+EXPERIMENT: exp01_tfidf_lr
+Timestamp: 2026-08-23 16:50:35 UTC
+============================================================
+
+Accuracy:            0.9184
+Precision (Class 1): 0.9458
+Recall (Class 1):    0.8882
+F1-Score (Class 1):  0.9161
+F1-Macro:            0.9184
+ROC-AUC:             0.9603
+PR-AUC:              0.9591
+
+Training Time:       0.3764 s
+Inference Time:      0.0415 s
+Latency/Sample:      0.021 ms
+
+Confusion Matrix:
+  TP: 890
+  TN: 945
+  FP: 51
+  FN: 112
+============================================================

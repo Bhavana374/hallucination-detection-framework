@@ -1,0 +1,48 @@
+{
+  "Exp 3": {
+    "sample_count": 6,
+    "accuracy": 0.6667,
+    "precision": 0.6667,
+    "recall": 0.6667,
+    "f1_score": 0.6667,
+    "f1_macro": 0.6667,
+    "roc_auc": 0.4444,
+    "pr_auc": 0.4278,
+    "confusion_matrix": {
+      "tp": 2,
+      "tn": 2,
+      "fp": 1,
+      "fn": 1
+    },
+    "false_positive_rate": 0.3333,
+    "false_negative_rate": 0.3333,
+    "training_time_sec": 0.0,
+    "inference_time_sec": 0.0,
+    "latency_per_sample_ms": 0.0,
+    "experiment_id": "Exp 3",
+    "model_name": "Standalone BERT"
+  },
+  "Exp 5": {
+    "sample_count": 6,
+    "accuracy": 0.5,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1_score": 0.0,
+    "f1_macro": 0.3333,
+    "roc_auc": 0.4444,
+    "pr_auc": 0.4278,
+    "confusion_matrix": {
+      "tp": 0,
+      "tn": 3,
+      "fp": 0,
+      "fn": 3
+    },
+    "false_positive_rate": 0.0,
+    "false_negative_rate": 1.0,
+    "training_time_sec": 0.0,
+    "inference_time_sec": 0.0,
+    "latency_per_sample_ms": 0.0,
+    "experiment_id": "Exp 5",
+    "model_name": "Evidence BERT NLI"
+  }
+}

@@ -1,0 +1,195 @@
+{
+  "experiment_pair": [
+    "exp07_hybrid_rf (V1)",
+    "exp08_hybrid_v2 (V2)"
+  ],
+  "methodology_difference": "V2 excludes claim_word_count and length_ratio features",
+  "v1_feature_count": 20,
+  "v2_feature_count": 18,
+  "excluded_features": [
+    "claim_word_count",
+    "length_ratio"
+  ],
+  "metrics_comparison": {
+    "accuracy": {
+      "v1": 0.981,
+      "v2": 0.965,
+      "delta": -0.016
+    },
+    "precision": {
+      "v1": 0.983,
+      "v2": 0.9726,
+      "delta": -0.0104
+    },
+    "recall": {
+      "v1": 0.979,
+      "v2": 0.9571,
+      "delta": -0.0219
+    },
+    "f1_score": {
+      "v1": 0.981,
+      "v2": 0.9648,
+      "delta": -0.0162
+    },
+    "f1_macro": {
+      "v1": 0.981,
+      "v2": 0.965,
+      "delta": -0.016
+    },
+    "roc_auc": {
+      "v1": 0.9934,
+      "v2": 0.9912,
+      "delta": -0.0022
+    },
+    "pr_auc": {
+      "v1": 0.9955,
+      "v2": 0.9939,
+      "delta": -0.0016
+    },
+    "training_time_sec": {
+      "v1": 2824.6849,
+      "v2": 4.2611,
+      "delta": -2820.4238
+    },
+    "inference_time_sec": {
+      "v1": 359.1475,
+      "v2": 0.7373,
+      "delta": -358.4102
+    },
+    "latency_per_sample_ms": {
+      "v1": 179.753,
+      "v2": 0.369,
+      "delta": -179.384
+    }
+  },
+  "confusion_matrix_comparison": {
+    "v1": {
+      "tp": 981,
+      "tn": 979,
+      "fp": 17,
+      "fn": 21
+    },
+    "v2": {
+      "tp": 959,
+      "tn": 969,
+      "fp": 27,
+      "fn": 43
+    }
+  },
+  "feature_importance_comparison": [
+    {
+      "feature": "token_precision",
+      "v1_importance": 0.227197,
+      "v2_importance": 0.314905,
+      "delta": 0.087708
+    },
+    {
+      "feature": "token_recall",
+      "v1_importance": 0.060326,
+      "v2_importance": 0.135115,
+      "delta": 0.074789
+    },
+    {
+      "feature": "missing_entity_count",
+      "v1_importance": 0.074426,
+      "v2_importance": 0.093359,
+      "delta": 0.018933
+    },
+    {
+      "feature": "entity_overlap_ratio",
+      "v1_importance": 0.040172,
+      "v2_importance": 0.092345,
+      "delta": 0.052173
+    },
+    {
+      "feature": "lexical_jaccard_similarity",
+      "v1_importance": 0.038993,
+      "v2_importance": 0.075039,
+      "delta": 0.036046
+    },
+    {
+      "feature": "nli_prob_entailment",
+      "v1_importance": 0.013544,
+      "v2_importance": 0.057245,
+      "delta": 0.0437
+    },
+    {
+      "feature": "token_f1",
+      "v1_importance": 0.039435,
+      "v2_importance": 0.053963,
+      "delta": 0.014528
+    },
+    {
+      "feature": "nli_entailment_ratio",
+      "v1_importance": 0.018745,
+      "v2_importance": 0.044472,
+      "delta": 0.025728
+    },
+    {
+      "feature": "semantic_dot_product",
+      "v1_importance": 0.011982,
+      "v2_importance": 0.029677,
+      "delta": 0.017695
+    },
+    {
+      "feature": "semantic_cosine_sim",
+      "v1_importance": 0.010999,
+      "v2_importance": 0.027897,
+      "delta": 0.016898
+    },
+    {
+      "feature": "nli_prob_neutral",
+      "v1_importance": 0.011958,
+      "v2_importance": 0.024012,
+      "delta": 0.012054
+    },
+    {
+      "feature": "semantic_euclidean_dist",
+      "v1_importance": 0.017153,
+      "v2_importance": 0.020265,
+      "delta": 0.003111
+    },
+    {
+      "feature": "nli_prob_contradiction",
+      "v1_importance": 0.00917,
+      "v2_importance": 0.018835,
+      "delta": 0.009666
+    },
+    {
+      "feature": "semantic_embedding_magnitude_ratio",
+      "v1_importance": 0.002217,
+      "v2_importance": 0.006421,
+      "delta": 0.004203
+    },
+    {
+      "feature": "missing_number_count",
+      "v1_importance": 0.001821,
+      "v2_importance": 0.003348,
+      "delta": 0.001527
+    },
+    {
+      "feature": "number_match_ratio",
+      "v1_importance": 0.001228,
+      "v2_importance": 0.00307,
+      "delta": 0.001842
+    },
+    {
+      "feature": "hedge_word_count",
+      "v1_importance": 4e-06,
+      "v2_importance": 3.2e-05,
+      "delta": 2.7e-05
+    },
+    {
+      "feature": "retrieval_score",
+      "v1_importance": 0.0,
+      "v2_importance": 0.0,
+      "delta": 0.0
+    }
+  ],
+  "prediction_diff_summary": {
+    "total_prediction_changes": 52,
+    "v1_correct_v2_wrong": 42,
+    "v1_wrong_v2_correct": 10,
+    "both_wrong_but_different": 0
+  }
+}

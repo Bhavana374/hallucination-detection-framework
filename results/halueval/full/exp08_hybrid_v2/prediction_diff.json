@@ -1,0 +1,948 @@
+{
+  "total_prediction_changes": 52,
+  "v1_correct_v2_wrong": 42,
+  "v1_wrong_v2_correct": 10,
+  "both_wrong_but_different": 0,
+  "v1_correct_v2_wrong_examples": [
+    {
+      "index": 73,
+      "answer": "Ronald Dworkin was a legal scholar.",
+      "true_label": 1,
+      "v1_predicted": 1,
+      "v1_probability": 0.83,
+      "v2_predicted": 0,
+      "v2_probability": 0.48
+    },
+    {
+      "index": 79,
+      "answer": "Can I Borrow a Dollar?",
+      "true_label": 0,
+      "v1_predicted": 0,
+      "v1_probability": 0.42,
+      "v2_predicted": 1,
+      "v2_probability": 0.71
+    },
+    {
+      "index": 137,
+      "answer": "Danny Dyer was nominated in 2013.",
+      "true_label": 1,
+      "v1_predicted": 1,
+      "v1_probability": 0.96,
+      "v2_predicted": 0,
+      "v2_probability": 0.25
+    },
+    {
+      "index": 151,
+      "answer": "The composer of \"Prima la musica e poi le parole\" was born in Verona.",
+      "true_label": 1,
+      "v1_predicted": 1,
+      "v1_probability": 0.82,
+      "v2_predicted": 0,
+      "v2_probability": 0.49
+    },
+    {
+      "index": 238,
+      "answer": "Cia Berg was inducted into the Rock and Roll Hall of Fame.",
+      "true_label": 1,
+      "v1_predicted": 1,
+      "v1_probability": 0.88,
+      "v2_predicted": 0,
+      "v2_probability": 0.19
+    },
+    {
+      "index": 245,
+      "answer": "started his own private security firm.",
+      "true_label": 1,
+      "v1_predicted": 1,
+      "v1_probability": 0.92,
+      "v2_predicted": 0,
+      "v2_probability": 0.016038
+    },
+    {
+      "index": 254,
+      "answer": "The League of Extraordinary Gentlemen",
+      "true_label": 0,
+      "v1_predicted": 0,
+      "v1_probability": 0.23,
+      "v2_predicted": 1,
+      "v2_probability": 0.64
+    },
+    {
+      "index": 480,
+      "answer": "Hurricane Frances caused the Swannanoa to flood.",
+      "true_label": 1,
+      "v1_predicted": 1,
+      "v1_probability": 0.5,
+      "v2_predicted": 0,
+      "v2_probability": 0.49
+    },
+    {
+      "index": 522,
+      "answer": "The Federal Republic of Nigeria",
+      "true_label": 0,
+      "v1_predicted": 0,
+      "v1_probability": 0.4,
+      "v2_predicted": 1,
+      "v2_probability": 0.62
+    },
+    {
+      "index": 589,
+      "answer": "The ancient Greek drama",
+      "true_label": 0,
+      "v1_predicted": 0,
+      "v1_probability": 0.29,
+      "v2_predicted": 1,
+      "v2_probability": 0.7
+    },
+    {
+      "index": 604,
+      "answer": "William Cavendish, 6th Duke of Devonshire",
+      "true_label": 0,
+      "v1_predicted": 0,
+      "v1_probability": 0.17,
+      "v2_predicted": 1,
+      "v2_probability": 0.58
+    },
+    {
+      "index": 620,
+      "answer": "The West Lancashire Evening Gazette",
+      "true_label": 0,
+      "v1_predicted": 0,
+      "v1_probability": 0.19,
+      "v2_predicted": 1,
+      "v2_probability": 0.56
+    },
+    {
+      "index": 633,
+      "answer": "London Academy of Music and Dramatic Art",
+      "true_label": 0,
+      "v1_predicted": 0,
+      "v1_probability": 0.19,
+      "v2_predicted": 1,
+      "v2_probability": 0.75
+    },
+    {
+      "index": 635,
+      "answer": "Maurizio Lobina and Jeffrey Jey.",
+      "true_label": 1,
+      "v1_predicted": 1,
+      "v1_probability": 0.66,
+      "v2_predicted": 0,
+      "v2_probability": 0.26
+    },
+    {
+      "index": 672,
+      "answer": "Emma Watson directed Regression in 2015.",
+      "true_label": 1,
+      "v1_predicted": 1,
+      "v1_probability": 0.84,
+      "v2_predicted": 0,
+      "v2_probability": 0.23
+    },
+    {
+      "index": 736,
+      "answer": "Hurricane Beulah was the second tropical storm, second hurricane, and only major hurricane during the first Atlantic hurricane season.",
+      "true_label": 1,
+      "v1_predicted": 1,
+      "v1_probability": 0.57,
+      "v2_predicted": 0,
+      "v2_probability": 0.17
+    },
+    {
+      "index": 762,
+      "answer": "Dante Bonfim Costa Santos (born 18 October 1983)",
+      "true_label": 0,
+      "v1_predicted": 0,
+      "v1_probability": 0.42,
+      "v2_predicted": 1,
+      "v2_probability": 0.8
+    },
+    {
+      "index": 772,
+      "answer": "Albert Wilson played college football in Georgia.",
+      "true_label": 1,
+      "v1_predicted": 1,
+      "v1_probability": 0.85,
+      "v2_predicted": 0,
+      "v2_probability": 0.02
+    },
+    {
+      "index": 795,
+      "answer": "Gustavo Nicol\u00e1s Aguirre plays basketball in Argentina.",
+      "true_label": 1,
+      "v1_predicted": 1,
+      "v1_probability": 0.92,
+      "v2_predicted": 0,
+      "v2_probability": 0.32
+    },
+    {
+      "index": 850,
+      "answer": "Fort Benning, Georgia",
+      "true_label": 0,
+      "v1_predicted": 0,
+      "v1_probability": 0.01,
+      "v2_predicted": 1,
+      "v2_probability": 0.56
+    },
+    {
+      "index": 893,
+      "answer": "Otra Pel\u00edcula de Huevos y un Pollo is a Japanese anime series and the sixth \"Pretty Cure\" installment by Izumi Todo.",
+      "true_label": 1,
+      "v1_predicted": 1,
+      "v1_probability": 0.71,
+      "v2_predicted": 0,
+      "v2_probability": 0.25
+    },
+    {
+      "index": 1014,
+      "answer": "Simon Wincer is a film producer.",
+      "true_label": 1,
+      "v1_predicted": 1,
+      "v1_probability": 0.92,
+      "v2_predicted": 0,
+      "v2_probability": 0.43
+    },
+    {
+      "index": 1020,
+      "answer": "Suzy Kolber was born in 1964.",
+      "true_label": 1,
+      "v1_predicted": 1,
+      "v1_probability": 0.84,
+      "v2_predicted": 0,
+      "v2_probability": 0.28
+    },
+    {
+      "index": 1068,
+      "answer": "El Paso, Texas, United States",
+      "true_label": 0,
+      "v1_predicted": 0,
+      "v1_probability": 0.02,
+      "v2_predicted": 1,
+      "v2_probability": 0.66
+    },
+    {
+      "index": 1080,
+      "answer": "1600 ft above sea level",
+      "true_label": 0,
+      "v1_predicted": 0,
+      "v1_probability": 0.14,
+      "v2_predicted": 1,
+      "v2_probability": 0.5
+    },
+    {
+      "index": 1092,
+      "answer": "The Type Zhongzheng rifle was the forerunner of the Karabiner 98k.",
+      "true_label": 1,
+      "v1_predicted": 1,
+      "v1_probability": 0.73,
+      "v2_predicted": 0,
+      "v2_probability": 0.38
+    },
+    {
+      "index": 1121,
+      "answer": "The director of Paprika is Yoshihiro Wanibuchi.",
+      "true_label": 1,
+      "v1_predicted": 1,
+      "v1_probability": 0.83,
+      "v2_predicted": 0,
+      "v2_probability": 0.14
+    },
+    {
+      "index": 1280,
+      "answer": "People's Republic of China",
+      "true_label": 0,
+      "v1_predicted": 0,
+      "v1_probability": 0.4,
+      "v2_predicted": 1,
+      "v2_probability": 0.74
+    },
+    {
+      "index": 1300,
+      "answer": "his speed on the ball",
+      "true_label": 0,
+      "v1_predicted": 0,
+      "v1_probability": 0.48,
+      "v2_predicted": 1,
+      "v2_probability": 0.58
+    },
+    {
+      "index": 1358,
+      "answer": "United States Air Force (USAF)",
+      "true_label": 0,
+      "v1_predicted": 0,
+      "v1_probability": 0.27,
+      "v2_predicted": 1,
+      "v2_probability": 0.67
+    },
+    {
+      "index": 1380,
+      "answer": "The capital of South Tongu district is located near Sokpoe in the Volta Region of Ghana.",
+      "true_label": 1,
+      "v1_predicted": 1,
+      "v1_probability": 0.65,
+      "v2_predicted": 0,
+      "v2_probability": 0.44
+    },
+    {
+      "index": 1432,
+      "answer": "The Carolinian is the busiest route.",
+      "true_label": 1,
+      "v1_predicted": 1,
+      "v1_probability": 0.78,
+      "v2_predicted": 0,
+      "v2_probability": 0.45
+    },
+    {
+      "index": 1551,
+      "answer": "Russ Abbot, an English, starred.",
+      "true_label": 1,
+      "v1_predicted": 1,
+      "v1_probability": 0.8,
+      "v2_predicted": 0,
+      "v2_probability": 0.48
+    },
+    {
+      "index": 1690,
+      "answer": "Frederik Willem de Klerk",
+      "true_label": 0,
+      "v1_predicted": 0,
+      "v1_probability": 0.01,
+      "v2_predicted": 1,
+      "v2_probability": 0.54
+    },
+    {
+      "index": 1719,
+      "answer": "Western Association of Schools and Colleges",
+      "true_label": 0,
+      "v1_predicted": 0,
+      "v1_probability": 0.02,
+      "v2_predicted": 1,
+      "v2_probability": 0.56
+    },
+    {
+      "index": 1725,
+      "answer": "Robin McKinley is an author.",
+      "true_label": 1,
+      "v1_predicted": 1,
+      "v1_probability": 0.76,
+      "v2_predicted": 0,
+      "v2_probability": 0.31
+    },
+    {
+      "index": 1756,
+      "answer": "Wulfenia is the related genus.",
+      "true_label": 1,
+      "v1_predicted": 1,
+      "v1_probability": 0.7,
+      "v2_predicted": 0,
+      "v2_probability": 0.22
+    },
+    {
+      "index": 1813,
+      "answer": "International Data Group owned GamePro.",
+      "true_label": 1,
+      "v1_predicted": 1,
+      "v1_probability": 0.65,
+      "v2_predicted": 0,
+      "v2_probability": 0.34
+    },
+    {
+      "index": 1818,
+      "answer": "The Lowry Hotel is in Manchester.",
+      "true_label": 1,
+      "v1_predicted": 1,
+      "v1_probability": 0.84,
+      "v2_predicted": 0,
+      "v2_probability": 0.49
+    },
+    {
+      "index": 1890,
+      "answer": "The Blue Fairy disappears in the Haunted Mansion.",
+      "true_label": 1,
+      "v1_predicted": 1,
+      "v1_probability": 0.5,
+      "v2_predicted": 0,
+      "v2_probability": 0.43
+    },
+    {
+      "index": 1934,
+      "answer": "The population in 2010 is 69,078.",
+      "true_label": 1,
+      "v1_predicted": 1,
+      "v1_probability": 0.79,
+      "v2_predicted": 0,
+      "v2_probability": 0.35
+    },
+    {
+      "index": 1963,
+      "answer": "no",
+      "true_label": 0,
+      "v1_predicted": 0,
+      "v1_probability": 0.0,
+      "v2_predicted": 1,
+      "v2_probability": 0.511333
+    }
+  ],
+  "v1_wrong_v2_correct_examples": [
+    {
+      "index": 75,
+      "answer": "It is located in The Hague, Netherlands, and was established to support the Permanent Court of Justice",
+      "true_label": 0,
+      "v1_predicted": 1,
+      "v1_probability": 0.62,
+      "v2_predicted": 0,
+      "v2_probability": 0.19
+    },
+    {
+      "index": 213,
+      "answer": "who reached popularity as a teenager.",
+      "true_label": 0,
+      "v1_predicted": 1,
+      "v1_probability": 0.54,
+      "v2_predicted": 0,
+      "v2_probability": 0.02
+    },
+    {
+      "index": 622,
+      "answer": "a five-piece Alt-Country band",
+      "true_label": 0,
+      "v1_predicted": 1,
+      "v1_probability": 0.71,
+      "v2_predicted": 0,
+      "v2_probability": 0.02
+    },
+    {
+      "index": 715,
+      "answer": "The Golden Trilogy by Philip Pullman.",
+      "true_label": 1,
+      "v1_predicted": 0,
+      "v1_probability": 0.43,
+      "v2_predicted": 1,
+      "v2_probability": 0.72
+    },
+    {
+      "index": 784,
+      "answer": "Steve Riddle was appointed to the Montana Arts Council by Governor Brian Schweitzer.",
+      "true_label": 1,
+      "v1_predicted": 0,
+      "v1_probability": 0.15,
+      "v2_predicted": 1,
+      "v2_probability": 0.81
+    },
+    {
+      "index": 925,
+      "answer": "Indian Territory Act of 1887.",
+      "true_label": 1,
+      "v1_predicted": 0,
+      "v1_probability": 0.07,
+      "v2_predicted": 1,
+      "v2_probability": 0.66
+    },
+    {
+      "index": 1107,
+      "answer": "Ram\u00f3n Mar\u00eda del Valle-Incl\u00e1n",
+      "true_label": 0,
+      "v1_predicted": 1,
+      "v1_probability": 0.6,
+      "v2_predicted": 0,
+      "v2_probability": 0.01
+    },
+    {
+      "index": 1163,
+      "answer": "the United States Department of Health and Human Services",
+      "true_label": 0,
+      "v1_predicted": 1,
+      "v1_probability": 0.53,
+      "v2_predicted": 0,
+      "v2_probability": 0.16
+    },
+    {
+      "index": 1268,
+      "answer": "The Georgia Tech Yellow Jacket Marching Band",
+      "true_label": 0,
+      "v1_predicted": 1,
+      "v1_probability": 0.6,
+      "v2_predicted": 0,
+      "v2_probability": 0.47
+    },
+    {
+      "index": 1695,
+      "answer": "2048: No Escape or 2048: Nowhere to Escape",
+      "true_label": 0,
+      "v1_predicted": 1,
+      "v1_probability": 0.69,
+      "v2_predicted": 0,
+      "v2_probability": 0.0
+    }
+  ],
+  "prediction_changes_all": [
+    {
+      "index": 73,
+      "answer": "Ronald Dworkin was a legal scholar.",
+      "true_label": 1,
+      "v1_predicted": 1,
+      "v1_probability": 0.83,
+      "v2_predicted": 0,
+      "v2_probability": 0.48
+    },
+    {
+      "index": 75,
+      "answer": "It is located in The Hague, Netherlands, and was established to support the Permanent Court of Justice",
+      "true_label": 0,
+      "v1_predicted": 1,
+      "v1_probability": 0.62,
+      "v2_predicted": 0,
+      "v2_probability": 0.19
+    },
+    {
+      "index": 79,
+      "answer": "Can I Borrow a Dollar?",
+      "true_label": 0,
+      "v1_predicted": 0,
+      "v1_probability": 0.42,
+      "v2_predicted": 1,
+      "v2_probability": 0.71
+    },
+    {
+      "index": 137,
+      "answer": "Danny Dyer was nominated in 2013.",
+      "true_label": 1,
+      "v1_predicted": 1,
+      "v1_probability": 0.96,
+      "v2_predicted": 0,
+      "v2_probability": 0.25
+    },
+    {
+      "index": 151,
+      "answer": "The composer of \"Prima la musica e poi le parole\" was born in Verona.",
+      "true_label": 1,
+      "v1_predicted": 1,
+      "v1_probability": 0.82,
+      "v2_predicted": 0,
+      "v2_probability": 0.49
+    },
+    {
+      "index": 213,
+      "answer": "who reached popularity as a teenager.",
+      "true_label": 0,
+      "v1_predicted": 1,
+      "v1_probability": 0.54,
+      "v2_predicted": 0,
+      "v2_probability": 0.02
+    },
+    {
+      "index": 238,
+      "answer": "Cia Berg was inducted into the Rock and Roll Hall of Fame.",
+      "true_label": 1,
+      "v1_predicted": 1,
+      "v1_probability": 0.88,
+      "v2_predicted": 0,
+      "v2_probability": 0.19
+    },
+    {
+      "index": 245,
+      "answer": "started his own private security firm.",
+      "true_label": 1,
+      "v1_predicted": 1,
+      "v1_probability": 0.92,
+      "v2_predicted": 0,
+      "v2_probability": 0.016038
+    },
+    {
+      "index": 254,
+      "answer": "The League of Extraordinary Gentlemen",
+      "true_label": 0,
+      "v1_predicted": 0,
+      "v1_probability": 0.23,
+      "v2_predicted": 1,
+      "v2_probability": 0.64
+    },
+    {
+      "index": 480,
+      "answer": "Hurricane Frances caused the Swannanoa to flood.",
+      "true_label": 1,
+      "v1_predicted": 1,
+      "v1_probability": 0.5,
+      "v2_predicted": 0,
+      "v2_probability": 0.49
+    },
+    {
+      "index": 522,
+      "answer": "The Federal Republic of Nigeria",
+      "true_label": 0,
+      "v1_predicted": 0,
+      "v1_probability": 0.4,
+      "v2_predicted": 1,
+      "v2_probability": 0.62
+    },
+    {
+      "index": 589,
+      "answer": "The ancient Greek drama",
+      "true_label": 0,
+      "v1_predicted": 0,
+      "v1_probability": 0.29,
+      "v2_predicted": 1,
+      "v2_probability": 0.7
+    },
+    {
+      "index": 604,
+      "answer": "William Cavendish, 6th Duke of Devonshire",
+      "true_label": 0,
+      "v1_predicted": 0,
+      "v1_probability": 0.17,
+      "v2_predicted": 1,
+      "v2_probability": 0.58
+    },
+    {
+      "index": 620,
+      "answer": "The West Lancashire Evening Gazette",
+      "true_label": 0,
+      "v1_predicted": 0,
+      "v1_probability": 0.19,
+      "v2_predicted": 1,
+      "v2_probability": 0.56
+    },
+    {
+      "index": 622,
+      "answer": "a five-piece Alt-Country band",
+      "true_label": 0,
+      "v1_predicted": 1,
+      "v1_probability": 0.71,
+      "v2_predicted": 0,
+      "v2_probability": 0.02
+    },
+    {
+      "index": 633,
+      "answer": "London Academy of Music and Dramatic Art",
+      "true_label": 0,
+      "v1_predicted": 0,
+      "v1_probability": 0.19,
+      "v2_predicted": 1,
+      "v2_probability": 0.75
+    },
+    {
+      "index": 635,
+      "answer": "Maurizio Lobina and Jeffrey Jey.",
+      "true_label": 1,
+      "v1_predicted": 1,
+      "v1_probability": 0.66,
+      "v2_predicted": 0,
+      "v2_probability": 0.26
+    },
+    {
+      "index": 672,
+      "answer": "Emma Watson directed Regression in 2015.",
+      "true_label": 1,
+      "v1_predicted": 1,
+      "v1_probability": 0.84,
+      "v2_predicted": 0,
+      "v2_probability": 0.23
+    },
+    {
+      "index": 715,
+      "answer": "The Golden Trilogy by Philip Pullman.",
+      "true_label": 1,
+      "v1_predicted": 0,
+      "v1_probability": 0.43,
+      "v2_predicted": 1,
+      "v2_probability": 0.72
+    },
+    {
+      "index": 736,
+      "answer": "Hurricane Beulah was the second tropical storm, second hurricane, and only major hurricane during the first Atlantic hurricane season.",
+      "true_label": 1,
+      "v1_predicted": 1,
+      "v1_probability": 0.57,
+      "v2_predicted": 0,
+      "v2_probability": 0.17
+    },
+    {
+      "index": 762,
+      "answer": "Dante Bonfim Costa Santos (born 18 October 1983)",
+      "true_label": 0,
+      "v1_predicted": 0,
+      "v1_probability": 0.42,
+      "v2_predicted": 1,
+      "v2_probability": 0.8
+    },
+    {
+      "index": 772,
+      "answer": "Albert Wilson played college football in Georgia.",
+      "true_label": 1,
+      "v1_predicted": 1,
+      "v1_probability": 0.85,
+      "v2_predicted": 0,
+      "v2_probability": 0.02
+    },
+    {
+      "index": 784,
+      "answer": "Steve Riddle was appointed to the Montana Arts Council by Governor Brian Schweitzer.",
+      "true_label": 1,
+      "v1_predicted": 0,
+      "v1_probability": 0.15,
+      "v2_predicted": 1,
+      "v2_probability": 0.81
+    },
+    {
+      "index": 795,
+      "answer": "Gustavo Nicol\u00e1s Aguirre plays basketball in Argentina.",
+      "true_label": 1,
+      "v1_predicted": 1,
+      "v1_probability": 0.92,
+      "v2_predicted": 0,
+      "v2_probability": 0.32
+    },
+    {
+      "index": 850,
+      "answer": "Fort Benning, Georgia",
+      "true_label": 0,
+      "v1_predicted": 0,
+      "v1_probability": 0.01,
+      "v2_predicted": 1,
+      "v2_probability": 0.56
+    },
+    {
+      "index": 893,
+      "answer": "Otra Pel\u00edcula de Huevos y un Pollo is a Japanese anime series and the sixth \"Pretty Cure\" installment by Izumi Todo.",
+      "true_label": 1,
+      "v1_predicted": 1,
+      "v1_probability": 0.71,
+      "v2_predicted": 0,
+      "v2_probability": 0.25
+    },
+    {
+      "index": 925,
+      "answer": "Indian Territory Act of 1887.",
+      "true_label": 1,
+      "v1_predicted": 0,
+      "v1_probability": 0.07,
+      "v2_predicted": 1,
+      "v2_probability": 0.66
+    },
+    {
+      "index": 1014,
+      "answer": "Simon Wincer is a film producer.",
+      "true_label": 1,
+      "v1_predicted": 1,
+      "v1_probability": 0.92,
+      "v2_predicted": 0,
+      "v2_probability": 0.43
+    },
+    {
+      "index": 1020,
+      "answer": "Suzy Kolber was born in 1964.",
+      "true_label": 1,
+      "v1_predicted": 1,
+      "v1_probability": 0.84,
+      "v2_predicted": 0,
+      "v2_probability": 0.28
+    },
+    {
+      "index": 1068,
+      "answer": "El Paso, Texas, United States",
+      "true_label": 0,
+      "v1_predicted": 0,
+      "v1_probability": 0.02,
+      "v2_predicted": 1,
+      "v2_probability": 0.66
+    },
+    {
+      "index": 1080,
+      "answer": "1600 ft above sea level",
+      "true_label": 0,
+      "v1_predicted": 0,
+      "v1_probability": 0.14,
+      "v2_predicted": 1,
+      "v2_probability": 0.5
+    },
+    {
+      "index": 1092,
+      "answer": "The Type Zhongzheng rifle was the forerunner of the Karabiner 98k.",
+      "true_label": 1,
+      "v1_predicted": 1,
+      "v1_probability": 0.73,
+      "v2_predicted": 0,
+      "v2_probability": 0.38
+    },
+    {
+      "index": 1107,
+      "answer": "Ram\u00f3n Mar\u00eda del Valle-Incl\u00e1n",
+      "true_label": 0,
+      "v1_predicted": 1,
+      "v1_probability": 0.6,
+      "v2_predicted": 0,
+      "v2_probability": 0.01
+    },
+    {
+      "index": 1121,
+      "answer": "The director of Paprika is Yoshihiro Wanibuchi.",
+      "true_label": 1,
+      "v1_predicted": 1,
+      "v1_probability": 0.83,
+      "v2_predicted": 0,
+      "v2_probability": 0.14
+    },
+    {
+      "index": 1163,
+      "answer": "the United States Department of Health and Human Services",
+      "true_label": 0,
+      "v1_predicted": 1,
+      "v1_probability": 0.53,
+      "v2_predicted": 0,
+      "v2_probability": 0.16
+    },
+    {
+      "index": 1268,
+      "answer": "The Georgia Tech Yellow Jacket Marching Band",
+      "true_label": 0,
+      "v1_predicted": 1,
+      "v1_probability": 0.6,
+      "v2_predicted": 0,
+      "v2_probability": 0.47
+    },
+    {
+      "index": 1280,
+      "answer": "People's Republic of China",
+      "true_label": 0,
+      "v1_predicted": 0,
+      "v1_probability": 0.4,
+      "v2_predicted": 1,
+      "v2_probability": 0.74
+    },
+    {
+      "index": 1300,
+      "answer": "his speed on the ball",
+      "true_label": 0,
+      "v1_predicted": 0,
+      "v1_probability": 0.48,
+      "v2_predicted": 1,
+      "v2_probability": 0.58
+    },
+    {
+      "index": 1358,
+      "answer": "United States Air Force (USAF)",
+      "true_label": 0,
+      "v1_predicted": 0,
+      "v1_probability": 0.27,
+      "v2_predicted": 1,
+      "v2_probability": 0.67
+    },
+    {
+      "index": 1380,
+      "answer": "The capital of South Tongu district is located near Sokpoe in the Volta Region of Ghana.",
+      "true_label": 1,
+      "v1_predicted": 1,
+      "v1_probability": 0.65,
+      "v2_predicted": 0,
+      "v2_probability": 0.44
+    },
+    {
+      "index": 1432,
+      "answer": "The Carolinian is the busiest route.",
+      "true_label": 1,
+      "v1_predicted": 1,
+      "v1_probability": 0.78,
+      "v2_predicted": 0,
+      "v2_probability": 0.45
+    },
+    {
+      "index": 1551,
+      "answer": "Russ Abbot, an English, starred.",
+      "true_label": 1,
+      "v1_predicted": 1,
+      "v1_probability": 0.8,
+      "v2_predicted": 0,
+      "v2_probability": 0.48
+    },
+    {
+      "index": 1690,
+      "answer": "Frederik Willem de Klerk",
+      "true_label": 0,
+      "v1_predicted": 0,
+      "v1_probability": 0.01,
+      "v2_predicted": 1,
+      "v2_probability": 0.54
+    },
+    {
+      "index": 1695,
+      "answer": "2048: No Escape or 2048: Nowhere to Escape",
+      "true_label": 0,
+      "v1_predicted": 1,
+      "v1_probability": 0.69,
+      "v2_predicted": 0,
+      "v2_probability": 0.0
+    },
+    {
+      "index": 1719,
+      "answer": "Western Association of Schools and Colleges",
+      "true_label": 0,
+      "v1_predicted": 0,
+      "v1_probability": 0.02,
+      "v2_predicted": 1,
+      "v2_probability": 0.56
+    },
+    {
+      "index": 1725,
+      "answer": "Robin McKinley is an author.",
+      "true_label": 1,
+      "v1_predicted": 1,
+      "v1_probability": 0.76,
+      "v2_predicted": 0,
+      "v2_probability": 0.31
+    },
+    {
+      "index": 1756,
+      "answer": "Wulfenia is the related genus.",
+      "true_label": 1,
+      "v1_predicted": 1,
+      "v1_probability": 0.7,
+      "v2_predicted": 0,
+      "v2_probability": 0.22
+    },
+    {
+      "index": 1813,
+      "answer": "International Data Group owned GamePro.",
+      "true_label": 1,
+      "v1_predicted": 1,
+      "v1_probability": 0.65,
+      "v2_predicted": 0,
+      "v2_probability": 0.34
+    },
+    {
+      "index": 1818,
+      "answer": "The Lowry Hotel is in Manchester.",
+      "true_label": 1,
+      "v1_predicted": 1,
+      "v1_probability": 0.84,
+      "v2_predicted": 0,
+      "v2_probability": 0.49
+    },
+    {
+      "index": 1890,
+      "answer": "The Blue Fairy disappears in the Haunted Mansion.",
+      "true_label": 1,
+      "v1_predicted": 1,
+      "v1_probability": 0.5,
+      "v2_predicted": 0,
+      "v2_probability": 0.43
+    },
+    {
+      "index": 1934,
+      "answer": "The population in 2010 is 69,078.",
+      "true_label": 1,
+      "v1_predicted": 1,
+      "v1_probability": 0.79,
+      "v2_predicted": 0,
+      "v2_probability": 0.35
+    },
+    {
+      "index": 1963,
+      "answer": "no",
+      "true_label": 0,
+      "v1_predicted": 0,
+      "v1_probability": 0.0,
+      "v2_predicted": 1,
+      "v2_probability": 0.511333
+    }
+  ]
+}

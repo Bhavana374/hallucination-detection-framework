@@ -1,0 +1,3051 @@
+{
+  "false_positives": [
+    {
+      "index": 41,
+      "original_prompt": "What is the elevation of the stadium where the 2006 Las Vegas Bowl was played?",
+      "generated_response": "1600 ft above sea level",
+      "claim": "1600 ft above sea level",
+      "retrieved_evidence": " This bowl game was played on December 22, 2006 at 5 p.m. PST at 40,000-seat Sam Boyd Stadium in Whitney, Nevada, USA where this bowl game has been played since 1992. The field has a conventional north-south orientation and is at an elevation of 1600 ft above sea level.",
+      "predicted_label": 1,
+      "actual_label": 0,
+      "prediction_probability": 0.56,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.8765087723731995,
+        "contradiction": 0.004194099456071854,
+        "neutral": 0.11929712444543839
+      },
+      "features": {
+        "semantic_similarity": 0.18961820006370544,
+        "entity_overlap_ratio": 1.0,
+        "lexical_jaccard": 0.10869565217391304,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 74,
+      "original_prompt": "Which collaborator with Nate Dogg was inducted into the Rock and Roll Hall of Fame in 2017?",
+      "generated_response": "Tupac Shakur",
+      "claim": "Tupac Shakur",
+      "retrieved_evidence": " He was noted for his membership in rap trio 213 and his solo career in which he collaborated with Dr. Dre, Eminem, Warren G, Tupac Shakur, Westside Connection, Snoop Dogg, 50 Cent, Ludacris, Xzibit, and Shade Sheist on many hit releases. On April 7, 2017, Shakur was inducted into the Rock and Roll Hall of Fame.",
+      "predicted_label": 1,
+      "actual_label": 0,
+      "prediction_probability": 0.53,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.9949890971183777,
+        "contradiction": 0.004840387497097254,
+        "neutral": 0.00017048613517545164
+      },
+      "features": {
+        "semantic_similarity": 0.14433757960796356,
+        "entity_overlap_ratio": 1.0,
+        "lexical_jaccard": 0.041666666666666664,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 75,
+      "original_prompt": "Who was the writer of the short stories collection influenced by the surrealist painter that was a founding member of the Mexican Women's Liberation Movement? ",
+      "generated_response": "Jen George",
+      "claim": "Jen George",
+      "retrieved_evidence": "The Babysitter at Rest is a collection of short stories by American writer Jen George published in 2016 by the Dorothy Project. George has acknowledged the influence of surrealist painter and writer Leonora Carrington on the stories in the book. Leonora Carrington was also a founding member of the Women\u2019s Liberation Movement in Mexico during the 1970s.",
+      "predicted_label": 1,
+      "actual_label": 0,
+      "prediction_probability": 0.62,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.998363196849823,
+        "contradiction": 0.0014585600001737475,
+        "neutral": 0.00017827728879638016
+      },
+      "features": {
+        "semantic_similarity": 0.1749635636806488,
+        "entity_overlap_ratio": 1.0,
+        "lexical_jaccard": 0.04878048780487805,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 197,
+      "original_prompt": "What is the nickname of the person who gave Roger Ruzek a nickname?",
+      "generated_response": "Boomer",
+      "claim": "Boomer",
+      "retrieved_evidence": " He was given the classic nickname \"Who Framed Roger Ruzek\" (after Who Framed Roger Rabbit ) by Chris Berman.Christopher James Berman (born May 10, 1955), nicknamed Boomer, is an American sportscaster.",
+      "predicted_label": 1,
+      "actual_label": 0,
+      "prediction_probability": 0.51,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.9868764877319336,
+        "contradiction": 0.0046578990295529366,
+        "neutral": 0.008465616032481194
+      },
+      "features": {
+        "semantic_similarity": 0.0,
+        "entity_overlap_ratio": 1.0,
+        "lexical_jaccard": 0.037037037037037035,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 213,
+      "original_prompt": "What was the town that holds the Garth School originally named?",
+      "generated_response": "The town that holds the Garth School was originally named Lebanon City.",
+      "claim": "The town that holds the Garth School was originally named Lebanon City.",
+      "retrieved_evidence": "Garth School is an historic school building located on South Broadway Street in Georgetown, Kentucky, United States. It was originally called Lebanon when founded by Rev. Elijah Craig and was renamed in 1790 in honor of President George Washington.",
+      "predicted_label": 1,
+      "actual_label": 0,
+      "prediction_probability": 0.54,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.007167136296629906,
+        "contradiction": 0.9772054553031921,
+        "neutral": 0.015627384185791016
+      },
+      "features": {
+        "semantic_similarity": 0.222026526927948,
+        "entity_overlap_ratio": 0.6,
+        "lexical_jaccard": 0.12195121951219512,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 360,
+      "original_prompt": "What British sitcom, starring the English comedian and actress Jennifer Saunders, did Difford & Tilbrook write the music for?",
+      "generated_response": "\"Girls on Top\"",
+      "claim": "\"Girls on Top\"",
+      "retrieved_evidence": " They have both written independently outside the band, and together wrote the music for the British sit-com \"Girls on Top\" starring Dawn French, Jennifer Saunders, Ruby Wax and Tracey Ullman.Jennifer Jane Saunders (born 6 July 1958) is an English comedian, screenwriter, and actress.",
+      "predicted_label": 1,
+      "actual_label": 0,
+      "prediction_probability": 0.77,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.9961656332015991,
+        "contradiction": 0.00213543395511806,
+        "neutral": 0.0016989270225167274
+      },
+      "features": {
+        "semantic_similarity": 0.21483448147773743,
+        "entity_overlap_ratio": 1.0,
+        "lexical_jaccard": 0.07692307692307693,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 621,
+      "original_prompt": "The 2012\u201313 Puebla season was the 66th professional season of a league currently sponsored by which company ?",
+      "generated_response": "The 2012\u201313 Puebla season was not sponsored by BBVA.",
+      "claim": "The 2012\u201313 Puebla season was not sponsored by BBVA.",
+      "retrieved_evidence": "The 2012\u201313 Puebla season was the 66th professional season of Mexico's top-flight football league. Currently sponsored by BBVA through its Mexican subsidiary BBVA Bancomer, it is officially known as Liga BBVA Bancomer.",
+      "predicted_label": 1,
+      "actual_label": 0,
+      "prediction_probability": 0.71,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.00011922605335712433,
+        "contradiction": 0.9997782111167908,
+        "neutral": 0.00010260046110488474
+      },
+      "features": {
+        "semantic_similarity": 0.5406205654144287,
+        "entity_overlap_ratio": 1.0,
+        "lexical_jaccard": 0.2903225806451613,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 668,
+      "original_prompt": "What son of a Chinese fencer is an entertainer and is fluent in 6 languages?",
+      "generated_response": "The son of a Chinese fencer who is an entertainer and is fluent in 6 languages is Wang Ruiji's son.",
+      "claim": "The son of a Chinese fencer who is an entertainer and is fluent in 6 languages is Wang Ruiji's son.",
+      "retrieved_evidence": "Wang Ruiji (born 17 February 1957) is a Chinese fencer. He is the father of Jackson Wang.Jackson Wang (traditional Chinese: \u738b\u5609\u723e; born 28 March 1994) is a Hong Kong rapper, singer, and dancer based in South Korea. Jackson speaks fluent English, Cantonese, Mandarin, Shanghainese, Japanese and Korean.",
+      "predicted_label": 1,
+      "actual_label": 0,
+      "prediction_probability": 0.94,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.16316543519496918,
+        "contradiction": 0.0008267673547379673,
+        "neutral": 0.836007833480835
+      },
+      "features": {
+        "semantic_similarity": 0.709442675113678,
+        "entity_overlap_ratio": 0.5,
+        "lexical_jaccard": 0.24444444444444444,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 748,
+      "original_prompt": "Ave Satani was the theme song to which Richard Donner horror film?",
+      "generated_response": "Ave Satani was the theme song to David Seltzer's horror film.",
+      "claim": "Ave Satani was the theme song to David Seltzer's horror film.",
+      "retrieved_evidence": "\"Ave Satani\" is the theme song to the film \"The Omen\" (1976) composed by Jerry Goldsmith.The Omen is a 1976 British-American supernatural horror film directed by Richard Donner, and written by David Seltzer.",
+      "predicted_label": 1,
+      "actual_label": 0,
+      "prediction_probability": 0.52,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.01007828302681446,
+        "contradiction": 0.4923775792121887,
+        "neutral": 0.49754419922828674
+      },
+      "features": {
+        "semantic_similarity": 0.3313261568546295,
+        "entity_overlap_ratio": 0.75,
+        "lexical_jaccard": 0.35714285714285715,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 754,
+      "original_prompt": "Who holds a World Land Speed Record and named Daniel Jubb \"one of the world's leading rocket scientists\"?",
+      "generated_response": "Andy Green",
+      "claim": "Andy Green",
+      "retrieved_evidence": " In a 17 November 2008 article from the British newspaper \"The Times\", he was named \"one of the world's leading rocket scientists\", by the Royal Air Force Wing Commander Andy Green.Wing Commander Andy D. Green OBE (born 30 July 1962) is a British Royal Air Force fighter pilot and World Land Speed Record holder.",
+      "predicted_label": 1,
+      "actual_label": 0,
+      "prediction_probability": 0.96,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.015558512881398201,
+        "contradiction": 0.9834694862365723,
+        "neutral": 0.000972063047811389
+      },
+      "features": {
+        "semantic_similarity": 0.29173001646995544,
+        "entity_overlap_ratio": 1.0,
+        "lexical_jaccard": 0.046511627906976744,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 1106,
+      "original_prompt": "When was the English actress born who acted in The Royle Family as Baebara?",
+      "generated_response": "7 December 1943",
+      "claim": "7 December 1943",
+      "retrieved_evidence": "The Royle Family is a British television sitcom produced by ITV Studios for the BBC, which ran for three series from 1998-2000, and specials from 2006-12. It centres on the lives of a scruffy television-fixated Manchester family, the Royles, comprising family patriarch Jim Royle (Ricky Tomlinson), his wife Barbara (Sue Johnston), their daughter Denise (Caroline Aherne), their son Antony (Ralf Little) and Denise's fianc\u00e9 (later husband) David (Craig Cash).Sue Johnston OBE (born Susan Wright; born 7 December 1943) is an English actress known for playing Sheila Grant in the Channel 4 soap opera \"Brookside\" (1982\u20131990), Barbara Royle in the BBC comedy \"The Royle Family\" (1998\u20132012), Grace Foley in the BBC drama \"Waking the Dead\" (2000\u20132011), Gloria Price in the ITV soap opera \"Coronation Street\" (2012\u20132014) and Miss Denker in the ITV drama \"Downton Abbey\" (2014\u20132015).",
+      "predicted_label": 1,
+      "actual_label": 0,
+      "prediction_probability": 0.6,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.7534543871879578,
+        "contradiction": 0.044337376952171326,
+        "neutral": 0.2022082358598709
+      },
+      "features": {
+        "semantic_similarity": 0.13444942235946655,
+        "entity_overlap_ratio": 1.0,
+        "lexical_jaccard": 0.03,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 1162,
+      "original_prompt": "Steve Carter ended his career for the team that plays in what association?",
+      "generated_response": "Steve Carter ended his career for the English team in a rugby league association.",
+      "claim": "Steve Carter ended his career for the English team in a rugby league association.",
+      "retrieved_evidence": " He ended his career with a season in England with the Widnes Vikings.Widnes Vikings R.L.F.C. is an English professional rugby league club based in Widnes, Cheshire which currently plays in the Super League, the top tier of European rugby league.",
+      "predicted_label": 1,
+      "actual_label": 0,
+      "prediction_probability": 0.53,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.34344482421875,
+        "contradiction": 0.0021980092860758305,
+        "neutral": 0.6543571352958679
+      },
+      "features": {
+        "semantic_similarity": 0.5312532782554626,
+        "entity_overlap_ratio": 0.3333333333333333,
+        "lexical_jaccard": 0.23684210526315788,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 1267,
+      "original_prompt": "What suburb of Salisbury has a population of 98,861 people?",
+      "generated_response": "City of Tea Tree Gully",
+      "claim": "City of Tea Tree Gully",
+      "retrieved_evidence": "Salisbury Heights is a suburb located in the City of Salisbury, Adelaide, South Australia.The City of Tea Tree Gully is a local council in the Australian state of South Australia, in the outer north-eastern suburbs of Adelaide. The city has an estimated population of 98,861 people and is one of the most populous local government divisions in Adelaide.",
+      "predicted_label": 1,
+      "actual_label": 0,
+      "prediction_probability": 0.6,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.9971368312835693,
+        "contradiction": 0.0023332389537245035,
+        "neutral": 0.0005299004260450602
+      },
+      "features": {
+        "semantic_similarity": 0.3833259642124176,
+        "entity_overlap_ratio": 1.0,
+        "lexical_jaccard": 0.13513513513513514,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 1565,
+      "original_prompt": "When was the singer who performed \"I Should Be So Lucky\" born? ",
+      "generated_response": "28 May 1968",
+      "claim": "28 May 1968",
+      "retrieved_evidence": "\"I Should Be So Lucky\" is a song performed by Australian recording artist and songwriter Kylie Minogue from her debut studio album \"Kylie\" (1988).Kylie Ann Minogue, ( ; born 28 May 1968), often known simply as Kylie, is an Australian singer, songwriter, dancer and actress.",
+      "predicted_label": 1,
+      "actual_label": 0,
+      "prediction_probability": 0.62,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.8598240613937378,
+        "contradiction": 0.0047629233449697495,
+        "neutral": 0.1354130059480667
+      },
+      "features": {
+        "semantic_similarity": 0.15294383466243744,
+        "entity_overlap_ratio": 1.0,
+        "lexical_jaccard": 0.08333333333333333,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 1693,
+      "original_prompt": "What city's famous architecture belonging to a Tiwa-speaking Native American tribe of Puebloan people inspired an abstract strategy game which is a competition to optimally place blocks in a constrained space?",
+      "generated_response": "Taos Pueblo",
+      "claim": "Taos Pueblo",
+      "retrieved_evidence": "Pueblo is an abstract strategy game which is a competition to optimally place blocks in a constrained space.Taos Pueblo (or Pueblo de Taos) is an ancient pueblo belonging to a Tiwa-speaking Native American tribe of Puebloan people.",
+      "predicted_label": 1,
+      "actual_label": 0,
+      "prediction_probability": 0.69,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.8562664985656738,
+        "contradiction": 0.020009826868772507,
+        "neutral": 0.12372376024723053
+      },
+      "features": {
+        "semantic_similarity": 0.3265986442565918,
+        "entity_overlap_ratio": 1.0,
+        "lexical_jaccard": 0.06896551724137931,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 1719,
+      "original_prompt": "Sameera Perera is a cricketer from what island country located southeast of the Republic of India and northeast of the Maldives?",
+      "generated_response": "Sri Lanka",
+      "claim": "Sri Lanka",
+      "retrieved_evidence": "Sameera Perera (born 20 August 1988) is a Sri Lankan cricketer.Sri Lanka ( or ; Sinhalese: \u0dc1\u0dca\u200d\u0dbb\u0dd3 \u0dbd\u0d82\u0d9a\u0dcf \"\u015ar\u012b La\u1e43k\u0101 \", Tamil: \u0b87\u0bb2\u0b99\u0bcd\u0b95\u0bc8 \"Ila\u1e45kai\"), officially the Democratic Socialist Republic of Sri Lanka, is an island country located southeast of the Republic of India and northeast of the Maldives.",
+      "predicted_label": 1,
+      "actual_label": 0,
+      "prediction_probability": 0.79,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.016365425661206245,
+        "contradiction": 0.004495642147958279,
+        "neutral": 0.9791389107704163
+      },
+      "features": {
+        "semantic_similarity": 0.2314550280570984,
+        "entity_overlap_ratio": 1.0,
+        "lexical_jaccard": 0.05128205128205128,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 1923,
+      "original_prompt": "Skin Game is a 1971 American independent comedy western starring James Garner and Louis Gossett, Jr., the supporting cast features Susan Clark, a Canadian actress, known for her movie roles such as which?",
+      "generated_response": "Susan Clark is known for her movie roles such as \"The Last Hard Men\".",
+      "claim": "Susan Clark is known for her movie roles such as \"The Last Hard Men\".",
+      "retrieved_evidence": "Skin Game is a 1971 American independent comedy western starring James Garner and Louis Gossett, Jr. and directed by Paul Bogart and Gordon Douglas, The supporting cast features Susan Clark, Edward Asner, Andrew Duggan, Parley Baer and Royal Dano.Susan Clark (born March 8, 1943) is a Canadian actress, known for her movie roles such as \"Coogan's Bluff\" and \"\", and for her role as Katherine on the American television sitcom \"Webster\", on which she appeared with her husband, Alex Karras.",
+      "predicted_label": 1,
+      "actual_label": 0,
+      "prediction_probability": 0.5,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.0032713960390537977,
+        "contradiction": 0.9962472319602966,
+        "neutral": 0.00048139059799723327
+      },
+      "features": {
+        "semantic_similarity": 0.5899249315261841,
+        "entity_overlap_ratio": 0.5,
+        "lexical_jaccard": 0.16176470588235295,
+        "hedge_word_count": 0.0
+      }
+    }
+  ],
+  "false_negatives": [
+    {
+      "index": 72,
+      "original_prompt": "What type of profession does Physikalische Zeitschrift and Peter Debye have in common?",
+      "generated_response": "Peter Debye and Physikalische Zeitschrift were both chemists.",
+      "claim": "Peter Debye and Physikalische Zeitschrift were both chemists.",
+      "retrieved_evidence": " During its life, it was edited by several prominent physicists, such as Peter Debye.Peter Joseph William Debye {'1': \", '2': \", '3': 'ForMemRS', '4': \"} ( ; ] ; March 24, 1884 \u2013 November 2, 1966) was a Dutch-American physicist and physical chemist, and Nobel laureate in Chemistry.",
+      "predicted_label": 0,
+      "actual_label": 1,
+      "prediction_probability": 0.3,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.9592028856277466,
+        "contradiction": 0.030023125931620598,
+        "neutral": 0.010773957706987858
+      },
+      "features": {
+        "semantic_similarity": 0.208333358168602,
+        "entity_overlap_ratio": 0.5,
+        "lexical_jaccard": 0.07142857142857142,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 101,
+      "original_prompt": "Joey Gathright was an outfielder for which AL Central team?",
+      "generated_response": "Joey Gathright was an outfielder for the Chicago Cubs.",
+      "claim": "Joey Gathright was an outfielder for the Chicago Cubs.",
+      "retrieved_evidence": "Joey Renard Gathright (born April 27, 1981) is a former Major League Baseball outfielder for the Tampa Bay Devil Rays, Kansas City Royals, Chicago Cubs and Boston Red Sox.The Kansas City Royals are an American professional baseball team based in Kansas City, Missouri. The Royals compete in Major League Baseball (MLB) as a member team of the American League (AL) Central division.",
+      "predicted_label": 0,
+      "actual_label": 1,
+      "prediction_probability": 0.03,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.0073993694968521595,
+        "contradiction": 0.018420077860355377,
+        "neutral": 0.9741805195808411
+      },
+      "features": {
+        "semantic_similarity": 0.3682298958301544,
+        "entity_overlap_ratio": 1.0,
+        "lexical_jaccard": 0.17391304347826086,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 144,
+      "original_prompt": "Susan Heyward appears in \"Powers\" alongside an actor known for playing what character in \"The Riches\"?",
+      "generated_response": "Wayne Malloy",
+      "claim": "Wayne Malloy",
+      "retrieved_evidence": " She is best known for appearing alongside Sharlto Copley and Eddie Izzard in the PlayStation Network's first scripted original program, \"Powers\". He had a starring role in the television series \"The Riches\" as Wayne Malloy and has appeared in films such as \"Ocean's Twelve\", \"Ocean's Thirteen\", \"Mystery Men\", \"Shadow of the Vampire\", \"The Cat's Meow\", \"Across the Universe\" and \"Valkyrie\".",
+      "predicted_label": 0,
+      "actual_label": 1,
+      "prediction_probability": 0.12,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.007535416167229414,
+        "contradiction": 0.9886696338653564,
+        "neutral": 0.003794899908825755
+      },
+      "features": {
+        "semantic_similarity": 0.24253563582897186,
+        "entity_overlap_ratio": 1.0,
+        "lexical_jaccard": 0.04,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 210,
+      "original_prompt": "What is the nickname of the airplane model flown in Malaysian Airlines Flight 370?",
+      "generated_response": "The airplane model flown in Malaysian Airlines Flight 370 is \"Seven Two Seven\".",
+      "claim": "The airplane model flown in Malaysian Airlines Flight 370 is \"Seven Two Seven\".",
+      "retrieved_evidence": " The aircraft, a Boeing 777-200ER operated by Malaysia Airlines, last made voice contact with air traffic control at 01:19 MYT, 8 March (17:19 UTC, 7 March) when it was over the South China Sea, less than an hour after takeoff. Commonly referred to as the \"Triple Seven\", its distinguishing features include the largest-diameter turbofan engines of any aircraft, six wheels on each main landing gear, fully circular fuselage cross-section, and a blade-shaped tail cone.",
+      "predicted_label": 0,
+      "actual_label": 1,
+      "prediction_probability": 0.13,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.008156062103807926,
+        "contradiction": 0.9872620701789856,
+        "neutral": 0.004581773187965155
+      },
+      "features": {
+        "semantic_similarity": 0.29508358240127563,
+        "entity_overlap_ratio": 0.5,
+        "lexical_jaccard": 0.036585365853658534,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 217,
+      "original_prompt": "According to the 2010 census, what was the population of the county in which Loma, Montana is located?",
+      "generated_response": "5,813",
+      "claim": "5,813",
+      "retrieved_evidence": "Loma is a census-designated place (CDP) in Chouteau County, Montana, United States. As of the 2010 census, the population was 5,813.",
+      "predicted_label": 0,
+      "actual_label": 1,
+      "prediction_probability": 0.0,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.9944896697998047,
+        "contradiction": 0.0006978798191994429,
+        "neutral": 0.004812400788068771
+      },
+      "features": {
+        "semantic_similarity": 0.0,
+        "entity_overlap_ratio": 1.0,
+        "lexical_jaccard": 0.09523809523809523,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 219,
+      "original_prompt": "Which movie starring Verna Bloom is produced by Ivan Reitman and Matty Simmons and is an American Comedy Film?",
+      "generated_response": "Ivan Reitman and Matty Simmons co-produced more than one American comedy film starring Verna Bloom, including Animal House.",
+      "claim": "Ivan Reitman and Matty Simmons co-produced more than one American comedy film starring Verna Bloom, including Animal House.",
+      "retrieved_evidence": " She has had roles in more than 30 films and television episodes since the 1960s, including playing Mary, mother of Jesus, in \"The Last Temptation of Christ\" in 1988 and Marion Wormer in \"Animal House\" in 1978.National Lampoon's Animal House is a 1978 American comedy film from Universal Pictures. It was produced by Ivan Reitman and Matty Simmons, directed by John Landis, and stars John Belushi, Tim Matheson, John Vernon, Verna Bloom, Thomas Hulce, Stephen Furst, and Donald Sutherland.",
+      "predicted_label": 0,
+      "actual_label": 1,
+      "prediction_probability": 0.1,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.007272945251315832,
+        "contradiction": 0.0006410371279343963,
+        "neutral": 0.9920859932899475
+      },
+      "features": {
+        "semantic_similarity": 0.5312796831130981,
+        "entity_overlap_ratio": 1.0,
+        "lexical_jaccard": 0.23529411764705882,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 268,
+      "original_prompt": "Do both Juniper and Indigofera belong to the cypress family Cupressaceae?",
+      "generated_response": "no",
+      "claim": "no",
+      "retrieved_evidence": "Junipers are coniferous plants in the genus Juniperus of the cypress family Cupressaceae.Indigofera is a large genus of over 750 species of flowering plants belonging to the family Fabaceae.",
+      "predicted_label": 0,
+      "actual_label": 1,
+      "prediction_probability": 0.0,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.9732463955879211,
+        "contradiction": 0.026362009346485138,
+        "neutral": 0.0003915939014405012
+      },
+      "features": {
+        "semantic_similarity": 0.2857142984867096,
+        "entity_overlap_ratio": 1.0,
+        "lexical_jaccard": 0.0,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 498,
+      "original_prompt": "Liza Campbell, the daughter of Hugh Campbell, was born at a castle set in what parish of Scotland?",
+      "generated_response": "Nairnshire",
+      "claim": "Nairnshire",
+      "retrieved_evidence": "Liza Campbell (born 24 September 1959 as Lady Elizabeth Campbell), is an artist, calligrapher, columnist and writer, born in the north of Scotland and currently living in London, England. She is the second daughter of Hugh Campbell, 6th Earl Cawdor (1932\u20131993) by his first wife, the former Cathryn Hinde. She is the last child of an Earl Cawdor to have been born at Cawdor Castle, which has previously been erroneously associated with Shakespeare's Macbeth.Cawdor Castle is set amid gardens in the parish of Cawdor in Nairnshire, Scotland.",
+      "predicted_label": 0,
+      "actual_label": 1,
+      "prediction_probability": 0.01,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.7734684944152832,
+        "contradiction": 0.2238023579120636,
+        "neutral": 0.0027291455771774054
+      },
+      "features": {
+        "semantic_similarity": 0.0,
+        "entity_overlap_ratio": 1.0,
+        "lexical_jaccard": 0.016129032258064516,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 714,
+      "original_prompt": "The Magician's House is a quartet of children's fantasy books by who, the series featured Jennifer Jane Saunders (born 6 July 1958) is an English comedian, screenwriter, and actress?",
+      "generated_response": "The Magician's House is a quartet of children's fantasy books by Jennifer Jane Saunders, who also happens to be an English comedian, screenwriter, and actress.",
+      "claim": "The Magician's House is a quartet of children's fantasy books by Jennifer Jane Saunders, who also happens to be an English comedian, screenwriter, and actress.",
+      "retrieved_evidence": "The Magician's House is a quartet of children's fantasy books by William Corlett.Jennifer Jane Saunders (born 6 July 1958) is an English comedian, screenwriter, and actress.",
+      "predicted_label": 0,
+      "actual_label": 1,
+      "prediction_probability": 0.43,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.009905900806188583,
+        "contradiction": 0.00642518512904644,
+        "neutral": 0.9836689829826355
+      },
+      "features": {
+        "semantic_similarity": 0.7484552264213562,
+        "entity_overlap_ratio": 0.8571428571428571,
+        "lexical_jaccard": 0.65625,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 775,
+      "original_prompt": "What was the population in 2010 of the village where James W. and Anne Smith Phyfe Estate is located ? ",
+      "generated_response": "The population in 2010 was 1,742.",
+      "claim": "The population in 2010 was 1,742.",
+      "retrieved_evidence": "James W. and Anne Smith Phyfe Estate is a national historic district located at Nissequogue in Suffolk County, New York. As of the 2010 census, the village population was 1,749.",
+      "predicted_label": 0,
+      "actual_label": 1,
+      "prediction_probability": 0.23,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.1690398007631302,
+        "contradiction": 0.19328944385051727,
+        "neutral": 0.6376708149909973
+      },
+      "features": {
+        "semantic_similarity": 0.48154348134994507,
+        "entity_overlap_ratio": 0.0,
+        "lexical_jaccard": 0.1935483870967742,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 783,
+      "original_prompt": "How many steel roller coasters of the same type as The Swarm are currently operating worldwide?",
+      "generated_response": "There are already hundreds of steel roller coasters of the same type as The Swarm currently operating worldwide.",
+      "claim": "There are already hundreds of steel roller coasters of the same type as The Swarm currently operating worldwide.",
+      "retrieved_evidence": "The Swarm is a steel Wing Coaster at Thorpe Park, a theme park in the United Kingdom. There are currently eight Wing Coasters operating worldwide.",
+      "predicted_label": 0,
+      "actual_label": 1,
+      "prediction_probability": 0.15,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.9923413991928101,
+        "contradiction": 0.006703960243612528,
+        "neutral": 0.000954716291744262
+      },
+      "features": {
+        "semantic_similarity": 0.5175492167472839,
+        "entity_overlap_ratio": 1.0,
+        "lexical_jaccard": 0.32142857142857145,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 862,
+      "original_prompt": "What was the original name of the gazette that publishes Lytham St Annes Express?",
+      "generated_response": "The West Lancashire Evening Gazette",
+      "claim": "The West Lancashire Evening Gazette",
+      "retrieved_evidence": " It is published by the Blackpool Gazette and therefore owned by Johnson Press. It was founded as \"The West Lancashire Evening Gazette\" in 1929 before being renamed the \"Evening Gazette\", and then \"Blackpool Gazette\".",
+      "predicted_label": 0,
+      "actual_label": 1,
+      "prediction_probability": 0.0,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.3126884400844574,
+        "contradiction": 0.04226159304380417,
+        "neutral": 0.6450499892234802
+      },
+      "features": {
+        "semantic_similarity": 0.46188029646873474,
+        "entity_overlap_ratio": 1.0,
+        "lexical_jaccard": 0.20833333333333334,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 880,
+      "original_prompt": "Are 919 Third Avenue and the Morgan Stanley Building located in the same area of New York?",
+      "generated_response": "yes",
+      "claim": "yes",
+      "retrieved_evidence": "919 Third Avenue is an office building in New York City, built in 1971, and is located at the intersection of Third Avenue and East 55th Street in Midtown Manhattan.The Morgan Stanley Building at 1585 Broadway is the headquarters of Morgan Stanley, on the west side of Broadway, north of Duffy Square in the Times Square neighborhood of midtown Manhattan, New York City.",
+      "predicted_label": 0,
+      "actual_label": 1,
+      "prediction_probability": 0.01,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.022209281101822853,
+        "contradiction": 0.9700437784194946,
+        "neutral": 0.007746906951069832
+      },
+      "features": {
+        "semantic_similarity": 0.07692307978868484,
+        "entity_overlap_ratio": 1.0,
+        "lexical_jaccard": 0.0,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 886,
+      "original_prompt": "Cannery Casino and Hotel is a locals casino in North Las Vegas, Nevada, USA, owned and operated by Boyd Gaming, Boyd Gaming Corporation is an American gaming and hospitality company based in which city in Nevada?",
+      "generated_response": "Paradise",
+      "claim": "Paradise",
+      "retrieved_evidence": "Cannery Casino and Hotel is a locals casino in North Las Vegas, Nevada, USA, owned and operated by Boyd Gaming.Boyd Gaming Corporation is an American gaming and hospitality company based in Paradise, Nevada.",
+      "predicted_label": 0,
+      "actual_label": 1,
+      "prediction_probability": 0.0,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.6206909418106079,
+        "contradiction": 0.10086309164762497,
+        "neutral": 0.2784459888935089
+      },
+      "features": {
+        "semantic_similarity": 0.0,
+        "entity_overlap_ratio": 1.0,
+        "lexical_jaccard": 0.04,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 924,
+      "original_prompt": " Visy Industries was established in Melbourne, Australia in 1948 and has since grown to become one of the world\u2019s largest privately owned paper, packaging and recycling companies, Visy was owned by Richard Pratt until his death, on which date, was a prominent Australian businessman, chairman of the privately owned company Visy Industries, and a leading figure of Melbourne society?",
+      "generated_response": "28 April 2009",
+      "claim": "28 April 2009",
+      "retrieved_evidence": " Visy was owned by Richard Pratt until his death on 28 April 2009.Richard J. Pratt (born Ryszard Przecicki; 10 December 193428 April 2009) was a prominent Australian businessman, chairman of the privately owned company Visy Industries, and a leading figure of Melbourne society.",
+      "predicted_label": 0,
+      "actual_label": 1,
+      "prediction_probability": 0.07,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.8622744679450989,
+        "contradiction": 0.01935688406229019,
+        "neutral": 0.11836859583854675
+      },
+      "features": {
+        "semantic_similarity": 0.22549381852149963,
+        "entity_overlap_ratio": 1.0,
+        "lexical_jaccard": 0.08571428571428572,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 998,
+      "original_prompt": "What team, managed by a man who is also and advisor to Central Coast Mariners, won the 2008 FA Cup?",
+      "generated_response": "The 2008 FA Cup was won by Aston Villa.",
+      "claim": "The 2008 FA Cup was won by Aston Villa.",
+      "retrieved_evidence": " This tournament was the 50th to be officially held since the six year suspension due to World War II. Everton's Joe Royle would be the last English-born manager to lift the FA Cup until Harry Redknapp managed Portsmouth to the 2008 victory. Redknapp is also an advisor to Central Coast Mariners and a director at Southern Football League club Wimborne Town.",
+      "predicted_label": 0,
+      "actual_label": 1,
+      "prediction_probability": 0.01,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.0005352781736291945,
+        "contradiction": 0.9994053840637207,
+        "neutral": 5.937967944191769e-05
+      },
+      "features": {
+        "semantic_similarity": 0.41522741317749023,
+        "entity_overlap_ratio": 0.4,
+        "lexical_jaccard": 0.08771929824561403,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 1303,
+      "original_prompt": "Puklo srce is an album by a singer who lives where? ",
+      "generated_response": "Puklo srce is an album by a singer who lives in Montenegro and Serbia.",
+      "claim": "Puklo srce is an album by a singer who lives in Montenegro and Serbia.",
+      "retrieved_evidence": "Puklo srce (English translation: My Heart Exploded) is the second studio album by Montenegrin singer Boban Rajovi\u0107. He has lived in Belgrade since 2000.",
+      "predicted_label": 0,
+      "actual_label": 1,
+      "prediction_probability": 0.21,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.033023808151483536,
+        "contradiction": 0.000314976874506101,
+        "neutral": 0.966661274433136
+      },
+      "features": {
+        "semantic_similarity": 0.5272195935249329,
+        "entity_overlap_ratio": 0.3333333333333333,
+        "lexical_jaccard": 0.22580645161290322,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 1318,
+      "original_prompt": " Naneun Ggomsuda made a satire song based on the 19th-century Christian hymn by whom?",
+      "generated_response": "Sarah Flower Adams",
+      "claim": "Sarah Flower Adams",
+      "retrieved_evidence": " They have also made a satire song (based on a Christian hymn, Nearer, My God, to Thee) about Lee's disputes on his Naegok-dong property purchase.\"Nearer, My God, to Thee\" is a 19th-century Christian hymn by Sarah Flower Adams, which retells the story of Jacob's dream.",
+      "predicted_label": 0,
+      "actual_label": 1,
+      "prediction_probability": 0.03,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.976740300655365,
+        "contradiction": 0.013263349421322346,
+        "neutral": 0.009996384382247925
+      },
+      "features": {
+        "semantic_similarity": 0.27407553791999817,
+        "entity_overlap_ratio": 1.0,
+        "lexical_jaccard": 0.07692307692307693,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 1543,
+      "original_prompt": "What group did the composer of Pictures at an Exhibition belong to?",
+      "generated_response": "The Five",
+      "claim": "The Five",
+      "retrieved_evidence": "Pictures at an Exhibition (Russian: \u041a\u0430\u0440\u0442\u0438\u043d\u043a\u0438 \u0441 \u0432\u044b\u0441\u0442\u0430\u0432\u043a\u0438 \u2013 \u0412\u043e\u0441\u043f\u043e\u043c\u0438\u043d\u0430\u043d\u0438\u0435 \u043e \u0412\u0438\u043a\u0442\u043e\u0440\u0435 \u0413\u0430\u0440\u0442\u043c\u0430\u043d\u0435 , \"Kart\u00ednki s v\u00fdstavki \u2013 Vospomin\u00e1niye o V\u00edktore G\u00e1rtmane\" , \"Pictures from an Exhibition \u2013 A Remembrance of Viktor Hartmann\"; French: \"Tableaux d'une exposition\" ) is a suite of ten pieces (plus a recurring, varied Promenade) composed for the piano by Russian composer Modest Mussorgsky in 1874.Modest Petrovich Mussorgsky (Russian: \u041c\u043e\u0434\u0435\u0301\u0441\u0442 \u041f\u0435\u0442\u0440\u043e\u0301\u0432\u0438\u0447 \u041c\u0443\u0301\u0441\u043e\u0440\u0433\u0441\u043a\u0438\u0439 ; ] ; 21 March [O.S. 9 March] 1839 \u2013 28 March [O.S. 16 March] 1881 ) was a Russian composer, one of the group known as \"The Five\".",
+      "predicted_label": 0,
+      "actual_label": 1,
+      "prediction_probability": 0.03,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.08156704157590866,
+        "contradiction": 0.02055727131664753,
+        "neutral": 0.8978756666183472
+      },
+      "features": {
+        "semantic_similarity": 0.28934571146965027,
+        "entity_overlap_ratio": 1.0,
+        "lexical_jaccard": 0.029411764705882353,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 1795,
+      "original_prompt": "Love Story was the lead single from what album that was released on November 11, 2008 by Big Machine Records?",
+      "generated_response": "Love Story was not included in Fearless.",
+      "claim": "Love Story was not included in Fearless.",
+      "retrieved_evidence": " It was released on September 12, 2008 by Big Machine Records, as the lead single from Swift's second studio album \"Fearless\" (2008). The album was released on November 11, 2008, by Big Machine Records.",
+      "predicted_label": 0,
+      "actual_label": 1,
+      "prediction_probability": 0.12,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.0627727061510086,
+        "contradiction": 0.936759352684021,
+        "neutral": 0.0004679124103859067
+      },
+      "features": {
+        "semantic_similarity": 0.29277005791664124,
+        "entity_overlap_ratio": 0.3333333333333333,
+        "lexical_jaccard": 0.06896551724137931,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 1987,
+      "original_prompt": "Susan Floyd starred opposite the actor and singer in \"Chinese Coffee\" of what nationality?",
+      "generated_response": "American",
+      "claim": "American",
+      "retrieved_evidence": " She has also had featured roles in several motion pictures, including \"Domestic Disturbance\" and \"Forgiven\", and starred opposite Al Pacino and Jerry Orbach in \"Chinese Coffee\".Jerome Bernard \"Jerry\" Orbach (October 20, 1935 \u2013 December 28, 2004) was an American actor and singer, described at the time of his death as \"one of the last\" bona fide\" leading men of the Broadway musical and global celebrity on television\" and a \"versatile stage and film actor\".",
+      "predicted_label": 0,
+      "actual_label": 1,
+      "prediction_probability": 0.0,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.3282497227191925,
+        "contradiction": 0.07109803706407547,
+        "neutral": 0.600652277469635
+      },
+      "features": {
+        "semantic_similarity": 0.07001399993896484,
+        "entity_overlap_ratio": 1.0,
+        "lexical_jaccard": 0.016666666666666666,
+        "hedge_word_count": 0.0
+      }
+    }
+  ],
+  "correct_positives": [
+    {
+      "index": 0,
+      "original_prompt": "Which widely acclaimed singer on the soundtrack of Ramu defined feminism in South Indian Cinema?",
+      "generated_response": "P. Susheela",
+      "claim": "P. Susheela",
+      "retrieved_evidence": " The soundtrack of the film was composed by R. Goverdhanam and songs rendered by Ghantasala Venkateswara Rao and P. Susheela, most memorable one \"Raa Raa Krishnayya\". Susheela is widely acclaimed as a singer who defined feminism in South Indian Cinema and is well known for her mellifluous vocal performances for over 40,000 film songs across South Indian languages.",
+      "predicted_label": 1,
+      "actual_label": 1,
+      "prediction_probability": 1.0,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.9980864524841309,
+        "contradiction": 0.0011348517145961523,
+        "neutral": 0.0007786945789121091
+      },
+      "features": {
+        "semantic_similarity": 0.12909945845603943,
+        "entity_overlap_ratio": 1.0,
+        "lexical_jaccard": 0.0425531914893617,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 1,
+      "original_prompt": "Which rock band was formed earlier, Hinder or The Fatima Mansions?",
+      "generated_response": "Hinder was formed earlier.",
+      "claim": "Hinder was formed earlier.",
+      "retrieved_evidence": "Hinder is an American rock band from Oklahoma that was formed in 2001 by lead singer Austin Winkler, lead guitarist Joe \"Blower\" Garvey, and drummer Cody Hanson.The Fatima Mansions were an art rock group formed in 1988 by Cork singer/keyboardist Cathal Coughlan, formerly of Microdisney.",
+      "predicted_label": 1,
+      "actual_label": 1,
+      "prediction_probability": 1.0,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.07337776571512222,
+        "contradiction": 0.9181461334228516,
+        "neutral": 0.008476114831864834
+      },
+      "features": {
+        "semantic_similarity": 0.404145210981369,
+        "entity_overlap_ratio": 1.0,
+        "lexical_jaccard": 0.07317073170731707,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 3,
+      "original_prompt": "What is the postcode of a town in Cook County, New South Wales, that is situated approximately 100 km west of the Sydney central business district, and about 8 km east of Katoomba?",
+      "generated_response": "2782",
+      "claim": "2782",
+      "retrieved_evidence": "Cook County was one of the original Nineteen Counties in New South Wales and is now one of the 141 Cadastral divisions of New South Wales. It includes the area to the west of Sydney in the Blue Mountains, between the Colo River in the north, and the Coxs River in the south and west, encompassing Lithgow, Mount Victoria, Katoomba, Wentworth Falls, Lawson and most of the other towns in the Blue Mountains.Wentworth Falls (postcode: 2782) is a town in the Blue Mountains region of New South Wales, situated approximately 100 km west of the Sydney central business district, and about 8 km east of Katoomba, Australia on the Great Western Highway, with a Wentworth Falls railway station on the Main Western line.",
+      "predicted_label": 1,
+      "actual_label": 1,
+      "prediction_probability": 0.97,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.8661375641822815,
+        "contradiction": 0.07450056821107864,
+        "neutral": 0.059361860156059265
+      },
+      "features": {
+        "semantic_similarity": 0.041344910860061646,
+        "entity_overlap_ratio": 1.0,
+        "lexical_jaccard": 0.014705882352941176,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 4,
+      "original_prompt": "After the worst rail disaster in Australian history, who was legislated as the combat authority for responding to major structural collapse incidents within the state of New South Wales?",
+      "generated_response": "Fire & Rescue NSW",
+      "claim": "Fire & Rescue NSW",
+      "retrieved_evidence": " After earlier large-scale collapses including the 1977 Granville Train Disaster, 1989 Newcastle earthquake and 1997 Thredbo landslide, Fire & Rescue NSW was legislated as the combat authority for responding to major structural collapse incidents within the state of New South Wales. It is the worst rail disaster in Australian history: 84 people died, more than 210 were injured, and 1,300 were affected.",
+      "predicted_label": 1,
+      "actual_label": 1,
+      "prediction_probability": 1.0,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.9992160797119141,
+        "contradiction": 0.0005626894417218864,
+        "neutral": 0.0002211561513831839
+      },
+      "features": {
+        "semantic_similarity": 0.1961161345243454,
+        "entity_overlap_ratio": 1.0,
+        "lexical_jaccard": 0.05263157894736842,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 5,
+      "original_prompt": "On what subject did this German-born philologist and Orientalist, who lived in Britain for most of his life and is considered one of the most important German scholars in Indian Philology alongside Heinrich Zimmer, work on?",
+      "generated_response": "Indology",
+      "claim": "Indology",
+      "retrieved_evidence": " He was the most important German scholar in Indian Philology after Max M\u00fcller (1823-1900).Friedrich Max M\u00fcller (6 December 1823 \u2013 28 October 1900), generally known as Max M\u00fcller, was a German-born philologist and Orientalist, who lived and studied in Britain for most of his life. M\u00fcller wrote both scholarly and popular works on the subject of Indology.",
+      "predicted_label": 1,
+      "actual_label": 1,
+      "prediction_probability": 0.98,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.9983295798301697,
+        "contradiction": 0.0006279100198298693,
+        "neutral": 0.0010425521759316325
+      },
+      "features": {
+        "semantic_similarity": 0.0,
+        "entity_overlap_ratio": 1.0,
+        "lexical_jaccard": 0.022727272727272728,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 6,
+      "original_prompt": "Which member of the Beeba Boys died in 1998?",
+      "generated_response": "Bindy Johal",
+      "claim": "Bindy Johal",
+      "retrieved_evidence": "Beeba Boys is a 2015 Canadian crime thriller film written and directed by Deepa Mehta. The film is a fictional take based on real incidents, including Bindy Johal. On December 20, 1998, he was killed from behind at a crowded nightclub in Vancouver, British Columbia.",
+      "predicted_label": 1,
+      "actual_label": 1,
+      "prediction_probability": 0.99,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.1141633689403534,
+        "contradiction": 0.8795339465141296,
+        "neutral": 0.006302648689597845
+      },
+      "features": {
+        "semantic_similarity": 0.07856742292642593,
+        "entity_overlap_ratio": 1.0,
+        "lexical_jaccard": 0.05,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 7,
+      "original_prompt": "What Dr. Who episode was based on a short story written by Moffat entitled \"'What I Did on My Christmas Holidays' By Sally Sparrow\" included a Weeping Angel?",
+      "generated_response": "\"The Time of Angels\" / \"Flesh and Stone\"",
+      "claim": "\"The Time of Angels\" / \"Flesh and Stone\"",
+      "retrieved_evidence": " They were introduced in the 2007 episode \"Blink\", making repeat appearances in \"The Time of Angels\" / \"Flesh and Stone\" (2010) and \"The Angels Take Manhattan\" (2012) as well as cameo appearances in \"The God Complex\" (2011), \"The Time of the Doctor\" (2013) and \"Hell Bent\" (2015). The episode is based on a previous short story written by Moffat for the 2006 \"Doctor Who Annual\", entitled \"'What I Did on My Christmas Holidays' By Sally Sparrow\".",
+      "predicted_label": 1,
+      "actual_label": 1,
+      "prediction_probability": 1.0,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.988024890422821,
+        "contradiction": 0.010042857378721237,
+        "neutral": 0.0019321992294862866
+      },
+      "features": {
+        "semantic_similarity": 0.5182675123214722,
+        "entity_overlap_ratio": 1.0,
+        "lexical_jaccard": 0.12727272727272726,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 8,
+      "original_prompt": "Does Roystonea or Dionysia have more species?",
+      "generated_response": "Dionysia",
+      "claim": "Dionysia",
+      "retrieved_evidence": "Roystonea is a genus of eleven species of monoecious palms, native to the Caribbean Islands, and the adjacent coasts of Florida and Central and northern South America.Dionysia is a genus containing 49 species of flowering plants in the family Primulaceae.",
+      "predicted_label": 1,
+      "actual_label": 1,
+      "prediction_probability": 1.0,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.0028188240248709917,
+        "contradiction": 0.9966521859169006,
+        "neutral": 0.0005290214321576059
+      },
+      "features": {
+        "semantic_similarity": 0.10783277451992035,
+        "entity_overlap_ratio": 0.0,
+        "lexical_jaccard": 0.03333333333333333,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 14,
+      "original_prompt": "\"Purple Rain-Union\" is the sixth episode of the fourth season of the animated comedy series \"Bob's Burgers\", it aired on Fox in the United States on which date, the title of the episode is a reference to the song, film, and album \"Purple Rain\" by Prince?",
+      "generated_response": "December 1, 2013",
+      "claim": "December 1, 2013",
+      "retrieved_evidence": " It aired on Fox in the United States on December 1, 2013.\"Purple Rain\" is a song by Prince and The Revolution.",
+      "predicted_label": 1,
+      "actual_label": 1,
+      "prediction_probability": 1.0,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.4572475254535675,
+        "contradiction": 0.010466027073562145,
+        "neutral": 0.5322864651679993
+      },
+      "features": {
+        "semantic_similarity": 0.30151137709617615,
+        "entity_overlap_ratio": 1.0,
+        "lexical_jaccard": 0.15,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 15,
+      "original_prompt": "Sundays at Tiffany's was co-written by which American author and philanthopist?",
+      "generated_response": "James Brendan Patterson",
+      "claim": "James Brendan Patterson",
+      "retrieved_evidence": "Sundays at Tiffany's is a romance novel by the authors James Patterson and Gabrielle Charbonnet released on April 29, 2008.James Brendan Patterson (born March 22, 1947) is an American author and philanthropist.",
+      "predicted_label": 1,
+      "actual_label": 1,
+      "prediction_probability": 1.0,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.9915533661842346,
+        "contradiction": 0.008230816572904587,
+        "neutral": 0.00021578409359790385
+      },
+      "features": {
+        "semantic_similarity": 0.40824833512306213,
+        "entity_overlap_ratio": 1.0,
+        "lexical_jaccard": 0.1,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 18,
+      "original_prompt": "Which city that publishes the Marathi daily newspaper 'Loksatta' is titled \"The City of Gates\"?",
+      "generated_response": "Aurangabad",
+      "claim": "Aurangabad",
+      "retrieved_evidence": " \"Loksatta\" is published out of Mumbai, Pune, Nagpur, Ahmednagar, Aurangabad, and Delhi. The administrative headquarters of the Aurangabad Division or Marathwada region, Aurangabad is titled \"The City of Gates\" and the strong presence of these can be felt as one drives through the city.The City was founded in 1610 by Malik Amber which in the year 2010 completed 400 years.",
+      "predicted_label": 1,
+      "actual_label": 1,
+      "prediction_probability": 1.0,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.9973701238632202,
+        "contradiction": 0.002234166953712702,
+        "neutral": 0.00039571389788761735
+      },
+      "features": {
+        "semantic_similarity": 0.17541159689426422,
+        "entity_overlap_ratio": 1.0,
+        "lexical_jaccard": 0.022222222222222223,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 21,
+      "original_prompt": "What song did a Jamaican singer, songwriter, supermodel, record producer, and actress release in 1983?",
+      "generated_response": "\"Island Life\" was the song released in 1983 by Grace Jones.",
+      "claim": "\"Island Life\" was the song released in 1983 by Grace Jones.",
+      "retrieved_evidence": "\"Living My Life\" is a Grace Jones song released as a single in 1983.Grace Beverly Jones (born 19 May 1948) is a Jamaican singer, songwriter, supermodel, record producer, and actress.",
+      "predicted_label": 1,
+      "actual_label": 1,
+      "prediction_probability": 0.99,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.0034396389964967966,
+        "contradiction": 0.9937082529067993,
+        "neutral": 0.0028521998319774866
+      },
+      "features": {
+        "semantic_similarity": 0.5222330093383789,
+        "entity_overlap_ratio": 0.75,
+        "lexical_jaccard": 0.23333333333333334,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 22,
+      "original_prompt": "Notable planes made at Woodford Aerodrome include what British four-engined Second World War heavy bomber?",
+      "generated_response": "The Avro Lancaster was originally based in Germany.",
+      "claim": "The Avro Lancaster was originally based in Germany.",
+      "retrieved_evidence": "Woodford Aerodrome or Manchester Woodford Aerodrome (ICAO: EGCD) is a former private airfield and aircraft factory located at Woodford, Greater Manchester. Notable planes made at the factory include the Avro Anson, Avro Lancaster, Avro Shackleton and Avro Vulcan.The Avro Lancaster is a British four-engined Second World War heavy bomber.",
+      "predicted_label": 1,
+      "actual_label": 1,
+      "prediction_probability": 1.0,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.9682013392448425,
+        "contradiction": 0.03130260854959488,
+        "neutral": 0.0004960547666996717
+      },
+      "features": {
+        "semantic_similarity": 0.4715595841407776,
+        "entity_overlap_ratio": 0.5,
+        "lexical_jaccard": 0.075,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 26,
+      "original_prompt": "Are all members of the Epacris and Bulbophyllum genera flowering plants?",
+      "generated_response": "No, only some are flowering.",
+      "claim": "No, only some are flowering.",
+      "retrieved_evidence": "Epacris is a genus of about 35\u201340 species of flowering plants in the family Ericaceae. With more than 2,000 species, it is also one of the largest genera of flowering plants, exceeded only by \"Astragalus\".",
+      "predicted_label": 1,
+      "actual_label": 1,
+      "prediction_probability": 1.0,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.5183073878288269,
+        "contradiction": 0.10569944977760315,
+        "neutral": 0.37599316239356995
+      },
+      "features": {
+        "semantic_similarity": 0.046373892575502396,
+        "entity_overlap_ratio": 0.0,
+        "lexical_jaccard": 0.0625,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 27,
+      "original_prompt": "What store in Ambarrukmo Plaza was established in 1981?",
+      "generated_response": "Centro was established in 1981.",
+      "claim": "Centro was established in 1981.",
+      "retrieved_evidence": " The mall was opened in 2006 and consists of 7 floors with anchor tenants including Carrefour, Centro, Gramedia, Cineplex 21, Optik Seis, Nike, Giordano and Guess. Established in 1981, Giordano now employs over 8,100 staff with over 2,800 shops operating in more than 40 countries worldwide.",
+      "predicted_label": 1,
+      "actual_label": 1,
+      "prediction_probability": 1.0,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.0038355395663529634,
+        "contradiction": 0.9932517409324646,
+        "neutral": 0.0029127784073352814
+      },
+      "features": {
+        "semantic_similarity": 0.4151390790939331,
+        "entity_overlap_ratio": 1.0,
+        "lexical_jaccard": 0.11904761904761904,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 29,
+      "original_prompt": "Who has coached at more schools, Jerry Tarkanian or Richard Donchian?",
+      "generated_response": "Jerry Tarkanian",
+      "claim": "Jerry Tarkanian",
+      "retrieved_evidence": "Jerry Tarkanian (August 8, 1930 \u2013 February 11, 2015) was an American basketball coach. He coached college basketball for 31 seasons over five decades at three schools.Richard Davoud Donchian (born September 1905, Hartford, Connecticut \u2013 d. 1993) was an Armenian-American commodities and futures trader, and pioneer in the field of managed futures.",
+      "predicted_label": 1,
+      "actual_label": 1,
+      "prediction_probability": 1.0,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.1878136545419693,
+        "contradiction": 0.13548199832439423,
+        "neutral": 0.6767042875289917
+      },
+      "features": {
+        "semantic_similarity": 0.16903086006641388,
+        "entity_overlap_ratio": 1.0,
+        "lexical_jaccard": 0.043478260869565216,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 39,
+      "original_prompt": "The 1st Battle of Kharkov was named so by a German field army born in which year ?",
+      "generated_response": "1882",
+      "claim": "1882",
+      "retrieved_evidence": "The 1st Battle of Kharkov, so named by Wilhelm Keitel, was the 1941 tactical battle for the city of Kharkov (now \"Kharkiv\") (Ukrainian SSR) during the final phase of Operation \"Barbarossa\" between the German 6th Army of Army Group South and the Soviet Southwestern Front.Wilhelm Keitel (22 September 1882 \u2013 16 October 1946) was a German field marshal who served as Chief of the Armed Forces High Command (\"Oberkommando der Wehrmacht\" or OKW) in Nazi Germany during World War II.",
+      "predicted_label": 1,
+      "actual_label": 1,
+      "prediction_probability": 1.0,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.9785741567611694,
+        "contradiction": 0.010111709125339985,
+        "neutral": 0.011314068920910358
+      },
+      "features": {
+        "semantic_similarity": 0.07179581373929977,
+        "entity_overlap_ratio": 1.0,
+        "lexical_jaccard": 0.016129032258064516,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 42,
+      "original_prompt": "Lodoicea and Nothofagus, are genus of what mutual species?",
+      "generated_response": "trees",
+      "claim": "trees",
+      "retrieved_evidence": "Lodoicea, commonly known as the sea coconut, coco de mer, or double coconut, is a monotypic genus in the palm family.Nothofagus, also known as the southern beeches, is a genus of 43 species of trees and shrubs native to the Southern Hemisphere in southern South America (Chile, Argentina) and Australasia (east and southeast Australia, New Zealand, New Guinea and New Caledonia).",
+      "predicted_label": 1,
+      "actual_label": 1,
+      "prediction_probability": 1.0,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.9913928508758545,
+        "contradiction": 0.007930329069495201,
+        "neutral": 0.0006768359453417361
+      },
+      "features": {
+        "semantic_similarity": 0.08304548263549805,
+        "entity_overlap_ratio": 1.0,
+        "lexical_jaccard": 0.022727272727272728,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 46,
+      "original_prompt": "What is the capital of the archipelago where Djoi\u00e8zi is located?",
+      "generated_response": "The capital of Djoi\u00e8zi is Moroni.",
+      "claim": "The capital of Djoi\u00e8zi is Moroni.",
+      "retrieved_evidence": "Djoi\u00e8zi is a village on the island of Moh\u00e9li in the Comoros. Its capital is Moroni, on Grande Comore.",
+      "predicted_label": 1,
+      "actual_label": 1,
+      "prediction_probability": 0.98,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.0024101566523313522,
+        "contradiction": 0.001405609305948019,
+        "neutral": 0.9961842894554138
+      },
+      "features": {
+        "semantic_similarity": 0.8053873777389526,
+        "entity_overlap_ratio": 0.6666666666666666,
+        "lexical_jaccard": 0.375,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 53,
+      "original_prompt": "Who starred in the British gangster film in which Daragh O'Malley had one of his first roles?",
+      "generated_response": "Daragh O'Malley starred in The Long Good Friday.",
+      "claim": "Daragh O'Malley starred in The Long Good Friday.",
+      "retrieved_evidence": " O'Malley first appeared in roles in the iconic films \"The Long Good Friday\" and \"Withnail and I\", leading guest roles in many UK television series including \"Tales of The Unexpected (TV Series)\", \"Waking The Dead\", \"Wire in the Blood\", \"Silent Witness\" and \"Vera\", and roles in Longitude, Cleopatra for ABC and The Magnificent Seven for CBS and in the US TV films 'Vendetta\", \"Camelot\" (TV Series) and \"Shaughnessy\".The Long Good Friday is a British gangster film starring Bob Hoskins and Helen Mirren.",
+      "predicted_label": 1,
+      "actual_label": 1,
+      "prediction_probability": 1.0,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.9388943314552307,
+        "contradiction": 0.05329504609107971,
+        "neutral": 0.007810572627931833
+      },
+      "features": {
+        "semantic_similarity": 0.41224247217178345,
+        "entity_overlap_ratio": 0.8333333333333334,
+        "lexical_jaccard": 0.125,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 55,
+      "original_prompt": "The 2013 Indiana Hoosiers football team were lead by which current offensive coordinator at Ohio State?",
+      "generated_response": "The 2013 Indiana Hoosiers football team were lead by Tom Herman, the current offensive coordinator at Ohio State.",
+      "claim": "The 2013 Indiana Hoosiers football team were lead by Tom Herman, the current offensive coordinator at Ohio State.",
+      "retrieved_evidence": "The 2013 Indiana Hoosiers football team represented the Indiana University during the 2013 NCAA Division I FBS football season. The team was led by head coach Kevin Wilson, who was in his third season.Kevin Reece Wilson (born October 23, 1961) is an American football coach and former player who is the current offensive coordinator at Ohio State University.",
+      "predicted_label": 1,
+      "actual_label": 1,
+      "prediction_probability": 1.0,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.002202075207605958,
+        "contradiction": 0.9976402521133423,
+        "neutral": 0.00015774733037687838
+      },
+      "features": {
+        "semantic_similarity": 0.5211617946624756,
+        "entity_overlap_ratio": 0.7142857142857143,
+        "lexical_jaccard": 0.2826086956521739,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 56,
+      "original_prompt": "What was the time with which a teammate of Bryan Howard had the 100 m world record?",
+      "generated_response": "9.79 seconds",
+      "claim": "9.79 seconds",
+      "retrieved_evidence": " Howard later joined the HSI track team, running on relay teams with world record holder Maurice Greene.Maurice Greene (born July 23, 1974) is an American former track and field sprinter who specialized in the 100 meters and 200 meters. He is a former 100 m world record holder with a time of 9.79 seconds.",
+      "predicted_label": 1,
+      "actual_label": 1,
+      "prediction_probability": 0.99,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.9907965660095215,
+        "contradiction": 0.001348618883639574,
+        "neutral": 0.007854748517274857
+      },
+      "features": {
+        "semantic_similarity": 0.2060408592224121,
+        "entity_overlap_ratio": 1.0,
+        "lexical_jaccard": 0.07142857142857142,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 57,
+      "original_prompt": "Who was a Canadian film producer, director, actor and screenwriter, Randal Kirk II or Sidney Olcott?",
+      "generated_response": "Sidney Olcott",
+      "claim": "Sidney Olcott",
+      "retrieved_evidence": "Sidney Olcott (September 20, 1872 \u2013 December 16, 1949) was a Canadian-born film producer, director, actor and screenwriter.Randal Kirk II is an American film director, writer, producer, and cinematographer.",
+      "predicted_label": 1,
+      "actual_label": 1,
+      "prediction_probability": 0.97,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.010930310003459454,
+        "contradiction": 0.9878183603286743,
+        "neutral": 0.001251243520528078
+      },
+      "features": {
+        "semantic_similarity": 0.32349833846092224,
+        "entity_overlap_ratio": 1.0,
+        "lexical_jaccard": 0.07692307692307693,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 58,
+      "original_prompt": "Who was the husband of the the English novelist whose work provided the basis for a series of films which includes Frankenstein Meets the Wolf Man?",
+      "generated_response": "Percy Bysshe Shelley",
+      "claim": "Percy Bysshe Shelley",
+      "retrieved_evidence": "Frankenstein Meets the Wolf Man is a 1943 American horror film produced by Universal Studios starring Lon Chaney, Jr. as the Wolf Man and Bela Lugosi as Frankenstein's monster. This film, therefore, is both the fifth in the series of films based upon Mary Shelley's \"Frankenstein\", directly after \"The Ghost of Frankenstein\", and a sequel to \"The Wolf Man\".Mary Wollstonecraft Shelley (n\u00e9e Godwin; 30 August 1797 \u2013 1 February 1851) was an English novelist, short story writer, dramatist, essayist, biographer, and travel writer, best known for her Gothic novel \"Frankenstein: or, The Modern Prometheus\" (1818). She also edited and promoted the works of her husband, the Romantic poet and philosopher Percy Bysshe Shelley.",
+      "predicted_label": 1,
+      "actual_label": 1,
+      "prediction_probability": 1.0,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.9987040758132935,
+        "contradiction": 0.0010767087806016207,
+        "neutral": 0.00021925699547864497
+      },
+      "features": {
+        "semantic_similarity": 0.2337232232093811,
+        "entity_overlap_ratio": 1.0,
+        "lexical_jaccard": 0.03614457831325301,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 59,
+      "original_prompt": "Which character did Margot Robbie win two Logie Award nominations for her portrayal of?",
+      "generated_response": "Margot Robbie won two Logie Award nominations for her portrayal of Donna Robertson.",
+      "claim": "Margot Robbie won two Logie Award nominations for her portrayal of Donna Robertson.",
+      "retrieved_evidence": "Donna Freedman (also Brown) is a fictional character from the Australian soap opera \"Neighbours\", played by Margot Robbie. She was later cast in the soap opera \"Neighbours\" (2008\u20132011), which earned her two Logie Award nominations.",
+      "predicted_label": 1,
+      "actual_label": 1,
+      "prediction_probability": 1.0,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.013449341058731079,
+        "contradiction": 0.018711479380726814,
+        "neutral": 0.967839241027832
+      },
+      "features": {
+        "semantic_similarity": 0.40337562561035156,
+        "entity_overlap_ratio": 0.8333333333333334,
+        "lexical_jaccard": 0.21621621621621623,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 60,
+      "original_prompt": "The Dutch guilder is the currency of the country that has what type of governmental system?",
+      "generated_response": "constitutional monarchy",
+      "claim": "constitutional monarchy",
+      "retrieved_evidence": " The Netherlands Antillean guilder is still in use in Cura\u00e7ao and Sint Maarten (two countries in the Kingdom of the Netherlands), but this currency is distinct from the Dutch guilder.The Kingdom of the Netherlands (Dutch: \"Het Koninkrijk der Nederlanden\" ; ] ; Papiamento: \"Reino Hulandes\" ), commonly known as the Netherlands, is a sovereign state and constitutional monarchy with the large majority of its territory in western Europe and several small islands in the Caribbean Sea, in the West Indies islands (Leeward Islands / Lesser Antilles).",
+      "predicted_label": 1,
+      "actual_label": 1,
+      "prediction_probability": 1.0,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.20854677259922028,
+        "contradiction": 0.008183969184756279,
+        "neutral": 0.7832692861557007
+      },
+      "features": {
+        "semantic_similarity": 0.1232992485165596,
+        "entity_overlap_ratio": 1.0,
+        "lexical_jaccard": 0.037037037037037035,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 61,
+      "original_prompt": "Francesco Rospigliosi Pallavicini was born in Rome, in what was then which territories in the Italian Peninsula under the sovereign direct rule of the pope, from the 8th century until 1870?",
+      "generated_response": "Francesco Rospigliosi Pallavicini was born in Rome, in what was then the Italian duchies under papal control.",
+      "claim": "Francesco Rospigliosi Pallavicini was born in Rome, in what was then the Italian duchies under papal control.",
+      "retrieved_evidence": " He was born in Rome, in what was then the Papal States.The Papal States, officially the State of the Church (Italian: \"Stato della Chiesa\" , ] ; Latin: \"Status Ecclesiae\" ), were territories in the Italian Peninsula under the sovereign direct rule of the pope, from the 8th century until 1870.",
+      "predicted_label": 1,
+      "actual_label": 1,
+      "prediction_probability": 1.0,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.9961370825767517,
+        "contradiction": 0.0024539753794670105,
+        "neutral": 0.0014088641619309783
+      },
+      "features": {
+        "semantic_similarity": 0.5833466649055481,
+        "entity_overlap_ratio": 0.4,
+        "lexical_jaccard": 0.2564102564102564,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 62,
+      "original_prompt": "What county is Sagemont School located in?",
+      "generated_response": "Sagemont School is situated exactly on the western boundary of Broward County.",
+      "claim": "Sagemont School is situated exactly on the western boundary of Broward County.",
+      "retrieved_evidence": "The Sagemont School is a private preparatory school in Weston, Florida, United States. Established as a city in 1996, much of the community was developed by Arvida/JMB Realty (known for developing Walt Disney World) and is located near the western developmental boundary of Broward County.",
+      "predicted_label": 1,
+      "actual_label": 1,
+      "prediction_probability": 0.98,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.9891929030418396,
+        "contradiction": 0.005362412426620722,
+        "neutral": 0.005444707814604044
+      },
+      "features": {
+        "semantic_similarity": 0.5452753305435181,
+        "entity_overlap_ratio": 1.0,
+        "lexical_jaccard": 0.21428571428571427,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 64,
+      "original_prompt": "Jan van Aken is a writer belonging to which Germanic ethnic group native to the Netherlands?",
+      "generated_response": "Jan van Aken belongs to the Dutch ethnicity.",
+      "claim": "Jan van Aken belongs to the Dutch ethnicity.",
+      "retrieved_evidence": "Jan van Aken (Herwen en Aerdt, August 9, 1961) is a Dutch writer, who worked in the cultural sector and in automation.The Dutch (Dutch:    ), occasionally referred to as Netherlanders\u2014a term that is cognate to the Dutch word for Dutch people, \"Nederlanders\"\u2014are a Germanic ethnic group native to the Netherlands.",
+      "predicted_label": 1,
+      "actual_label": 1,
+      "prediction_probability": 1.0,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.009792088530957699,
+        "contradiction": 0.9779928922653198,
+        "neutral": 0.012215033173561096
+      },
+      "features": {
+        "semantic_similarity": 0.5011148452758789,
+        "entity_overlap_ratio": 1.0,
+        "lexical_jaccard": 0.14634146341463414,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 73,
+      "original_prompt": "The aircraft that uses Runway Overrun Prevention System technology is the first to have both a fuselage and wing structure made primarily of what material?",
+      "generated_response": "The aircraft that uses Runway Overrun Prevention System technology is the first to have both a fuselage and wing structure made primarily of Kevlar.",
+      "claim": "The aircraft that uses Runway Overrun Prevention System technology is the first to have both a fuselage and wing structure made primarily of Kevlar.",
+      "retrieved_evidence": "ROPS (Runway Overrun Prevention System) is a technology used in the Airbus A350 XWB aircraft, which is designed to prevent the overshooting of the runway as the plane is landing. The A350 is the first Airbus aircraft with both fuselage and wing structures made primarily of carbon-fibre-reinforced polymer.",
+      "predicted_label": 1,
+      "actual_label": 1,
+      "prediction_probability": 0.83,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.02453255094587803,
+        "contradiction": 0.9678603410720825,
+        "neutral": 0.0076070912182331085
+      },
+      "features": {
+        "semantic_similarity": 0.6383106708526611,
+        "entity_overlap_ratio": 0.8333333333333334,
+        "lexical_jaccard": 0.42857142857142855,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 76,
+      "original_prompt": "Where does the city that the Dunedin Isles Golf Club Golf Course is get it's name from?",
+      "generated_response": "\"D\u00f9n \u00c8ideann\"",
+      "claim": "\"D\u00f9n \u00c8ideann\"",
+      "retrieved_evidence": "Dunedin Isles Golf Club Golf Course is a national historic site located at 1050 Palm Blvd., Dunedin, Florida in Pinellas County. The name comes from \"D\u00f9n \u00c8ideann\", the Scottish Gaelic name for Edinburgh, the capital of Scotland.",
+      "predicted_label": 1,
+      "actual_label": 1,
+      "prediction_probability": 1.0,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.03787513077259064,
+        "contradiction": 0.018489666283130646,
+        "neutral": 0.9436352849006653
+      },
+      "features": {
+        "semantic_similarity": 0.43852904438972473,
+        "entity_overlap_ratio": 1.0,
+        "lexical_jaccard": 0.0625,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 77,
+      "original_prompt": "What Irvine, California band has Justin Francis directed music videos for?",
+      "generated_response": "Young the Giant",
+      "claim": "Young the Giant",
+      "retrieved_evidence": "Justin Francis is a New York-based director/photographer. He has directed music videos for Alicia Keys, Jessica Sanchez, B.o.B, Weezer, The Fray, Kelly Clarkson, Nicole Scherzinger, Modest Mouse, Young the Giant, Demi Lovato, Amos Lee, Timbaland, Mariah Carey, Trey Songz, Jaguar Wright, Obie Trice, Cashis, Stat Quo, Kill Hannah, Dropping Daylight, Melody Thornton, Carly Rae Jepsen, Nickelback and Busta Rhymes (co-directed with Benny Boom).Young the Giant is an American rock band that formed in Irvine, California, in 2004.",
+      "predicted_label": 1,
+      "actual_label": 1,
+      "prediction_probability": 1.0,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.9777260422706604,
+        "contradiction": 0.021476762369275093,
+        "neutral": 0.0007971527520567179
+      },
+      "features": {
+        "semantic_similarity": 0.4228569269180298,
+        "entity_overlap_ratio": 1.0,
+        "lexical_jaccard": 0.04,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 81,
+      "original_prompt": "What British Politician, who was the Prime Minister of the Unted Kingdom, was the person who forced a resignation from PAtrick Mercer?",
+      "generated_response": "David Cameron",
+      "claim": "David Cameron",
+      "retrieved_evidence": " He was Conservative shadow homeland security spokesman before being forced to resign by David Cameron in 2007 for making \"unacceptable\" racist remarks in an interview with \"The Times\".David William Donald Cameron ( ; born 9 October 1966) is a British politician who was Prime Minister of the United Kingdom from 2010 to 2016 and Leader of the Conservative Party from 2005 to 2016.",
+      "predicted_label": 1,
+      "actual_label": 1,
+      "prediction_probability": 0.94,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.9760919213294983,
+        "contradiction": 0.01853417605161667,
+        "neutral": 0.005373932421207428
+      },
+      "features": {
+        "semantic_similarity": 0.24525576829910278,
+        "entity_overlap_ratio": 1.0,
+        "lexical_jaccard": 0.04,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 82,
+      "original_prompt": "No Clue is a dark comedy starring what actor known for his role on The Office? ",
+      "generated_response": "No Clue is a dark comedy starring the talented American actor, David Koechner, who is best known for playing roles such as Champ Kind in the \"Anchorman\" films and Todd Packer on NBC's \"The Office\".",
+      "claim": "No Clue is a dark comedy starring the talented American actor, David Koechner, who is best known for playing roles such as Champ Kind in the \"Anchorman\" films and Todd Packer on NBC's \"The Office\".",
+      "retrieved_evidence": "No Clue is a 2013 Canadian dark comedy film written by Brent Butt and directed by Carl Bessai, starring Butt, Amy Smart and David Koechner.David Michael Koechner ( ; born August 24, 1962) is an American actor and comedian, best known for playing roles such as Champ Kind in the \"\" films and Todd Packer on NBC's \"The Office\".",
+      "predicted_label": 1,
+      "actual_label": 1,
+      "prediction_probability": 1.0,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.9839562773704529,
+        "contradiction": 0.00134983379393816,
+        "neutral": 0.014693854376673698
+      },
+      "features": {
+        "semantic_similarity": 0.7703795433044434,
+        "entity_overlap_ratio": 0.9230769230769231,
+        "lexical_jaccard": 0.5769230769230769,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 83,
+      "original_prompt": "Oumar Tchomogo who was born in Cotonou, where is this city located?",
+      "generated_response": "Cotonou is located in Africa.",
+      "claim": "Cotonou is located in Africa.",
+      "retrieved_evidence": "Oumar Tchomogo (born 7 January 1978 in Cotonou) is a Beninese footballer who plays as a forward for Rh\u00f4ne-Alpes Honneur Regional Ligue side Union Montilienne Sportive Football.Cotonou (] ), is the largest city and economic centre of Benin.",
+      "predicted_label": 1,
+      "actual_label": 1,
+      "prediction_probability": 1.0,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.9966756105422974,
+        "contradiction": 0.0013001224724575877,
+        "neutral": 0.002024245448410511
+      },
+      "features": {
+        "semantic_similarity": 0.37416571378707886,
+        "entity_overlap_ratio": 0.5,
+        "lexical_jaccard": 0.08108108108108109,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 86,
+      "original_prompt": "Which lead vocalist wrote songs for Black Sabbath?",
+      "generated_response": "Ronnie James Dio",
+      "claim": "Ronnie James Dio",
+      "retrieved_evidence": " The song was written by Ronnie James Dio and Tony Iommi. It followed 1980's \"Heaven and Hell\", and it was the second and last Black Sabbath studio album to feature lead vocalist Ronnie James Dio prior to the 1992 album \"Dehumanizer\".",
+      "predicted_label": 1,
+      "actual_label": 1,
+      "prediction_probability": 0.98,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.9975457787513733,
+        "contradiction": 0.0010821912437677383,
+        "neutral": 0.001371977268718183
+      },
+      "features": {
+        "semantic_similarity": 0.43328917026519775,
+        "entity_overlap_ratio": 1.0,
+        "lexical_jaccard": 0.1,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 87,
+      "original_prompt": "Buck-Tick and Kitchens of Distinction, are both what type of musical bands?",
+      "generated_response": "rock",
+      "claim": "rock",
+      "retrieved_evidence": " In their three decade career, the band has released 20 studio albums, nearly all reaching the top ten on the charts, of which three in the late eighties and early nineties topped them.Kitchens of Distinction (sometimes shortened colloquially to KOD) are an English three-person alternative rock band formed in Tooting, South London in 1986.",
+      "predicted_label": 1,
+      "actual_label": 1,
+      "prediction_probability": 1.0,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.9276111125946045,
+        "contradiction": 0.04178228974342346,
+        "neutral": 0.030606552958488464
+      },
+      "features": {
+        "semantic_similarity": 0.09712858498096466,
+        "entity_overlap_ratio": 1.0,
+        "lexical_jaccard": 0.021739130434782608,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 88,
+      "original_prompt": "Which song by Desiigner was featured on Kanye West's seventh studio album?",
+      "generated_response": "Panda",
+      "claim": "Panda",
+      "retrieved_evidence": " \"Panda\" was heavily sampled by Desiigner's fellow GOOD Music label-mate and founder Kanye West, for \"Pt. 2\", a song on West's seventh studio album \"The Life of Pablo\", and inspired a number of remixes.The Life of Pablo is the seventh studio album by American rapper Kanye West.",
+      "predicted_label": 1,
+      "actual_label": 1,
+      "prediction_probability": 0.94,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.7140914797782898,
+        "contradiction": 0.05904410779476166,
+        "neutral": 0.22686441242694855
+      },
+      "features": {
+        "semantic_similarity": 0.0,
+        "entity_overlap_ratio": 1.0,
+        "lexical_jaccard": 0.02857142857142857,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 89,
+      "original_prompt": "Who has a wider scope of profession, Michael Haneke or Ralph Thomas?",
+      "generated_response": "Michael Haneke",
+      "claim": "Michael Haneke",
+      "retrieved_evidence": "Michael Haneke (] ; born 23 March 1942) is an Austrian film director and screenwriter best known for films such as \"Funny Games\" (1997), \"Cach\u00e9\" (2005), \"The White Ribbon\" (2009) and \"Amour\" (2012).Ralph Philip Thomas MC (10 August 1915 \u2013 17 March 2001) was an English film director, born in Hull, East Riding of Yorkshire.",
+      "predicted_label": 1,
+      "actual_label": 1,
+      "prediction_probability": 1.0,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.0002481723786331713,
+        "contradiction": 0.999679446220398,
+        "neutral": 7.245683809742332e-05
+      },
+      "features": {
+        "semantic_similarity": 0.22742944955825806,
+        "entity_overlap_ratio": 1.0,
+        "lexical_jaccard": 0.0425531914893617,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 90,
+      "original_prompt": "Where is the laboratory that houses The Tandem Van de Graaff located?",
+      "generated_response": "The Tandem Van de Graaff is located on Long Island.",
+      "claim": "The Tandem Van de Graaff is located on Long Island.",
+      "retrieved_evidence": "The Tandem Van de Graaff is an electrostatic accelerator facility at Brookhaven National Laboratory.Brookhaven National Laboratory (BNL) is a United States Department of Energy national laboratory located in Upton, New York, on Long Island, and was formally established in 1947 at the site of Camp Upton, a former U.S. Army base.",
+      "predicted_label": 1,
+      "actual_label": 1,
+      "prediction_probability": 0.99,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.00465258676558733,
+        "contradiction": 0.0015169018879532814,
+        "neutral": 0.9938305020332336
+      },
+      "features": {
+        "semantic_similarity": 0.5502761006355286,
+        "entity_overlap_ratio": 1.0,
+        "lexical_jaccard": 0.24390243902439024,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 91,
+      "original_prompt": "Which rock band was formed before 1990, Pearl Jam or The House of Love?",
+      "generated_response": "The House of Love",
+      "claim": "The House of Love",
+      "retrieved_evidence": "Pearl Jam is an American rock band formed in Seattle, Washington, in 1990.The House of Love are an English alternative rock band, formed in London in 1986 by singer-songwriter-guitarist Guy Chadwick and co-founder and lead-guitarist Terry Bickers.",
+      "predicted_label": 1,
+      "actual_label": 1,
+      "prediction_probability": 1.0,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.00011194700346095487,
+        "contradiction": 0.9998594522476196,
+        "neutral": 2.8573625968419947e-05
+      },
+      "features": {
+        "semantic_similarity": 0.21952852606773376,
+        "entity_overlap_ratio": 0.6666666666666666,
+        "lexical_jaccard": 0.12121212121212122,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 92,
+      "original_prompt": "What country of origin does Vichy France and Philippe P\u00e9tain have in common?",
+      "generated_response": "French",
+      "claim": "French",
+      "retrieved_evidence": "Vichy France (French: \"R\u00e9gime de Vichy\" ) is the common name of the French State (\"\u00c9tat fran\u00e7ais\") headed by Marshal Philippe P\u00e9tain during World War II.Henri Philippe Benoni Omer Joseph P\u00e9tain (24 April 1856 \u2013 23 July 1951), generally known as Philippe P\u00e9tain (] ) or Marshal P\u00e9tain (\"Mar\u00e9chal P\u00e9tain\"), was a French general who reached the distinction of Marshal of France, and later served as the Chief of State of Vichy France also known as Nationalist France or the French State \"(Chef de l'\u00c9tat Fran\u00e7ais)\", from 1940 to 1944.",
+      "predicted_label": 1,
+      "actual_label": 1,
+      "prediction_probability": 1.0,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.052727848291397095,
+        "contradiction": 0.0059874695725739,
+        "neutral": 0.9412845969200134
+      },
+      "features": {
+        "semantic_similarity": 0.1905001997947693,
+        "entity_overlap_ratio": 1.0,
+        "lexical_jaccard": 0.01818181818181818,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 94,
+      "original_prompt": "What is the title of the book written by the host of \"Family Feud\"?",
+      "generated_response": "\"Act Like a Lady, Think Like a Man\"",
+      "claim": "\"Act Like a Lady, Think Like a Man\"",
+      "retrieved_evidence": "Think Like a Man is a 2012 American romantic comedy film directed by Tim Story and written by Keith Marryman and David A. Newman, based on Steve Harvey's 2009 book \"Act Like a Lady, Think Like a Man\". He hosts \"The Steve Harvey Morning Show\", the \"Steve Harvey\" talk show, \"Family Feud\", \"Little Big Shots\" and its spinoff \"\", and \"Steve Harvey's Funderdome\".",
+      "predicted_label": 1,
+      "actual_label": 1,
+      "prediction_probability": 0.99,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.2986067831516266,
+        "contradiction": 0.1168396919965744,
+        "neutral": 0.5845534801483154
+      },
+      "features": {
+        "semantic_similarity": 0.44721361994743347,
+        "entity_overlap_ratio": 1.0,
+        "lexical_jaccard": 0.13953488372093023,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 95,
+      "original_prompt": "Orden Satany was the album produced by the leader of which band?",
+      "generated_response": "Orden Satany was the album produced by Stas Namin.",
+      "claim": "Orden Satany was the album produced by Stas Namin.",
+      "retrieved_evidence": " Originally released in 1988 as a self-published cassette, produced by Stas Namin. He\u2019s one of the founders of Russian rock music, the creator and leader of the legendary band The Flowers, which has sold more than 60 million records on the territory of the USSR and Eastern Bloc countries over its half-century of existence, and the author of many popular songs including \"Summer Evening\", \"Nostalgia for the Present\" and \"We Wish You Happiness!\"",
+      "predicted_label": 1,
+      "actual_label": 1,
+      "prediction_probability": 1.0,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.006251189857721329,
+        "contradiction": 0.9932249188423157,
+        "neutral": 0.0005239248275756836
+      },
+      "features": {
+        "semantic_similarity": 0.34636226296424866,
+        "entity_overlap_ratio": 0.5,
+        "lexical_jaccard": 0.07692307692307693,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 96,
+      "original_prompt": "Qwirkle and Evo, are which type of entertainment?",
+      "generated_response": "game",
+      "claim": "game",
+      "retrieved_evidence": "Qwirkle is a tile-based game for 2 to 4 players, designed by Susan McKinley Ross and published by MindWare.Evo: The Last Gasp of the Dinosaurs is a German-style board game for three to five players, designed by Philippe Keyaerts and published by Eurogames.",
+      "predicted_label": 1,
+      "actual_label": 1,
+      "prediction_probability": 0.63,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.0005399127257987857,
+        "contradiction": 0.9992393255233765,
+        "neutral": 0.00022073270520195365
+      },
+      "features": {
+        "semantic_similarity": 0.2309401035308838,
+        "entity_overlap_ratio": 1.0,
+        "lexical_jaccard": 0.030303030303030304,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 97,
+      "original_prompt": "Cartoon Action Hour is a role-playing game (RPG) designed to emulate classic action-adventure cartoons, such as He-Man, a character of a series of comic books and several animated television series, and in most variations, he is the alter ego of who?",
+      "generated_response": "Prince Adam",
+      "claim": "Prince Adam",
+      "retrieved_evidence": "Cartoon Action Hour is a role-playing game (RPG) designed to emulate classic action-adventure cartoons, such as \"ThunderCats\", \"He-Man\", \"\", \"G.I. Joe\", \"\", \"Inhumanoids\", \"Centurions\", \"Thundarr the Barbarian\", \"M.A.S.K.\", and \"Bravestarr\". In most variations, he is the alter ego of Prince Adam.",
+      "predicted_label": 1,
+      "actual_label": 1,
+      "prediction_probability": 1.0,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.9972317814826965,
+        "contradiction": 0.00113761518150568,
+        "neutral": 0.0016306489706039429
+      },
+      "features": {
+        "semantic_similarity": 0.08512566238641739,
+        "entity_overlap_ratio": 1.0,
+        "lexical_jaccard": 0.04878048780487805,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 98,
+      "original_prompt": "What research group was formed in 2014 due to Russia's suspension?",
+      "generated_response": "The G7 Research Group",
+      "claim": "The G7 Research Group",
+      "retrieved_evidence": "The G7 Research Group (formerly the G8 Research Group) is an independent source of information, analysis and research on the institutions, issues and members of the Group of Seven (formerly the Group of Eight) and the G7 Summit.The G8 (reformatted as G7 from 2014 due to Russia's suspension) was an inter-governmental political forum from 1997 until 2014, with participation from the world\u2032s major highly industrialized economies in countries that viewed themselves as democracies.",
+      "predicted_label": 1,
+      "actual_label": 1,
+      "prediction_probability": 0.99,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.8062259554862976,
+        "contradiction": 0.14343412220478058,
+        "neutral": 0.05033992603421211
+      },
+      "features": {
+        "semantic_similarity": 0.5995437502861023,
+        "entity_overlap_ratio": 1.0,
+        "lexical_jaccard": 0.08,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 100,
+      "original_prompt": "Who was born earlier, Ram\u00f3n del Valle-Incl\u00e1n or Robert Caro",
+      "generated_response": "Ram\u00f3n Mar\u00eda del Valle-Incl\u00e1n",
+      "claim": "Ram\u00f3n Mar\u00eda del Valle-Incl\u00e1n",
+      "retrieved_evidence": "Robert Allan Caro (born October 30, 1935) is an American journalist and author known for his biographies of United States political figures Robert Moses and Lyndon B. Johnson.Ram\u00f3n Mar\u00eda del Valle-Incl\u00e1n y de la Pe\u00f1a (in Vilanova de Arousa, Galicia, Spain, 28 October 1866 \u2013 Santiago de Compostela, 5 January 1936) was a Spanish dramatist, novelist and member of the Spanish Generation of 98.",
+      "predicted_label": 1,
+      "actual_label": 1,
+      "prediction_probability": 1.0,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.00684758648276329,
+        "contradiction": 0.9871707558631897,
+        "neutral": 0.005981640424579382
+      },
+      "features": {
+        "semantic_similarity": 0.3713906705379486,
+        "entity_overlap_ratio": 0.6666666666666666,
+        "lexical_jaccard": 0.08928571428571429,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 109,
+      "original_prompt": "What was the name of the keyboardist and songwriter who formed the electronic music group whose fifth studio album was Invaders Must Die?",
+      "generated_response": "Liam Howlett",
+      "claim": "Liam Howlett",
+      "retrieved_evidence": "Invaders Must Die is the fifth studio album by English electronic dance music group The Prodigy.The Prodigy are an English electronic music group from Braintree, Essex, formed in 1990 by keyboardist and songwriter Liam Howlett.",
+      "predicted_label": 1,
+      "actual_label": 1,
+      "prediction_probability": 1.0,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.9991317391395569,
+        "contradiction": 0.0003967694938182831,
+        "neutral": 0.00047149055171757936
+      },
+      "features": {
+        "semantic_similarity": 0.2860388159751892,
+        "entity_overlap_ratio": 1.0,
+        "lexical_jaccard": 0.07142857142857142,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 111,
+      "original_prompt": "What How to Make It in America star also starred in a movie with Uma Thurman?",
+      "generated_response": "The movie Prime starred Jake Jagielski.",
+      "claim": "The movie Prime starred Jake Jagielski.",
+      "retrieved_evidence": "Bryan Greenberg (born May 24, 1978) is an American actor and singer, known for his starring role as Ben Epstein in the HBO original series \"How to Make It in America\" as well as a recurring role as Jake Jagielski in the WB series \"One Tree Hill\" and as Nick Garrett on the short-lived ABC drama \"October Road\".Prime is a 2005 American romantic comedy-drama film starring Uma Thurman, Meryl Streep and Bryan Greenberg.",
+      "predicted_label": 1,
+      "actual_label": 1,
+      "prediction_probability": 1.0,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.013749931938946247,
+        "contradiction": 0.5327115654945374,
+        "neutral": 0.4535384774208069
+      },
+      "features": {
+        "semantic_similarity": 0.24830836057662964,
+        "entity_overlap_ratio": 0.5,
+        "lexical_jaccard": 0.06779661016949153,
+        "hedge_word_count": 0.0
+      }
+    }
+  ],
+  "correct_negatives": [
+    {
+      "index": 2,
+      "original_prompt": "Miracle is a song by Julian Perretta, that was a collaboration with what Belgian DJ and record producer that is best known for \"Are you with me\" and \"Reality\"?",
+      "generated_response": "Lost Frequencies",
+      "claim": "Lost Frequencies",
+      "retrieved_evidence": "\"Miracle\" is a song by Julian Perretta released in 2015 in a collaboration with Belgian producer Lost Frequencies.Felix De Laet (born 30 November 1993), known by his stage name Lost Frequencies, is a Belgian DJ and record producer. He is best known for his singles \"Are You with Me\" in 2014 and \"Reality\" in 2015.",
+      "predicted_label": 0,
+      "actual_label": 0,
+      "prediction_probability": 0.03,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.9489628672599792,
+        "contradiction": 0.05037233233451843,
+        "neutral": 0.0006648051785305142
+      },
+      "features": {
+        "semantic_similarity": 0.2162952572107315,
+        "entity_overlap_ratio": 1.0,
+        "lexical_jaccard": 0.05128205128205128,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 9,
+      "original_prompt": "Daniel Z. Freedman was born in a city that as of 2010 had a population of what?",
+      "generated_response": "Hartford's population in 2010 was 126,000.",
+      "claim": "Hartford's population in 2010 was 126,000.",
+      "retrieved_evidence": "Daniel Z. Freedman (born 1939 in Hartford, Connecticut) is an American theoretical physicist. As of the 2010 Census, Hartford's population was 124,775, making it Connecticut's third-largest city after the coastal cities of Bridgeport and New Haven.",
+      "predicted_label": 0,
+      "actual_label": 0,
+      "prediction_probability": 0.0,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.06538362056016922,
+        "contradiction": 0.9148608446121216,
+        "neutral": 0.01975550875067711
+      },
+      "features": {
+        "semantic_similarity": 0.4124789834022522,
+        "entity_overlap_ratio": 1.0,
+        "lexical_jaccard": 0.16216216216216217,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 10,
+      "original_prompt": "Are both Angela Carter and Ralph Ellison a novelist?",
+      "generated_response": "Angela Carter and Ralph Ellison were both writers.",
+      "claim": "Angela Carter and Ralph Ellison were both writers.",
+      "retrieved_evidence": "Angela Olive Carter-Pearce (n\u00e9e Stalker; 7 May 1940 \u2013 16 February 1992), known professionally as Angela Carter, was an English novelist, short story writer and journalist, known for her feminist, magical realism, and picaresque works.Ralph Waldo Ellison (March 1, 1913 \u2013 April 16, 1994) was an American novelist, literary critic, and scholar.",
+      "predicted_label": 0,
+      "actual_label": 0,
+      "prediction_probability": 0.0,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.004717470146715641,
+        "contradiction": 0.004942081868648529,
+        "neutral": 0.9903404116630554
+      },
+      "features": {
+        "semantic_similarity": 0.2608746290206909,
+        "entity_overlap_ratio": 0.75,
+        "lexical_jaccard": 0.10869565217391304,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 11,
+      "original_prompt": "Who created the American action-comedy television series that aired on CBS from January 26, 1979, to February 8, 1985, that inspired the 1975 film, starring James Mitchum, about a Southern family that runs bootleg liquor?",
+      "generated_response": "The creator of the television show and the inspiration for the 1975 film is not the same person.",
+      "claim": "The creator of the television show and the inspiration for the 1975 film is not the same person.",
+      "retrieved_evidence": "The Dukes of Hazzard is an American action-comedy television series that aired on CBS from January 26, 1979, to February 8, 1985. The series was inspired by the 1975 film \"Moonrunners\", which was also created by Gy Waldron and had many identical or similar character names and concepts.Moonrunners is a 1975 film, starring James Mitchum, about a Southern family that runs bootleg liquor.",
+      "predicted_label": 0,
+      "actual_label": 0,
+      "prediction_probability": 0.0,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.0032393443398177624,
+        "contradiction": 0.9952688813209534,
+        "neutral": 0.001491775270551443
+      },
+      "features": {
+        "semantic_similarity": 0.46156632900238037,
+        "entity_overlap_ratio": 1.0,
+        "lexical_jaccard": 0.11666666666666667,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 12,
+      "original_prompt": "Which bolt-action, magazine-fed, repeating rifle is the Charlton Automatic Rifle a fully automatic conversion of?",
+      "generated_response": "The Charlton Automatic Rifle was a fully automatic conversion of the German Mauser rifle.",
+      "claim": "The Charlton Automatic Rifle was a fully automatic conversion of the German Mauser rifle.",
+      "retrieved_evidence": "The Charlton Automatic Rifle was a fully automatic conversion of the Lee\u2013Enfield rifle, designed by New Zealander Philip Charlton in 1941 to act as a substitute for the Bren and Lewis gun light machine guns which were in chronically short supply at the time.The Lee\u2013Enfield is a bolt-action, magazine-fed, repeating rifle that was the main firearm used by the military forces of the British Empire and Commonwealth during the first half of the 20th century.",
+      "predicted_label": 0,
+      "actual_label": 0,
+      "prediction_probability": 0.0,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.004656233824789524,
+        "contradiction": 0.9953065514564514,
+        "neutral": 3.715246566571295e-05
+      },
+      "features": {
+        "semantic_similarity": 0.6652829647064209,
+        "entity_overlap_ratio": 0.6666666666666666,
+        "lexical_jaccard": 0.15254237288135594,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 13,
+      "original_prompt": "When did Sarah Polley become known as a child actor?",
+      "generated_response": "who reached popularity as a teenager.",
+      "claim": "who reached popularity as a teenager.",
+      "retrieved_evidence": "Sarah Ellen Polley {'1': \", '2': \", '3': \", '4': \"} (born January 8, 1979) is a Canadian actress, writer, director and political activist.The term child actor or child actress is generally applied to a child acting on stage or in motion pictures or television, but also to an adult who began his or her acting career as a child; to avoid confusion, the latter is also called a \"former child actor\". Closely associated is teenage actor or teen actor, an actor who reached popularity as a teenager.",
+      "predicted_label": 0,
+      "actual_label": 0,
+      "prediction_probability": 0.0,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.0860813558101654,
+        "contradiction": 0.013902077451348305,
+        "neutral": 0.9000165462493896
+      },
+      "features": {
+        "semantic_similarity": 0.35147976875305176,
+        "entity_overlap_ratio": 1.0,
+        "lexical_jaccard": 0.10526315789473684,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 16,
+      "original_prompt": "Who, also known as Jose Roberto da Silva is known to have Juan Figer as his agent?",
+      "generated_response": "One Brazilian footballer in Figer's agency is Z\u00e9 Roberto.",
+      "claim": "One Brazilian footballer in Figer's agency is Z\u00e9 Roberto.",
+      "retrieved_evidence": "Juan Figer Svirski is an Uruguayan-Brazilian football agent. His organisation, MJF Publicidade e Promo\u00e7\u00f5es S/C Ltda, represent, amongst others, Brazilian footballers Robinho, J\u00falio Baptista, Alex, Z\u00e9 Roberto, and Europeans Lu\u00eds Figo and Marcos Senna.Jos\u00e9 Roberto da Silva J\u00fanior (born 6 July 1974), commonly known as Z\u00e9 Roberto, is a Brazilian professional footballer who plays for Palmeiras as a left wing back or as a midfielder.",
+      "predicted_label": 0,
+      "actual_label": 0,
+      "prediction_probability": 0.01,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.006049573887139559,
+        "contradiction": 0.005450682248920202,
+        "neutral": 0.9884997010231018
+      },
+      "features": {
+        "semantic_similarity": 0.3936251103878021,
+        "entity_overlap_ratio": 0.6,
+        "lexical_jaccard": 0.11666666666666667,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 17,
+      "original_prompt": "Sports Collectors Digest and The Family Handyman, are of which nationality?",
+      "generated_response": "American",
+      "claim": "American",
+      "retrieved_evidence": "Sports Collectors Digest (SCD) is an American advertising weekly paper published at Iola, Wisconsin.The Family Handyman is an American home-improvement magazine, owned by Trusted Media Brands, Inc.",
+      "predicted_label": 0,
+      "actual_label": 0,
+      "prediction_probability": 0.0,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.0007896915776655078,
+        "contradiction": 0.9990571141242981,
+        "neutral": 0.00015318852092605084
+      },
+      "features": {
+        "semantic_similarity": 0.32879796624183655,
+        "entity_overlap_ratio": 1.0,
+        "lexical_jaccard": 0.038461538461538464,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 19,
+      "original_prompt": "What Michigan county is named after the Vice President of the seventh President of the United States?",
+      "generated_response": "Calhoun County",
+      "claim": "Calhoun County",
+      "retrieved_evidence": "Calhoun County is a county in the U.S. state of Michigan. The county was established on October 19, 1829 and named after John C. Calhoun, who was at the time Vice President under Andrew Jackson, making it one of Michigan's Cabinet counties.Andrew Jackson (March 15, 1767 \u2013 June 8, 1845) was an American soldier and statesman who served as the seventh President of the United States from 1829 to 1837.",
+      "predicted_label": 0,
+      "actual_label": 0,
+      "prediction_probability": 0.03,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.007676741108298302,
+        "contradiction": 0.9899590611457825,
+        "neutral": 0.0023642205633223057
+      },
+      "features": {
+        "semantic_similarity": 0.2357022762298584,
+        "entity_overlap_ratio": 1.0,
+        "lexical_jaccard": 0.03773584905660377,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 20,
+      "original_prompt": "What magazine an American monthly food and lifestyle magazine founded in 1987, Cooking Light or Hot Rod?",
+      "generated_response": "Cooking Light",
+      "claim": "Cooking Light",
+      "retrieved_evidence": "Cooking Light is an American monthly food and lifestyle magazine founded in 1987.Hot Rod is a monthly American car magazine devoted to hot rodding, drag racing, and muscle cars \u2014 modifying automobiles for performance and appearance.",
+      "predicted_label": 0,
+      "actual_label": 0,
+      "prediction_probability": 0.11,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.138475701212883,
+        "contradiction": 0.08837486803531647,
+        "neutral": 0.7731494307518005
+      },
+      "features": {
+        "semantic_similarity": 0.2694079577922821,
+        "entity_overlap_ratio": 1.0,
+        "lexical_jaccard": 0.06896551724137931,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 23,
+      "original_prompt": "J. Todd Anderson served as Second Unit Director for Joel David Coen and his brother, named?",
+      "generated_response": "Ethan Jesse Coen",
+      "claim": "Ethan Jesse Coen",
+      "retrieved_evidence": " A few years later, he served as Second Unit Director on the Coen brothers' Intolerable Cruelty, which earned him membership in the Directors Guild of America.Joel David Coen (born November 29, 1954) and Ethan Jesse Coen (born September 21, 1957), collectively referred to as the Coen brothers, are American filmmakers.",
+      "predicted_label": 0,
+      "actual_label": 0,
+      "prediction_probability": 0.01,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.8536132574081421,
+        "contradiction": 0.09318897873163223,
+        "neutral": 0.053197696805000305
+      },
+      "features": {
+        "semantic_similarity": 0.5813777446746826,
+        "entity_overlap_ratio": 1.0,
+        "lexical_jaccard": 0.06976744186046512,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 24,
+      "original_prompt": "Michael Giacchino composed the scores to many films such as a 2015 computer-animated film produced by what studio?",
+      "generated_response": "Pixar Animation Studios",
+      "claim": "Pixar Animation Studios",
+      "retrieved_evidence": "Michael Giacchino ( ; ] ; born October 10, 1967) is an American composer of music for films, television and video games. He composed the scores to the television series \"Lost\", \"Alias\" and \"Fringe\", the video game series \"Medal of Honor\" and \"Call of Duty\" and many films such as \"The Incredibles\", \"\", \"Ratatouille\", \"Star Trek\", \"Up\", \"Super 8\", \"\", \"Star Trek Into Darkness\", \"Dawn of the Planet of the Apes\", \"Jurassic World\", \"Inside Out\", \"Zootopia\", \"Star Trek Beyond\", \"Doctor Strange\", \"Rogue One\", \"\", \"War for the Planet of the Apes\" and \"Coco\".Inside Out is a 2015 American 3D computer-animated coming of age comedy-drama adventure film produced by Pixar Animation Studios and released by Walt Disney Pictures.",
+      "predicted_label": 0,
+      "actual_label": 0,
+      "prediction_probability": 0.0,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.9650073051452637,
+        "contradiction": 0.008062933571636677,
+        "neutral": 0.026929736137390137
+      },
+      "features": {
+        "semantic_similarity": 0.1545242816209793,
+        "entity_overlap_ratio": 1.0,
+        "lexical_jaccard": 0.0379746835443038,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 25,
+      "original_prompt": " Der B\u00e4renh\u00e4uter was influenced by the German composer who created which opera?",
+      "generated_response": "Der B\u00e4renh\u00e4uter was influenced by Engelbert Humperdinck.",
+      "claim": "Der B\u00e4renh\u00e4uter was influenced by Engelbert Humperdinck.",
+      "retrieved_evidence": " As with most of Siegfried Wagner's operas it is more influenced by his teacher Humperdinck than his father Richard Wagner's operas.Engelbert Humperdinck (] ; 1 September 1854 \u2013 27 September 1921) was a German composer, best known for his opera \"Hansel and Gretel\".",
+      "predicted_label": 0,
+      "actual_label": 0,
+      "prediction_probability": 0.1,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.9813992381095886,
+        "contradiction": 0.0017304759239777923,
+        "neutral": 0.016870349645614624
+      },
+      "features": {
+        "semantic_similarity": 0.1406421959400177,
+        "entity_overlap_ratio": 0.25,
+        "lexical_jaccard": 0.13157894736842105,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 28,
+      "original_prompt": "Operation Roller Coaster was a series of nuclear tests conducted at a reservation located in what county?",
+      "generated_response": "Operation Roller Coaster was a series of nuclear tests conducted at a desert site near Las Vegas.",
+      "claim": "Operation Roller Coaster was a series of nuclear tests conducted at a desert site near Las Vegas.",
+      "retrieved_evidence": "Operation Roller Coaster was a series of 4 nuclear tests conducted by the United States in 1963 at the Nevada Test Site.The Nevada National Security Site (N2S2),(though the abbreviation NNSS is still used), previously the Nevada Test Site (NTS), is a United States Department of Energy reservation located in southeastern Nye County, Nevada, about 65 miles (105 km) northwest of the city of Las Vegas.",
+      "predicted_label": 0,
+      "actual_label": 0,
+      "prediction_probability": 0.01,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.9757875204086304,
+        "contradiction": 0.0018015351379290223,
+        "neutral": 0.022411001846194267
+      },
+      "features": {
+        "semantic_similarity": 0.4234049320220947,
+        "entity_overlap_ratio": 1.0,
+        "lexical_jaccard": 0.28,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 30,
+      "original_prompt": "The Battle of the Ch'ongch'on River and the beginning of the Korean War both occured in what year?",
+      "generated_response": "1950",
+      "claim": "1950",
+      "retrieved_evidence": "The Battle of the Ch'ongch'on River, also known as the Battle of the Ch'ongch'on () or the Second Phase Campaign Western Sector (), was a decisive battle in the Korean War, and it took place from November 25 to December 2, 1950, along the Ch'ongch'on River Valley in the northwestern part of North Korea.The Korean War (in South Korean Hangul: \ud55c\uad6d\uc804\uc7c1 ; Hanja: \u97d3\u570b\u6230\u722d ; RR: \"Hanguk Jeonjaeng \" , \"Korean War\"; in North Korean Chos\u014fn'g\u016dl: \uc870\uad6d\ud574\ubc29\uc804\uc7c1 ; Hancha: \u7956\u570b\u89e3\u653e\u6230\u722d ; MR: \"Choguk haebang ch\u01d2njaeng \" , \"Fatherland Liberation War\"; 25 June 1950 \u2013 27 July 1953) was a war between North Korea (with the support of China and the Soviet Union) and South Korea (with the principal support of the United States). The war began on 25 June 1950 when North Korea invaded South Korea.",
+      "predicted_label": 0,
+      "actual_label": 0,
+      "prediction_probability": 0.0,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.9699987173080444,
+        "contradiction": 0.022771025076508522,
+        "neutral": 0.00723024969920516
+      },
+      "features": {
+        "semantic_similarity": 0.08178608119487762,
+        "entity_overlap_ratio": 1.0,
+        "lexical_jaccard": 0.013513513513513514,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 31,
+      "original_prompt": "What other professional created characters for \"The Mooninites\" besides the co-creator of \"Aqua Teen Hunger Force\"?",
+      "generated_response": "Dave Willis",
+      "claim": "Dave Willis",
+      "retrieved_evidence": " Both characters were created by series creators Dave Willis and Matt Maiellaro.Matthew Gerard Maiellaro (Born August 17, 1966) is an American voice actor, filmmaker and musician, best known as the co-creator and writer of the cult television animated Adult Swim shows, \"Aqua Teen Hunger Force\" and \"Perfect Hair Forever\", and creator of \"12 oz.",
+      "predicted_label": 0,
+      "actual_label": 0,
+      "prediction_probability": 0.0,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.9633554220199585,
+        "contradiction": 0.01543323416262865,
+        "neutral": 0.021211326122283936
+      },
+      "features": {
+        "semantic_similarity": 0.20044595003128052,
+        "entity_overlap_ratio": 1.0,
+        "lexical_jaccard": 0.041666666666666664,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 32,
+      "original_prompt": "What is the provision of micro loan to the poor entrepreneurs and small businesses lacking access to banking and related services, offered by a company that helps  entrepreneurs living with mental health and addiction challenges who are interested in pursuing self-employment?",
+      "generated_response": "Micro finance",
+      "claim": "Micro finance",
+      "retrieved_evidence": "Rise provides microfinancing and mentorship to entrepreneurs living with mental health and addiction challenges who are interested in pursuing self-employment.Micro finance initially had limited definition - provision of micro loan to the poor entrepreneurs and small businesses lacking access to banking and related services.",
+      "predicted_label": 0,
+      "actual_label": 0,
+      "prediction_probability": 0.0,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.9958710074424744,
+        "contradiction": 0.0010190309258177876,
+        "neutral": 0.0031099666375666857
+      },
+      "features": {
+        "semantic_similarity": 0.22116294503211975,
+        "entity_overlap_ratio": 0.0,
+        "lexical_jaccard": 0.05263157894736842,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 33,
+      "original_prompt": "Garth Jennings and Lee Cheol-ha shared what occupation?",
+      "generated_response": "Garth Jennings and Lee Cheol-ha are both involved in the production of artistic visuals.",
+      "claim": "Garth Jennings and Lee Cheol-ha are both involved in the production of artistic visuals.",
+      "retrieved_evidence": "Garth Jennings (born 1972) is a British film director, screenwriter, producer and actor.Lee Cheol-ha is a South Korean film director known for his stylish portraits of the human experience.",
+      "predicted_label": 0,
+      "actual_label": 0,
+      "prediction_probability": 0.0,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.4141635298728943,
+        "contradiction": 0.5160485506057739,
+        "neutral": 0.06978784501552582
+      },
+      "features": {
+        "semantic_similarity": 0.40112870931625366,
+        "entity_overlap_ratio": 0.75,
+        "lexical_jaccard": 0.23529411764705882,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 34,
+      "original_prompt": "Guy Walters competed against which former professional boxer that is a two-weight world champion?",
+      "generated_response": "Virgil Hill",
+      "claim": "Virgil Hill",
+      "retrieved_evidence": "Guy \"Arc Angel\" Waters ( (1964--) 25 1964 (age (2017)-(1964)-((11)<(01)or(11)==(01)and(30)<(25)) ) ) is an Australian professional welter/light middle/middle/super middle/light heavy/cruiserweight boxer of the 1980s, 1990s and 2000s who won the New South Wales State (Australia) light heavyweight title, Australian light heavyweight title, Oriental and Pacific Boxing Federation (OPBF) light heavyweight title, Australasian Light Heavyweight Title, World Boxing Federation (WBF) light heavyweight title, International Boxing Federation (IBF) Pan Pacific super middleweight title, Oriental and Pacific Boxing Federation (OPBF) super middleweight title, and Commonwealth light heavyweight title, and was a challenger for the WBC light heavyweight title against Dennis Andries, World Boxing Association (WBA) World light heavyweight title against Virgil Hill, World Boxing Council (WBC) cruiserweight title against Juan Carlos G\u00f3mez, and Commonwealth super middleweight title against David Starie, his professional fighting weight varied from 167+1/2 lb , i.e. super middleweight to 185+1/4 lb , i.e. cruiserweight.Virgil Eugene Hill (born January 18, 1964) is an American former professional boxer who competed from 1984 to 2007, and in 2015. He is a two-weight world champion, having held the WBA light heavyweight title twice, from 1987 to 1997; the IBF and lineal light heavyweight titles from 1996 to 1997; and the WBA cruiserweight title twice, from 2000 to 2002 and 2006 to 2007.",
+      "predicted_label": 0,
+      "actual_label": 0,
+      "prediction_probability": 0.03,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.3082963228225708,
+        "contradiction": 0.12670928239822388,
+        "neutral": 0.5649943947792053
+      },
+      "features": {
+        "semantic_similarity": 0.06364279985427856,
+        "entity_overlap_ratio": 1.0,
+        "lexical_jaccard": 0.018518518518518517,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 35,
+      "original_prompt": "Which was released first, Dangal or The Wild?",
+      "generated_response": "The Wild",
+      "claim": "The Wild",
+      "retrieved_evidence": "Dangal (English: \"Wrestling competition\" ) is a 2016 Indian Hindi-language biographical sports drama film loosely based on the story of Mahavir Singh Phogat, an amateur wrestler, who trains his daughters Geeta Phogat and Babita Kumari to be world-class wrestlers.The Wild is a 2006 American 3D computer animated comedy directed by animator Steve \"Spaz\" Williams, and written by Ed Decter, John J. Strauss, Mark Gibson and Philip Halprin.",
+      "predicted_label": 0,
+      "actual_label": 0,
+      "prediction_probability": 0.04,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 6.339743413263932e-05,
+        "contradiction": 0.9999188184738159,
+        "neutral": 1.7737220332492143e-05
+      },
+      "features": {
+        "semantic_similarity": 0.12964075803756714,
+        "entity_overlap_ratio": 0.5,
+        "lexical_jaccard": 0.03225806451612903,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 36,
+      "original_prompt": "Ohio Brush Creek rises in southeastern Highland County, and flows generally southwardly into Adams County, past the 1348 ft -long, three-foot-high prehistoric effigy mound on a plateau of the which crater, along Ohio Brush Creek in Adams County, Ohio?",
+      "generated_response": "Crystal Clear Mound.",
+      "claim": "Crystal Clear Mound.",
+      "retrieved_evidence": "Ohio Brush Creek rises in southeastern Highland County, and flows generally southwardly into Adams County, past the Serpent Mound, to its confluence at the Ohio River, about 4 mi west of Rome.The Great Serpent Mound is a 1348 ft -long, three-foot-high prehistoric effigy mound on a plateau of the Serpent Mound crater along Ohio Brush Creek in Adams County, Ohio.",
+      "predicted_label": 0,
+      "actual_label": 0,
+      "prediction_probability": 0.0,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.00027081387815997005,
+        "contradiction": 0.9997102618217468,
+        "neutral": 1.8962617104989477e-05
+      },
+      "features": {
+        "semantic_similarity": 0.045083485543727875,
+        "entity_overlap_ratio": 0.3333333333333333,
+        "lexical_jaccard": 0.021739130434782608,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 37,
+      "original_prompt": "Leonard Francis McAllister Jr. (born January 13, 1972) is a conservative American political commentator for a number of newspapers and websites, including which English-language American online magazine of African-American culture launched on January 28, 2008, by Henry Louis Gates Jr. and Donald E. Graham, and was owned by Graham Holdings Company through its online subsidiary, The Slate Group?",
+      "generated_response": "The Root",
+      "claim": "The Root",
+      "retrieved_evidence": "Leonard Francis McAllister Jr. (born January 13, 1972) is a conservative American political commentator for a number of newspapers and websites, including AOL and The Root.The Root is an English-language American online magazine of African-American culture launched on January 28, 2008, by Henry Louis Gates Jr. and Donald E. Graham, and was owned by Graham Holdings Company through its online subsidiary, The Slate Group.",
+      "predicted_label": 0,
+      "actual_label": 0,
+      "prediction_probability": 0.0,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.33102336525917053,
+        "contradiction": 0.6529176831245422,
+        "neutral": 0.01605892740190029
+      },
+      "features": {
+        "semantic_similarity": 0.294627845287323,
+        "entity_overlap_ratio": 1.0,
+        "lexical_jaccard": 0.0392156862745098,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 38,
+      "original_prompt": "A major character in the 2000 novel \"Storm Front\" had her name changed to what when the novel series was adapted for television?",
+      "generated_response": "The character's name is Connie.",
+      "claim": "The character's name is Connie.",
+      "retrieved_evidence": "Karrin Murphy is a major character in Jim Butcher's contemporary fantasy series, \"The Dresden Files\". The character also appears as Connie Murphy in the television series based on the novels.The Dresden Files is a series of contemporary fantasy/mystery novels written by American author Jim Butcher. The first novel, \"Storm Front\", was published in 2000 by Roc Books.",
+      "predicted_label": 0,
+      "actual_label": 0,
+      "prediction_probability": 0.08,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.003045141464099288,
+        "contradiction": 0.9964273571968079,
+        "neutral": 0.0005274600116536021
+      },
+      "features": {
+        "semantic_similarity": 0.5199469923973083,
+        "entity_overlap_ratio": 1.0,
+        "lexical_jaccard": 0.125,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 40,
+      "original_prompt": "What team formed by three times Formula One champion Jackie Stewart and his son Paul Stewart in 1996 used The Stewart SF01 in the 1997 Formula One season?",
+      "generated_response": "Stewart Grand Prix",
+      "claim": "Stewart Grand Prix",
+      "retrieved_evidence": "The Stewart SF01 was the car that the Stewart Formula One team competed with in the 1997 Formula One season, and the first car constructed by the team.Stewart Grand Prix was a Formula One constructor and racing team formed by three times Formula One champion Jackie Stewart and his son Paul Stewart in 1996.",
+      "predicted_label": 0,
+      "actual_label": 0,
+      "prediction_probability": 0.02,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.4514653980731964,
+        "contradiction": 0.04657798260450363,
+        "neutral": 0.501956582069397
+      },
+      "features": {
+        "semantic_similarity": 0.31950482726097107,
+        "entity_overlap_ratio": 1.0,
+        "lexical_jaccard": 0.09375,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 43,
+      "original_prompt": "When was the ESPN analyst born who was was involved in an incident in 2003, in which a drunk Namath asked her to kiss him?",
+      "generated_response": "Suzy Kolber was born in 1964.",
+      "claim": "Suzy Kolber was born in 1964.",
+      "retrieved_evidence": " Among those interviewed for the documentary include Namath's sister Rita Sims, brother Frank, daughter Jessica, former Jets Matt Snell, Don Maynard, John Schmitt, Richard Caster, Emerson Boozer and John Riggins, along with ESPN analyst Suzy Kolber, who was involved in an incident in 2003, in which a drunk Namath asked her to kiss him.Suzanne Lisa \"Suzy\" Kolber ( ; born May 14, 1964) is an American football sideline reporter, co-producer, and sportscaster for ESPN.",
+      "predicted_label": 0,
+      "actual_label": 0,
+      "prediction_probability": 0.0,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.0048271967098116875,
+        "contradiction": 0.0003805838350672275,
+        "neutral": 0.9947922825813293
+      },
+      "features": {
+        "semantic_similarity": 0.41403937339782715,
+        "entity_overlap_ratio": 1.0,
+        "lexical_jaccard": 0.09230769230769231,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 44,
+      "original_prompt": "When was the railroad opened which is north to the Bates Pond?",
+      "generated_response": "1947",
+      "claim": "1947",
+      "retrieved_evidence": "Bates Pond is a 20 acre pond in Carver, Massachusetts. The pond is located south of Edaville Railroad.Edaville Railroad is a heritage railroad in South Carver, Massachusetts, opened in 1947.",
+      "predicted_label": 0,
+      "actual_label": 0,
+      "prediction_probability": 0.0,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.9677113890647888,
+        "contradiction": 0.031249254941940308,
+        "neutral": 0.0010393339907750487
+      },
+      "features": {
+        "semantic_similarity": 0.0,
+        "entity_overlap_ratio": 1.0,
+        "lexical_jaccard": 0.05555555555555555,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 45,
+      "original_prompt": "Are Just, Melvin: Just Evil and Speaking in Strings both documentaries about musicians?",
+      "generated_response": "No, Just, Melvin: Just Evil is a documentary about sexual abuse while Speaking in Strings is a documentary about a violinist's rise to fame.",
+      "claim": "No, Just, Melvin: Just Evil is a documentary about sexual abuse while Speaking in Strings is a documentary about a violinist's rise to fame.",
+      "retrieved_evidence": "Just, Melvin: Just Evil is a 2000 American documentary by James Ronald Whitney about his grandfather, Melvin Just, and the devastating consequences of the sexual abuse Just inflicted on their family. The film is based on the life of Italian-born violinist Nadja Salerno-Sonnenberg, and it received a nomination for Best Feature Documentary Film at the 72nd Academy Awards.",
+      "predicted_label": 0,
+      "actual_label": 0,
+      "prediction_probability": 0.01,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.0009679393260739744,
+        "contradiction": 0.9988318085670471,
+        "neutral": 0.00020029675215482712
+      },
+      "features": {
+        "semantic_similarity": 0.5063517093658447,
+        "entity_overlap_ratio": 0.5,
+        "lexical_jaccard": 0.18518518518518517,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 47,
+      "original_prompt": "What is the title of the book co-written by this biologist and author known for \"Higher Superstition\" (1994) on the origins of intelligent design? ",
+      "generated_response": "Intelligent Design: A Creationist's Perspective.",
+      "claim": "Intelligent Design: A Creationist's Perspective.",
+      "retrieved_evidence": " He has written widely on biology, evolution and creationism, and the intellectual conflicts of the Science wars\u2014for example, his book \"Creationism's Trojan Horse: The Wedge of Intelligent Design\" (2004), written with Barbara Forrest.Creationism's Trojan Horse: The Wedge of Intelligent Design is a 2004 book by Barbara Forrest and Paul R. Gross on the origins of intelligent design, specifically the Discovery Institute's Center for the Renewal of Science and Culture and its wedge strategy.",
+      "predicted_label": 0,
+      "actual_label": 0,
+      "prediction_probability": 0.0,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.9060027599334717,
+        "contradiction": 0.026025595143437386,
+        "neutral": 0.06797167658805847
+      },
+      "features": {
+        "semantic_similarity": 0.26035061478614807,
+        "entity_overlap_ratio": 0.5,
+        "lexical_jaccard": 0.08695652173913043,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 48,
+      "original_prompt": "What president did the chairman of the Commission on Protecting and Reducing Government Secrecy serve as an advisor to?",
+      "generated_response": "The chairman of the Commission on Protecting and Reducing Government Secrecy, Daniel Patrick Moynihan, served as adviser to President Gerald Ford.",
+      "claim": "The chairman of the Commission on Protecting and Reducing Government Secrecy, Daniel Patrick Moynihan, served as adviser to President Gerald Ford.",
+      "retrieved_evidence": "The Commission on Protecting and Reducing Government Secrecy, also called the Moynihan Secrecy Commission, after its chairman, U.S. Senator Daniel Patrick Moynihan, was a bipartisan statutory commission in the United States. A member of the Democratic Party, he represented New York in the United States Senate and served as an adviser to Republican President Richard Nixon.",
+      "predicted_label": 0,
+      "actual_label": 0,
+      "prediction_probability": 0.02,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.004757315386086702,
+        "contradiction": 0.9941779375076294,
+        "neutral": 0.0010647266171872616
+      },
+      "features": {
+        "semantic_similarity": 0.7413793802261353,
+        "entity_overlap_ratio": 0.8333333333333334,
+        "lexical_jaccard": 0.391304347826087,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 49,
+      "original_prompt": "Where are Audrey Horne and Gorgoth based?",
+      "generated_response": "Audrey Horne and Gorgoroth are both from Norway, but in different cities.",
+      "claim": "Audrey Horne and Gorgoroth are both from Norway, but in different cities.",
+      "retrieved_evidence": "Audrey Horne are a hard rock band from Bergen, Norway.Gorgoroth is a Norwegian black metal band based in Bergen.",
+      "predicted_label": 0,
+      "actual_label": 0,
+      "prediction_probability": 0.01,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.7006464004516602,
+        "contradiction": 0.2093389630317688,
+        "neutral": 0.09001469612121582
+      },
+      "features": {
+        "semantic_similarity": 0.4041452407836914,
+        "entity_overlap_ratio": 0.5,
+        "lexical_jaccard": 0.3181818181818182,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 50,
+      "original_prompt": "In what party is the president whose cabinet Francisco Javier Mayorga Casta\u00f1eda serves in?",
+      "generated_response": "Mayorga Casta\u00f1eda serves in a major Mexican political party.",
+      "claim": "Mayorga Casta\u00f1eda serves in a major Mexican political party.",
+      "retrieved_evidence": "Francisco Javier Mayorga Casta\u00f1eda (born on 17 April 1951) is a Mexican businessman and politician who serves as Secretary of Agriculture in the cabinet of President Felipe Calder\u00f3n since 7 September 2009. He has previously served in the same post from 28 September 2005 to 30 November 2006 in the administration of President Vicente Fox. He is a member of the National Action Party (\"Partido Acci\u00f3n Nacional\", PAN), one of the three major Mexican political parties.",
+      "predicted_label": 0,
+      "actual_label": 0,
+      "prediction_probability": 0.01,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.014755716547369957,
+        "contradiction": 0.0020840680226683617,
+        "neutral": 0.9831601977348328
+      },
+      "features": {
+        "semantic_similarity": 0.3790235221385956,
+        "entity_overlap_ratio": 1.0,
+        "lexical_jaccard": 0.15,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 51,
+      "original_prompt": "What network was the show that Carrie-Anne Moss currently portrays a character created for?",
+      "generated_response": "The show was created for Hulu.",
+      "claim": "The show was created for Hulu.",
+      "retrieved_evidence": " Moss currently portrays Jeri Hogarth in several series of the Marvel Cinematic Universe, mainly \"Jessica Jones\" (2015\u2013present).Marvel's Jessica Jones, or simply Jessica Jones, is an American web television series created for Netflix by Melissa Rosenberg, based on the Marvel Comics character of the same name.",
+      "predicted_label": 0,
+      "actual_label": 0,
+      "prediction_probability": 0.39,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.0004937950288876891,
+        "contradiction": 0.9994288086891174,
+        "neutral": 7.73243373259902e-05
+      },
+      "features": {
+        "semantic_similarity": 0.5192908048629761,
+        "entity_overlap_ratio": 0.0,
+        "lexical_jaccard": 0.07317073170731707,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 52,
+      "original_prompt": "Hong Kong Human Rights and Democracy Act is proposed by Chris Smith, who is the chairman of Congressional-Executive Commission on China, Christopher Henry Smith (born March 4, 1953) is the U.S. Representative for New Jersey 's 4 congressional district , serving since which year?",
+      "generated_response": "Christopher Henry Smith (born March 4, 1953) has been serving as the U.S. Representative for New Jersey's 4 congressional district since 1953.",
+      "claim": "Christopher Henry Smith (born March 4, 1953) has been serving as the U.S. Representative for New Jersey's 4 congressional district since 1953.",
+      "retrieved_evidence": "Hong Kong Human Rights and Democracy Act is proposed by Chris Smith, who is the chairman of Congressional-Executive Commission on China, and Marco Rubio, the co-chairman of the Congressional-Executive Commission on China.Christopher Henry Smith (born March 4, 1953) is the U.S. Representative for New Jersey 's 4 congressional district , serving since 1981.",
+      "predicted_label": 0,
+      "actual_label": 0,
+      "prediction_probability": 0.02,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.07677938789129257,
+        "contradiction": 0.8645046949386597,
+        "neutral": 0.05871593952178955
+      },
+      "features": {
+        "semantic_similarity": 0.4352390170097351,
+        "entity_overlap_ratio": 0.75,
+        "lexical_jaccard": 0.4186046511627907,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 54,
+      "original_prompt": "The film starring Oscar Martinez was selected for which award at the 73rd Venice International Film Festival?",
+      "generated_response": "The film starring Oscar Martinez was selected for the Silver Lion.",
+      "claim": "The film starring Oscar Martinez was selected for the Silver Lion.",
+      "retrieved_evidence": "Oscar Mart\u00ednez (Buenos Aires, 23 October 1949) is an Argentine actor, author and theatre director. He also received the Volpi Cup for Best Actor at the 73rd Venice Film Festival for his role in the comedy-drama \"The Distinguished Citizen\".The Distinguished Citizen (Spanish: El ciudadano ilustre ) is a 2016 Argentine-Spanish drama film directed by Gast\u00f3n Duprat & Mariano Cohn. It was selected to compete for the Golden Lion at the 73rd Venice International Film Festival.",
+      "predicted_label": 0,
+      "actual_label": 0,
+      "prediction_probability": 0.0,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.001635114080272615,
+        "contradiction": 0.9974660873413086,
+        "neutral": 0.0008988262270577252
+      },
+      "features": {
+        "semantic_similarity": 0.6042040586471558,
+        "entity_overlap_ratio": 0.6,
+        "lexical_jaccard": 0.1206896551724138,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 63,
+      "original_prompt": "Which English actress starred in both the televisions shows Trinity and Outnumbered?",
+      "generated_response": "Emily Watson",
+      "claim": "Emily Watson",
+      "retrieved_evidence": "Trinity is a British drama series which was broadcast on ITV2 from September to November 2009. The series is set in the fictional Trinity College of Bridgeford University, and stars Charles Dance, Claire Skinner, Antonia Bernath, Christian Cooke, Reggie Yates, and Isabella Calthorpe.Claire Skinner (born 1965) is an English actress, known in the United Kingdom for her television career, particularly playing Sue Brockman from the BBC television series \"Outnumbered\".",
+      "predicted_label": 0,
+      "actual_label": 0,
+      "prediction_probability": 0.01,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.9594024419784546,
+        "contradiction": 0.03976142033934593,
+        "neutral": 0.0008361375075764954
+      },
+      "features": {
+        "semantic_similarity": 0.22718475759029388,
+        "entity_overlap_ratio": 0.0,
+        "lexical_jaccard": 0.0,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 65,
+      "original_prompt": "Stephan Ratchford plays for the rugby team that has its home matches at which stadium?",
+      "generated_response": "Stephan Ratchford plays for the rugby team that has its home matches at Warrington Wolves' Stadium.",
+      "claim": "Stephan Ratchford plays for the rugby team that has its home matches at Warrington Wolves' Stadium.",
+      "retrieved_evidence": "Stefan Ratchford (born 19 July 1988 in Wigan) is an English rugby league player for Warrington in the Super League. They play at the Halliwell Jones Stadium, having moved there from Wilderspool in 2003.",
+      "predicted_label": 0,
+      "actual_label": 0,
+      "prediction_probability": 0.01,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.8621326088905334,
+        "contradiction": 0.026079313829541206,
+        "neutral": 0.1117880642414093
+      },
+      "features": {
+        "semantic_similarity": 0.34641021490097046,
+        "entity_overlap_ratio": 0.6,
+        "lexical_jaccard": 0.1794871794871795,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 66,
+      "original_prompt": "New Wave was later enhanced by this Russian superstar whose career started in what year ",
+      "generated_response": "New Wave was later enhanced by this Russian superstar whose career started in 1960.",
+      "claim": "New Wave was later enhanced by this Russian superstar whose career started in 1960.",
+      "retrieved_evidence": "New Wave (Russian: \u041d\u043e\u0432\u0430\u044f \u0432\u043e\u043b\u043d\u0430 , \"Novaya volna\", Latvian: \"Jaunais Vilnis\" ) is an international contest for young performers of popular music founded in 2002 by the Russian composer Igor Krutoy and Latvian pianist and composer Raimonds Pauls and later enhanced by the Russian superstar Alla Pugacheva.Alla Borisovna Pugacheva (Russian: \u0410\u043b\u043b\u0430 \u0411\u043e\u0440\u0438\u0441\u043e\u0432\u043d\u0430 \u041f\u0443\u0433\u0430\u0447\u0451\u0432\u0430 ; sometimes transcribed in English as Pugachova, ] ; born 15 April 1949), is \u0430 Soviet and Russian musical performer. Her career started in 1965 and continues to this day.",
+      "predicted_label": 0,
+      "actual_label": 0,
+      "prediction_probability": 0.01,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.006972210947424173,
+        "contradiction": 0.9920110106468201,
+        "neutral": 0.0010167364962399006
+      },
+      "features": {
+        "semantic_similarity": 0.5305348634719849,
+        "entity_overlap_ratio": 1.0,
+        "lexical_jaccard": 0.16923076923076924,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 67,
+      "original_prompt": "Theories of rhetoric and composition pedagogy, the field of rhetoric has been a matter of considerable debate for millennia, Aristotle, was an ancient Greek philosopher and scientist born in the city of Stagira, Chalkidice, on the northern periphery of which Classical location?",
+      "generated_response": "Greece",
+      "claim": "Greece",
+      "retrieved_evidence": " Aristotle wrote a philosophical work that still has major scholarly impact, \"Rhetoric\", in which he identifies five canons of the field of rhetoric: invention, arrangement, style, memory, and delivery.Aristotle ( ; Greek: \u1f08\u03c1\u03b9\u03c3\u03c4\u03bf\u03c4\u03ad\u03bb\u03b7\u03c2 , , \"Aristot\u00e9l\u0113s\"; 384\u2013322 BC) was an ancient Greek philosopher and scientist born in the city of Stagira, Chalkidice, on the northern periphery of Classical Greece.",
+      "predicted_label": 0,
+      "actual_label": 0,
+      "prediction_probability": 0.0,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.9631222486495972,
+        "contradiction": 0.010936363600194454,
+        "neutral": 0.025941353291273117
+      },
+      "features": {
+        "semantic_similarity": 0.0,
+        "entity_overlap_ratio": 1.0,
+        "lexical_jaccard": 0.02127659574468085,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 68,
+      "original_prompt": "What did the Lichfield Cricket Club nickname itself after?",
+      "generated_response": "Lichfield Cathedral",
+      "claim": "Lichfield Cathedral",
+      "retrieved_evidence": " The club has the nickname 'Three Spires', derived from the three nearby spires of Lichfield Cathedral. It is the only medieval English cathedral with three spires.",
+      "predicted_label": 0,
+      "actual_label": 0,
+      "prediction_probability": 0.0,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.9971893429756165,
+        "contradiction": 0.002471459796652198,
+        "neutral": 0.0003391473146621138
+      },
+      "features": {
+        "semantic_similarity": 0.283473402261734,
+        "entity_overlap_ratio": 1.0,
+        "lexical_jaccard": 0.1111111111111111,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 69,
+      "original_prompt": "When was the person who wrote The Sovereignty of Good born?",
+      "generated_response": "15 July 1919",
+      "claim": "15 July 1919",
+      "retrieved_evidence": "The Sovereignty of Good is a book of moral philosophy by Iris Murdoch.Dame Jean Iris Murdoch ( ; 15 July 1919 \u2013 8 February 1999) was an Anglo-Irish novelist and philosopher, best known for her novels about good and evil, sexual relationships, morality, and the power of the unconscious.",
+      "predicted_label": 0,
+      "actual_label": 0,
+      "prediction_probability": 0.01,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.5536129474639893,
+        "contradiction": 0.002437053946778178,
+        "neutral": 0.44395002722740173
+      },
+      "features": {
+        "semantic_similarity": 0.1973855197429657,
+        "entity_overlap_ratio": 1.0,
+        "lexical_jaccard": 0.07692307692307693,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 70,
+      "original_prompt": "\"Apocalypic\" is a song sung by Lizzy Hale from which group? ",
+      "generated_response": "Halestorm",
+      "claim": "Halestorm",
+      "retrieved_evidence": "\"Apocalyptic\" is a song by the American hard rock band Halestorm.Halestorm is an American hard rock band from Red Lion, Pennsylvania, consisting of lead vocalist and guitarist Lzzy Hale, her brother drummer and percussionist Arejay Hale, guitarist Joe Hottinger, and bassist Josh Smith.",
+      "predicted_label": 0,
+      "actual_label": 0,
+      "prediction_probability": 0.09,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.9881857633590698,
+        "contradiction": 0.0030807824805378914,
+        "neutral": 0.00873349979519844
+      },
+      "features": {
+        "semantic_similarity": 0.11396057903766632,
+        "entity_overlap_ratio": 0.0,
+        "lexical_jaccard": 0.029411764705882353,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 71,
+      "original_prompt": "When was the American microbiologist who developed MMR vaccine born?",
+      "generated_response": "Maurice Ralph Hilleman was born on August 31, 1919.",
+      "claim": "Maurice Ralph Hilleman was born on August 31, 1919.",
+      "retrieved_evidence": "The MMR vaccine (also known as the MPR vaccine after the Latin names of the diseases) is an immunization vaccine against measles, mumps, and rubella (German measles).Maurice Ralph Hilleman (August 30, 1919 \u2013 April 11, 2005) was an American microbiologist who specialized in vaccinology and developed over 40 vaccines, an unparalleled record of productivity.",
+      "predicted_label": 0,
+      "actual_label": 0,
+      "prediction_probability": 0.18,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.01578003168106079,
+        "contradiction": 0.978220522403717,
+        "neutral": 0.00599937979131937
+      },
+      "features": {
+        "semantic_similarity": 0.2062842696905136,
+        "entity_overlap_ratio": 0.75,
+        "lexical_jaccard": 0.1276595744680851,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 78,
+      "original_prompt": "Robinsons and Pocari Sweat are both what kind of product?",
+      "generated_response": "drink",
+      "claim": "drink",
+      "retrieved_evidence": "Robinsons is an English fruit drink brand owned by Britvic.Pocari Sweat (\u30dd\u30ab\u30ea\u30b9\u30a8\u30c3\u30c8 , Pokari Suetto ) is a Japanese sports drink, manufactured by Otsuka Pharmaceutical It was launched in 1980, and is now also available in East Asia, Southeast Asia, and the Middle East.",
+      "predicted_label": 0,
+      "actual_label": 0,
+      "prediction_probability": 0.02,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.2729770839214325,
+        "contradiction": 0.7261577844619751,
+        "neutral": 0.0008651099633425474
+      },
+      "features": {
+        "semantic_similarity": 0.10314212739467621,
+        "entity_overlap_ratio": 1.0,
+        "lexical_jaccard": 0.02857142857142857,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 79,
+      "original_prompt": "What band was Amy Grant's husband in?",
+      "generated_response": "Vince Gill was not in a band.",
+      "claim": "Vince Gill was not in a band.",
+      "retrieved_evidence": " Due the success of the first album and its high calibre, Christian music veteran Amy Grant and husband, Country music veteran Vince Gill both offered their talents towards the creation of this album.Vincent Grant Gill (born April 12, 1957) is an American country singer, songwriter and multi-instrumentalist. He has achieved commercial success and fame both as frontman to the country rock band Pure Prairie League in the 1970s and as a solo artist beginning in 1983, where his talents as a vocalist and musician have placed him in high demand as a guest vocalist and a duet partner.",
+      "predicted_label": 0,
+      "actual_label": 0,
+      "prediction_probability": 0.42,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.002224237658083439,
+        "contradiction": 0.9967024922370911,
+        "neutral": 0.001073259860277176
+      },
+      "features": {
+        "semantic_similarity": 0.3185110092163086,
+        "entity_overlap_ratio": 1.0,
+        "lexical_jaccard": 0.07042253521126761,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 80,
+      "original_prompt": "Who is a Swiss professional footballer who currently plays as a midfielder for a Swiss football team from the Bernese Oberland town of Thun ?",
+      "generated_response": "Nicola Sutter",
+      "claim": "Nicola Sutter",
+      "retrieved_evidence": "Nicola Sutter (born 5 May 1995) is a Swiss professional footballer who currently plays as a midfielder for FC Thun.FC Thun (\"Fussballclub Thun 1898\") is a Swiss football team from the Bernese Oberland town of Thun.",
+      "predicted_label": 0,
+      "actual_label": 0,
+      "prediction_probability": 0.31,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.0972178727388382,
+        "contradiction": 0.004058959893882275,
+        "neutral": 0.8987231254577637
+      },
+      "features": {
+        "semantic_similarity": 0.20000001788139343,
+        "entity_overlap_ratio": 1.0,
+        "lexical_jaccard": 0.06896551724137931,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 84,
+      "original_prompt": "Taxi Payant began airing on September 3, 2009 on V,, it airs in Qu\u00e9bec instead of which titled American version of the series game show,  that aired new episodes on the Discovery Channel from 2005 to 2012?",
+      "generated_response": "Cash Cab",
+      "claim": "Cash Cab",
+      "retrieved_evidence": " It airs in Qu\u00e9bec instead of the American version of the series, which is seen on the U.S. Discovery Channel cable network and on local U.S. stations in syndication.Cash Cab (stylized as CA$H CAB) is an American game show that aired new episodes on the Discovery Channel from 2005 to 2012.",
+      "predicted_label": 0,
+      "actual_label": 0,
+      "prediction_probability": 0.0,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.8794596195220947,
+        "contradiction": 0.11046138405799866,
+        "neutral": 0.010078919120132923
+      },
+      "features": {
+        "semantic_similarity": 0.18973666429519653,
+        "entity_overlap_ratio": 0.5,
+        "lexical_jaccard": 0.04878048780487805,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 85,
+      "original_prompt": "Where did Antony Alda's father move during the early 1960s?",
+      "generated_response": "Italy",
+      "claim": "Italy",
+      "retrieved_evidence": " The son of Robert Alda, he was born in France, his early studies were in Rome and he finished at The Juilliard School in New York City. A talented singer and dancer, Alda was featured in a number of Broadway productions before moving to Italy during the early 1960s.",
+      "predicted_label": 0,
+      "actual_label": 0,
+      "prediction_probability": 0.0,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.9987455606460571,
+        "contradiction": 0.0010001508053392172,
+        "neutral": 0.0002543082518968731
+      },
+      "features": {
+        "semantic_similarity": 0.10599979013204575,
+        "entity_overlap_ratio": 1.0,
+        "lexical_jaccard": 0.02702702702702703,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 93,
+      "original_prompt": "Gabriel Gustafson was in charge of the excavation of what well preserved Viking ship?",
+      "generated_response": "Oseberg Ship",
+      "claim": "Oseberg Ship",
+      "retrieved_evidence": " He was responsible for the excavation and conservation of the Oseberg Ship (\"Osebergfunnet\") .The Oseberg ship (Norwegian: \"Osebergskipet\") is a well-preserved Viking ship discovered in a large burial mound at the Oseberg farm near T\u00f8nsberg in Vestfold county, Norway.",
+      "predicted_label": 0,
+      "actual_label": 0,
+      "prediction_probability": 0.02,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.30558982491493225,
+        "contradiction": 0.1739960014820099,
+        "neutral": 0.5204141736030579
+      },
+      "features": {
+        "semantic_similarity": 0.4773344099521637,
+        "entity_overlap_ratio": 1.0,
+        "lexical_jaccard": 0.06451612903225806,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 99,
+      "original_prompt": "Kristin Fisher is a television news presenter for FNC, which is more commonly known as what?",
+      "generated_response": "Kristin Fisher is a television news presenter for FNC, which is more commonly known as Fox TV.",
+      "claim": "Kristin Fisher is a television news presenter for FNC, which is more commonly known as Fox TV.",
+      "retrieved_evidence": "Kristin Fisher (born July 29, 1983) is an American journalist and television news news presenter for Fox News.Fox News (officially known as the Fox News Channel, commonly abbreviated to FNC) is an American basic cable and satellite television news channel owned by the Fox Entertainment Group, a subsidiary of 21st Century Fox.",
+      "predicted_label": 0,
+      "actual_label": 0,
+      "prediction_probability": 0.02,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.002875106642022729,
+        "contradiction": 0.0013384552439674735,
+        "neutral": 0.9957864880561829
+      },
+      "features": {
+        "semantic_similarity": 0.6570510268211365,
+        "entity_overlap_ratio": 0.8,
+        "lexical_jaccard": 0.325,
+        "hedge_word_count": 0.0
+      }
+    },
+    {
+      "index": 102,
+      "original_prompt": "Maureen Starky married Ringo Starr in 1965 and would later have an affair with which Beatle band member?",
+      "generated_response": "George Harrison",
+      "claim": "George Harrison",
+      "retrieved_evidence": "\"Can't Stop Thinking About You\" is a song by English musician George Harrison, released in 1975 on his final album for Apple Records, \"Extra Texture (Read All About It)\". A love song in the style of a soul/R&B ballad, it was written by Harrison in December 1973, towards the end of his marriage to Pattie Boyd and while he was having an affair with Maureen Starkey, the wife of his former Beatles bandmate Ringo Starr. They married at the Caxton Hall Register Office, London, in 1965, and divorced in 1975.",
+      "predicted_label": 0,
+      "actual_label": 0,
+      "prediction_probability": 0.0,
+      "retrieval_score": 0.9,
+      "nli_probabilities": {
+        "entailment": 0.0016446016961708665,
+        "contradiction": 0.9982509016990662,
+        "neutral": 0.00010453659342601895
+      },
+      "features": {
+        "semantic_similarity": 0.2311251163482666,
+        "entity_overlap_ratio": 1.0,
+        "lexical_jaccard": 0.027777777777777776,
+        "hedge_word_count": 0.0
+      }
+    }
+  ],
+  "summary": {
+    "total_errors": 38,
+    "false_positives_count": 17,
+    "false_negatives_count": 21
+  }
+}

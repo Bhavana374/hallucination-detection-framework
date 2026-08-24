@@ -1,0 +1,13 @@
+{
+  "model": "TF-IDF + Logistic Regression",
+  "input_type": "claim_only",
+  "max_features": 5000,
+  "ngram_range": [
+    1,
+    2
+  ],
+  "C": 1.0,
+  "seed": 42,
+  "train_size": 161,
+  "test_size": 39
+}

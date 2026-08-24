@@ -1,0 +1,23 @@
+============================================================
+EXPERIMENT: exp07_hybrid_rf
+Timestamp: 2026-08-23 17:43:56 UTC
+============================================================
+
+Accuracy:            0.981
+Precision (Class 1): 0.983
+Recall (Class 1):    0.979
+F1-Score (Class 1):  0.981
+F1-Macro:            0.981
+ROC-AUC:             0.9934
+PR-AUC:              0.9955
+
+Training Time:       2824.6849 s
+Inference Time:      359.1475 s
+Latency/Sample:      179.753 ms
+
+Confusion Matrix:
+  TP: 981
+  TN: 979
+  FP: 17
+  FN: 21
+============================================================

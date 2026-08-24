@@ -1,0 +1,45 @@
+{
+  "full_model": {
+    "sample_count": 10,
+    "accuracy": 0.8,
+    "precision": 1.0,
+    "recall": 0.6,
+    "f1_score": 0.75,
+    "f1_macro": 0.7917,
+    "roc_auc": 1.0,
+    "pr_auc": 1.0,
+    "confusion_matrix": {
+      "tp": 3,
+      "tn": 5,
+      "fp": 0,
+      "fn": 2
+    },
+    "false_positive_rate": 0.0,
+    "false_negative_rate": 0.4,
+    "training_time_sec": 0.0,
+    "inference_time_sec": 0.0,
+    "latency_per_sample_ms": 0.0
+  },
+  "feature_importances": {
+    "token_precision": 0.20603931182121127,
+    "retrieval_score": 0.1681269325242048,
+    "token_f1": 0.14289435836037315,
+    "lexical_jaccard_similarity": 0.10746242642103962,
+    "token_recall": 0.09867171467308783,
+    "nli_entailment_ratio": 0.05966168864219008,
+    "nli_prob_neutral": 0.05670018220719394,
+    "nli_prob_entailment": 0.04169664023982209,
+    "nli_prob_contradiction": 0.02716938522296302,
+    "semantic_dot_product": 0.020007415674040133,
+    "entity_overlap_ratio": 0.015236688438130424,
+    "semantic_cosine_sim": 0.014814007699651008,
+    "semantic_euclidean_dist": 0.013282239469862017,
+    "length_ratio": 0.0108094255935789,
+    "missing_number_count": 0.005876656195485615,
+    "number_match_ratio": 0.0037040829346092507,
+    "claim_word_count": 0.003633969467041851,
+    "missing_entity_count": 0.003412314191425384,
+    "semantic_embedding_magnitude_ratio": 0.0008005602240896359,
+    "hedge_word_count": 0.0
+  }
+}

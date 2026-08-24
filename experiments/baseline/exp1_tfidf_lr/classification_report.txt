@@ -1,0 +1,24 @@
+============================================================
+EXPERIMENT EVALUATION REPORT: exp1_tfidf_lr
+Timestamp: 2026-08-19 14:18:15 UTC
+============================================================
+
+--- TEST SET PERFORMANCE ---
+Accuracy:              0.0
+Precision (Class 1):   0.0
+Recall (Class 1):      0.0
+F1-Score (Class 1):    0.0
+Macro F1-Score:        0.0
+ROC-AUC:               None
+PR-AUC:                None
+
+--- COMPUTATIONAL FOOTPRINT ---
+Training Time:         0.2758 s
+Inference Latency:     0.306 ms/sample
+
+--- CONFUSION MATRIX ---
+True Positives (TP):   0
+True Negatives (TN):   0
+False Positives (FP):  3
+False Negatives (FN):  3
+============================================================

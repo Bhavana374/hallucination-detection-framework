@@ -1,0 +1,67 @@
+[
+  {
+    "experiment_id": "exp01_tfidf_lr",
+    "accuracy": 0.8205,
+    "precision": 0.7826,
+    "recall": 0.9,
+    "f1_score": 0.8372,
+    "f1_macro": 0.8186,
+    "roc_auc": 0.8645,
+    "pr_auc": 0.8376,
+    "training_time_sec": 0.0624,
+    "inference_time_sec": 0.0027,
+    "latency_per_sample_ms": 0.069
+  },
+  {
+    "experiment_id": "exp02_tfidf_rf",
+    "accuracy": 0.5385,
+    "precision": 0.75,
+    "recall": 0.15,
+    "f1_score": 0.25,
+    "f1_macro": 0.4583,
+    "roc_auc": 0.7289,
+    "pr_auc": 0.7374,
+    "training_time_sec": 0.2864,
+    "inference_time_sec": 0.0177,
+    "latency_per_sample_ms": 0.453
+  },
+  {
+    "experiment_id": "exp03_bert",
+    "accuracy": 0.9744,
+    "precision": 0.9524,
+    "recall": 1.0,
+    "f1_score": 0.9756,
+    "f1_macro": 0.9743,
+    "roc_auc": 0.9974,
+    "pr_auc": 0.9976,
+    "training_time_sec": 45.5773,
+    "inference_time_sec": 1.6582,
+    "latency_per_sample_ms": 42.517
+  },
+  {
+    "experiment_id": "exp05_evidence_bert",
+    "accuracy": 0.5897,
+    "precision": 0.6111,
+    "recall": 0.55,
+    "f1_score": 0.5789,
+    "f1_macro": 0.5895,
+    "roc_auc": 0.5974,
+    "pr_auc": 0.6565,
+    "training_time_sec": 209.4328,
+    "inference_time_sec": 10.7527,
+    "latency_per_sample_ms": 275.71
+  },
+  {
+    "experiment_id": "exp07_hybrid_rf",
+    "accuracy": 0.9744,
+    "precision": 1.0,
+    "recall": 0.95,
+    "f1_score": 0.9744,
+    "f1_macro": 0.9744,
+    "roc_auc": 1.0,
+    "pr_auc": 1.0,
+    "training_time_sec": 60.055,
+    "inference_time_sec": 7.3295,
+    "latency_per_sample_ms": 187.935
+  }
+]

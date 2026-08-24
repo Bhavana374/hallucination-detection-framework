@@ -1,0 +1,2 @@
+# Processed data directory
+Store finalized train/val/test split parquets/JSONs here.

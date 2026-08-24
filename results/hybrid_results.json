@@ -1,0 +1,47 @@
+{
+  "Exp 7": {
+    "sample_count": 10,
+    "accuracy": 0.8,
+    "precision": 1.0,
+    "recall": 0.6,
+    "f1_score": 0.75,
+    "f1_macro": 0.7917,
+    "roc_auc": 1.0,
+    "pr_auc": 1.0,
+    "confusion_matrix": {
+      "tp": 3,
+      "tn": 5,
+      "fp": 0,
+      "fn": 2
+    },
+    "false_positive_rate": 0.0,
+    "false_negative_rate": 0.4,
+    "training_time_sec": 0.0,
+    "inference_time_sec": 0.0,
+    "latency_per_sample_ms": 0.0,
+    "experiment_id": "Exp 7",
+    "model_name": "Full Hybrid Meta-Classifier",
+    "feature_importances": {
+      "token_precision": 0.20603931182121127,
+      "retrieval_score": 0.17600337880519654,
+      "token_f1": 0.13977096148224716,
+      "lexical_jaccard_similarity": 0.10885453580991382,
+      "token_recall": 0.09867171467308783,
+      "nli_entailment_ratio": 0.06045567012367157,
+      "nli_prob_neutral": 0.05670018220719394,
+      "nli_prob_entailment": 0.04307842128557373,
+      "nli_prob_contradiction": 0.025371115114172612,
+      "semantic_dot_product": 0.019247043652684953,
+      "semantic_cosine_sim": 0.01632416610754476,
+      "entity_overlap_ratio": 0.014389629614601012,
+      "semantic_euclidean_dist": 0.011504460542888773,
+      "length_ratio": 0.007618542402695709,
+      "claim_word_count": 0.004677333980537642,
+      "missing_number_count": 0.004090860740940161,
+      "number_match_ratio": 0.0037040829346092507,
+      "missing_entity_count": 0.003412314191425384,
+      "semantic_embedding_magnitude_ratio": 8.627450980392158e-05,
+      "hedge_word_count": 0.0
+    }
+  }
+}

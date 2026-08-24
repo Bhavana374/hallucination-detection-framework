@@ -1,0 +1,92 @@
+# Model Architectures & Hyperparameters Configuration
+
+# 1. Classical Baselines
+baselines:
+  tfidf:
+    max_features: 5000
+    ngram_range: [1, 2]
+    sublinear_tf: true
+    norm: "l2"
+    strip_accents: "unicode"
+  logistic_regression:
+    c_param: 1.0
+    solver: "lbfgs"
+    max_iter: 1000
+    random_state: 42
+    class_weight: "balanced"
+  random_forest_baseline:
+    n_estimators: 200
+    max_depth: 20
+    min_samples_split: 5
+    min_samples_leaf: 2
+    random_state: 42
+    n_jobs: -1
+    class_weight: "balanced"
+
+# 2. Transformer Architectures
+transformers:
+  bert:
+    pretrained_name: "bert-base-uncased"
+    num_labels: 2
+    learning_rate: 2.0e-5
+    weight_decay: 0.01
+    warmup_ratio: 0.1
+    batch_size: 16
+    gradient_accumulation_steps: 2
+    num_epochs: 3
+    fp16: true
+    max_grad_norm: 1.0
+    early_stopping_patience: 2
+  deberta:
+    pretrained_name: "microsoft/deberta-v3-base"
+    num_labels: 2
+    learning_rate: 1.5e-5
+    weight_decay: 0.01
+    warmup_ratio: 0.1
+    batch_size: 16
+    gradient_accumulation_steps: 2
+    num_epochs: 3
+    fp16: true
+    max_grad_norm: 1.0
+    early_stopping_patience: 2
+
+# 3. Evidence-Grounded NLI Transformers
+nli_models:
+  bert_nli:
+    pretrained_name: "bert-base-uncased"
+    num_labels: 3  # Entailment, Contradiction, Neutral
+    learning_rate: 2.0e-5
+    max_length: 512
+  deberta_nli:
+    pretrained_name: "microsoft/deberta-v3-base"
+    num_labels: 3  # Entailment, Contradiction, Neutral
+    learning_rate: 1.5e-5
+    max_length: 512
+
+# 4. Hybrid Classifier (Meta-Learner over Multi-Modal Features)
+hybrid:
+  classifier_type: "random_forest"  # 'random_forest', 'logistic_regression', 'xgboost', 'mlp'
+  random_forest:
+    n_estimators: 300
+    max_depth: 15
+    min_samples_split: 4
+    min_samples_leaf: 2
+    max_features: "sqrt"
+    bootstrap: true
+    random_state: 42
+    n_jobs: -1
+    class_weight: "balanced"
+  feature_names:
+    - "prob_entailment"
+    - "prob_contradiction"
+    - "prob_neutral"
+    - "semantic_cosine_similarity"
+    - "semantic_euclidean_distance"
+    - "evidence_retrieval_score"
+    - "lexical_jaccard_overlap"
+    - "lexical_rouge1_recall"
+    - "named_entity_overlap_ratio"
+    - "claim_token_count"
+    - "evidence_token_count"
+    - "token_length_ratio"
+    - "uncertainty_marker_count"
