@@ -4,6 +4,6 @@
   "max_features": 5000,
   "n_estimators": 100,
   "seed": 42,
-  "train_size": 161,
-  "test_size": 39
+  "train_size": 142,
+  "test_size": 29
 }

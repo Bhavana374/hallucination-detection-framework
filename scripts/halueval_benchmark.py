@@ -126,10 +126,11 @@ def validate_data(records: List[Dict[str, str]]) -> Dict[str, Any]:
 
 def create_stratified_split(
     records: List[Dict[str, str]],
-    test_ratio: float = 0.20,
+    val_ratio: float = 0.15,
+    test_ratio: float = 0.15,
     seed: int = RANDOM_SEED
-) -> Tuple[List[Dict], List[Dict], Dict[str, Any]]:
-    """Create stratified train/test split with leakage prevention."""
+) -> Tuple[List[Dict], List[Dict], List[Dict], Dict[str, Any]]:
+    """Create stratified train/val/test split (70/15/15) with leakage prevention."""
     rng = np.random.RandomState(seed)
 
     # Separate by label
@@ -139,38 +140,51 @@ def create_stratified_split(
     rng.shuffle(pos)
     rng.shuffle(neg)
 
+    n_val_pos = int(len(pos) * val_ratio)
     n_test_pos = int(len(pos) * test_ratio)
+    n_val_neg = int(len(neg) * val_ratio)
     n_test_neg = int(len(neg) * test_ratio)
 
     test_pos = pos[:n_test_pos]
-    train_pos = pos[n_test_pos:]
+    val_pos = pos[n_test_pos : n_test_pos + n_val_pos]
+    train_pos = pos[n_test_pos + n_val_pos :]
+
     test_neg = neg[:n_test_neg]
-    train_neg = neg[n_test_neg:]
+    val_neg = neg[n_test_neg : n_test_neg + n_val_neg]
+    train_neg = neg[n_test_neg + n_val_neg :]
 
     train_data = [r for _, r in train_pos] + [r for _, r in train_neg]
+    val_data = [r for _, r in val_pos] + [r for _, r in val_neg]
     test_data = [r for _, r in test_pos] + [r for _, r in test_neg]
 
     # Shuffle within splits
     rng.shuffle(train_data)
+    rng.shuffle(val_data)
     rng.shuffle(test_data)
 
     split_meta = {
         "seed": seed,
+        "train_ratio": round(1.0 - val_ratio - test_ratio, 2),
+        "val_ratio": val_ratio,
         "test_ratio": test_ratio,
         "total": len(records),
         "train_size": len(train_data),
+        "val_size": len(val_data),
         "test_size": len(test_data),
         "train_pos": len(train_pos),
         "train_neg": len(train_neg),
+        "val_pos": len(val_pos),
+        "val_neg": len(val_neg),
         "test_pos": len(test_pos),
         "test_neg": len(test_neg),
-        "train_indices": [i for i, _ in train_pos + train_neg],
-        "test_indices": [i for i, _ in test_pos + test_neg],
     }
 
-    logger.info(f"Split: train={len(train_data)} (pos={len(train_pos)}, neg={len(train_neg)}), "
-                f"test={len(test_data)} (pos={len(test_pos)}, neg={len(test_neg)})")
-    return train_data, test_data, split_meta
+    logger.info(
+        f"Split: train={len(train_data)} (pos={len(train_pos)}, neg={len(train_neg)}), "
+        f"val={len(val_data)} (pos={len(val_pos)}, neg={len(val_neg)}), "
+        f"test={len(test_data)} (pos={len(test_pos)}, neg={len(test_neg)})"
+    )
+    return train_data, val_data, test_data, split_meta
 
 
 # ============================================================
@@ -243,12 +257,14 @@ def run_exp2_tfidf_rf(train_data, test_data, output_dir: Path) -> Dict:
     return metrics
 
 
-def _finetune_transformer(model_obj, train_data, test_data, output_dir, exp_id, exp_name,
-                          use_evidence=False, epochs=3, batch_size=16, lr=2e-5):
-    """Shared fine-tuning logic for BERT/DeBERTa experiments."""
+def _finetune_transformer(model_obj, train_data, val_data, test_data, output_dir, exp_id, exp_name,
+                          epochs=3, batch_size=16, lr=2e-5, warmup_ratio=0.1, max_grad_norm=1.0):
+    """Shared fine-tuning logic for BERT/DeBERTa standalone experiments."""
     import torch
     from torch.utils.data import DataLoader, TensorDataset
+    from transformers import get_linear_schedule_with_warmup
     from src.evaluation.metrics import compute_classification_metrics
+    from src.training.trainer import EarlyStopping
 
     logger.info(f"=== {exp_id.upper()}: {exp_name} ===")
 
@@ -257,70 +273,100 @@ def _finetune_transformer(model_obj, train_data, test_data, output_dir, exp_id, 
     device = model_obj.device
     max_length = model_obj.max_length
 
+    if str(device) == "cpu":
+        torch.set_num_threads(min(4, os.cpu_count() or 4))
+        base_encoder = getattr(model, "bert", getattr(model, "deberta", None))
+        if base_encoder is not None:
+            for p in base_encoder.parameters():
+                p.requires_grad = False
+
     train_labels = [1 if r["hallucination"] == "yes" else 0 for r in train_data]
+    val_labels = [1 if r["hallucination"] == "yes" else 0 for r in val_data]
     test_labels = [1 if r["hallucination"] == "yes" else 0 for r in test_data]
 
-    # Tokenize
-    if use_evidence:
-        train_enc = tokenizer(
-            [r["answer"] for r in train_data],
-            [r["knowledge"] for r in train_data],
-            padding=True, truncation=True, max_length=max_length, return_tensors="pt"
-        )
-        test_enc = tokenizer(
-            [r["answer"] for r in test_data],
-            [r["knowledge"] for r in test_data],
-            padding=True, truncation=True, max_length=max_length, return_tensors="pt"
-        )
-    else:
-        train_enc = tokenizer(
-            [r["answer"] for r in train_data],
-            padding=True, truncation=True, max_length=max_length, return_tensors="pt"
-        )
-        test_enc = tokenizer(
-            [r["answer"] for r in test_data],
-            padding=True, truncation=True, max_length=max_length, return_tensors="pt"
-        )
+    # Tokenize claim only (standalone)
+    train_enc = tokenizer([r["answer"] for r in train_data], padding=True, truncation=True, max_length=max_length, return_tensors="pt")
+    val_enc = tokenizer([r["answer"] for r in val_data], padding=True, truncation=True, max_length=max_length, return_tensors="pt")
+    test_enc = tokenizer([r["answer"] for r in test_data], padding=True, truncation=True, max_length=max_length, return_tensors="pt")
 
-    train_dataset = TensorDataset(
-        train_enc["input_ids"], train_enc["attention_mask"],
-        torch.tensor(train_labels, dtype=torch.long)
-    )
+    train_dataset = TensorDataset(train_enc["input_ids"], train_enc["attention_mask"], torch.tensor(train_labels, dtype=torch.long))
+    val_dataset = TensorDataset(val_enc["input_ids"], val_enc["attention_mask"], torch.tensor(val_labels, dtype=torch.long))
+    
     train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True)
+    val_loader = DataLoader(val_dataset, batch_size=batch_size, shuffle=False)
 
-    # Fine-tune
+    # Optimizer & Scheduler
     optimizer = torch.optim.AdamW(model.parameters(), lr=lr, weight_decay=0.01)
+    total_steps = len(train_loader) * epochs
+    warmup_steps = int(total_steps * warmup_ratio)
+    scheduler = get_linear_schedule_with_warmup(optimizer, num_warmup_steps=warmup_steps, num_training_steps=total_steps)
     loss_fn = torch.nn.CrossEntropyLoss()
-    model.train()
 
+    early_stopping = EarlyStopping(patience=2, mode="max")
     training_history = []
+    best_val_f1 = float("-inf")
+    ckpt_dir = output_dir / exp_id / "checkpoint"
     t0 = time.time()
 
     for epoch in range(epochs):
+        model.train()
         epoch_loss = 0.0
         epoch_correct = 0
         epoch_total = 0
+
         for batch_idx, batch in enumerate(train_loader):
             input_ids, attention_mask, labels = [b.to(device) for b in batch]
             optimizer.zero_grad()
             outputs = model(input_ids=input_ids, attention_mask=attention_mask)
             loss = loss_fn(outputs.logits, labels)
             loss.backward()
+
+            torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=max_grad_norm)
             optimizer.step()
+            scheduler.step()
 
             epoch_loss += loss.item() * input_ids.size(0)
             preds = torch.argmax(outputs.logits, dim=-1)
             epoch_correct += (preds == labels).sum().item()
             epoch_total += input_ids.size(0)
 
-            if (batch_idx + 1) % 50 == 0:
-                logger.info(f"  Epoch {epoch+1}/{epochs}, Batch {batch_idx+1}/{len(train_loader)}, "
-                            f"Loss: {loss.item():.4f}")
+        epoch_acc = epoch_correct / max(1, epoch_total)
+        epoch_avg_loss = epoch_loss / max(1, epoch_total)
 
-        epoch_acc = epoch_correct / epoch_total if epoch_total > 0 else 0
-        epoch_avg_loss = epoch_loss / epoch_total if epoch_total > 0 else 0
-        training_history.append({"epoch": epoch + 1, "loss": epoch_avg_loss, "accuracy": epoch_acc})
-        logger.info(f"  Epoch {epoch+1}: Loss={epoch_avg_loss:.4f}, Acc={epoch_acc:.4f}")
+        # Validation evaluation
+        model.eval()
+        val_probs = []
+        with torch.no_grad():
+            for batch in val_loader:
+                input_ids, attention_mask, _ = [b.to(device) for b in batch]
+                outputs = model(input_ids=input_ids, attention_mask=attention_mask)
+                probs = torch.softmax(outputs.logits, dim=-1).cpu().numpy()
+                val_probs.extend(probs[:, 1].tolist())
+
+        val_preds = [1 if p >= 0.5 else 0 for p in val_probs]
+        val_metrics = compute_classification_metrics(val_labels, val_preds, val_probs)
+        val_f1 = val_metrics.get("f1_score", 0.0)
+
+        training_history.append({
+            "epoch": epoch + 1,
+            "train_loss": round(epoch_avg_loss, 4),
+            "train_acc": round(epoch_acc, 4),
+            "val_f1": round(val_f1, 4),
+            "val_acc": round(val_metrics.get("accuracy", 0.0), 4)
+        })
+        logger.info(f"  Epoch {epoch+1}/{epochs}: Train Loss={epoch_avg_loss:.4f}, Train Acc={epoch_acc:.4f}, Val F1={val_f1:.4f}")
+
+        if val_f1 > best_val_f1:
+            best_val_f1 = val_f1
+            ckpt_dir.mkdir(parents=True, exist_ok=True)
+            if hasattr(model, "save_pretrained"):
+                model.save_pretrained(ckpt_dir)
+                tokenizer.save_pretrained(ckpt_dir)
+                logger.info(f"  Saved best checkpoint to {ckpt_dir}")
+
+        if early_stopping.check(val_f1):
+            logger.info(f"  Early stopping triggered at epoch {epoch+1}")
+            break
 
     train_time = time.time() - t0
 
@@ -346,57 +392,157 @@ def _finetune_transformer(model_obj, train_data, test_data, output_dir, exp_id, 
     config = {
         "model": exp_name,
         "model_name": model_obj.model_name,
-        "input_type": "claim+evidence" if use_evidence else "claim_only",
-        "epochs": epochs, "batch_size": batch_size, "learning_rate": lr,
-        "max_length": max_length, "device": device,
-        "seed": RANDOM_SEED, "train_size": len(train_data), "test_size": len(test_data),
+        "input_type": "claim_only",
+        "epochs": epochs,
+        "batch_size": batch_size,
+        "learning_rate": lr,
+        "max_length": max_length,
+        "device": str(device),
+        "seed": RANDOM_SEED,
+        "train_size": len(train_data),
+        "val_size": len(val_data),
+        "test_size": len(test_data),
         "training_history": training_history,
     }
 
     _save_experiment(output_dir, exp_id, config, metrics, test_data, test_labels, test_preds, all_probs)
-
-    # Save training history
-    history_path = output_dir / exp_id / "training_history.json"
-    with open(history_path, "w") as f:
-        json.dump(training_history, f, indent=2)
-
     return metrics
 
 
-def run_exp3_bert(train_data, test_data, output_dir: Path, epochs=3, batch_size=16) -> Dict:
+def run_exp3_bert(train_data, val_data, test_data, output_dir: Path, epochs=3, batch_size=16) -> Dict:
     """Experiment 3: Standalone BERT fine-tuning."""
     from src.models.bert.bert_classifier import BERTClassifier
-    model = BERTClassifier(model_name="bert-base-uncased", num_labels=2, max_length=256)
-    return _finetune_transformer(model, train_data, test_data, output_dir,
-                                  "exp03_bert", "Standalone BERT", use_evidence=False,
-                                  epochs=epochs, batch_size=batch_size)
+    model = BERTClassifier(model_name="google-bert/bert-base-uncased", num_labels=2, max_length=256)
+    return _finetune_transformer(model, train_data, val_data, test_data, output_dir,
+                                  "exp03_bert", "Standalone BERT",
+                                  epochs=epochs, batch_size=batch_size, lr=2e-5)
 
 
-def run_exp4_deberta(train_data, test_data, output_dir: Path, epochs=3, batch_size=16) -> Dict:
+def run_exp4_deberta(train_data, val_data, test_data, output_dir: Path, epochs=3, batch_size=16) -> Dict:
     """Experiment 4: Standalone DeBERTa fine-tuning."""
     from src.models.deberta.deberta_classifier import DeBERTaClassifier
     model = DeBERTaClassifier(model_name="microsoft/deberta-v3-base", num_labels=2, max_length=256)
-    return _finetune_transformer(model, train_data, test_data, output_dir,
-                                  "exp04_deberta", "Standalone DeBERTa", use_evidence=False,
-                                  epochs=epochs, batch_size=batch_size)
+    return _finetune_transformer(model, train_data, val_data, test_data, output_dir,
+                                  "exp04_deberta", "Standalone DeBERTa",
+                                  epochs=epochs, batch_size=batch_size, lr=1.5e-5)
 
 
-def run_exp5_evidence_bert(train_data, test_data, output_dir: Path, epochs=3, batch_size=16) -> Dict:
-    """Experiment 5: Evidence-Grounded BERT fine-tuning."""
-    from src.models.bert.bert_classifier import BERTClassifier
-    model = BERTClassifier(model_name="bert-base-uncased", num_labels=2, max_length=256)
-    return _finetune_transformer(model, train_data, test_data, output_dir,
-                                  "exp05_evidence_bert", "Evidence-Grounded BERT", use_evidence=True,
-                                  epochs=epochs, batch_size=batch_size)
+def run_exp5_evidence_bert(train_data, val_data, test_data, output_dir: Path, epochs=5, batch_size=16) -> Dict:
+    """Experiment 5: Evidence-Grounded BERT + NLI Fusion Classifier."""
+    from src.models.evidence_grounded.evidence_grounded_classifier import EvidenceGroundedClassifier
+    from src.evaluation.metrics import compute_classification_metrics
+
+    logger.info("=== EXP 05: Evidence-Grounded BERT + NLI Fusion ===")
+
+    train_claims = [r["answer"] for r in train_data]
+    train_evidences = [r["knowledge"] for r in train_data]
+    train_labels = [1 if r["hallucination"] == "yes" else 0 for r in train_data]
+
+    val_claims = [r["answer"] for r in val_data]
+    val_evidences = [r["knowledge"] for r in val_data]
+    val_labels = [1 if r["hallucination"] == "yes" else 0 for r in val_data]
+
+    test_claims = [r["answer"] for r in test_data]
+    test_evidences = [r["knowledge"] for r in test_data]
+    test_labels = [1 if r["hallucination"] == "yes" else 0 for r in test_data]
+
+    model = EvidenceGroundedClassifier(
+        base_model_name="google-bert/bert-base-uncased",
+        nli_model_name="cross-encoder/nli-deberta-v3-small",
+        freeze_base_encoder=True
+    )
+
+    t0 = time.time()
+    fit_res = model.fit(
+        train_claims, train_evidences, train_labels,
+        val_claims=val_claims, val_evidences=val_evidences, val_labels=val_labels,
+        epochs=epochs, batch_size=batch_size, lr=1e-3
+    )
+    train_time = time.time() - t0
+
+    t0 = time.time()
+    test_probs_matrix = model.predict_proba(test_claims, test_evidences, batch_size=batch_size)
+    infer_time = time.time() - t0
+
+    test_probs = test_probs_matrix[:, 1].tolist()
+    test_preds = [1 if p >= 0.5 else 0 for p in test_probs]
+
+    metrics = compute_classification_metrics(test_labels, test_preds, test_probs, train_time, infer_time)
+    config = {
+        "model": "Evidence-Grounded BERT + NLI Fusion",
+        "base_model": "google-bert/bert-base-uncased",
+        "nli_model": "cross-encoder/nli-deberta-v3-small",
+        "input_type": "claim+gold_evidence+nli_scores",
+        "epochs": epochs,
+        "batch_size": batch_size,
+        "seed": RANDOM_SEED,
+        "train_size": len(train_data),
+        "val_size": len(val_data),
+        "test_size": len(test_data),
+    }
+
+    model.save(output_dir / "exp05_evidence_bert" / "checkpoint")
+    _save_experiment(output_dir, "exp05_evidence_bert", config, metrics, test_data, test_labels, test_preds, test_probs)
+    return metrics
 
 
-def run_exp6_evidence_deberta(train_data, test_data, output_dir: Path, epochs=3, batch_size=16) -> Dict:
-    """Experiment 6: Evidence-Grounded DeBERTa fine-tuning."""
-    from src.models.deberta.deberta_classifier import DeBERTaClassifier
-    model = DeBERTaClassifier(model_name="microsoft/deberta-v3-base", num_labels=2, max_length=256)
-    return _finetune_transformer(model, train_data, test_data, output_dir,
-                                  "exp06_evidence_deberta", "Evidence-Grounded DeBERTa", use_evidence=True,
-                                  epochs=epochs, batch_size=batch_size)
+def run_exp6_evidence_deberta(train_data, val_data, test_data, output_dir: Path, epochs=5, batch_size=16) -> Dict:
+    """Experiment 6: Evidence-Grounded DeBERTa + NLI Fusion Classifier."""
+    from src.models.evidence_grounded.evidence_grounded_classifier import EvidenceGroundedClassifier
+    from src.evaluation.metrics import compute_classification_metrics
+
+    logger.info("=== EXP 06: Evidence-Grounded DeBERTa + NLI Fusion ===")
+
+    train_claims = [r["answer"] for r in train_data]
+    train_evidences = [r["knowledge"] for r in train_data]
+    train_labels = [1 if r["hallucination"] == "yes" else 0 for r in train_data]
+
+    val_claims = [r["answer"] for r in val_data]
+    val_evidences = [r["knowledge"] for r in val_data]
+    val_labels = [1 if r["hallucination"] == "yes" else 0 for r in val_data]
+
+    test_claims = [r["answer"] for r in test_data]
+    test_evidences = [r["knowledge"] for r in test_data]
+    test_labels = [1 if r["hallucination"] == "yes" else 0 for r in test_data]
+
+    model = EvidenceGroundedClassifier(
+        base_model_name="microsoft/deberta-v3-base",
+        nli_model_name="cross-encoder/nli-deberta-v3-small",
+        freeze_base_encoder=True
+    )
+
+    t0 = time.time()
+    fit_res = model.fit(
+        train_claims, train_evidences, train_labels,
+        val_claims=val_claims, val_evidences=val_evidences, val_labels=val_labels,
+        epochs=epochs, batch_size=batch_size, lr=1e-3
+    )
+    train_time = time.time() - t0
+
+    t0 = time.time()
+    test_probs_matrix = model.predict_proba(test_claims, test_evidences, batch_size=batch_size)
+    infer_time = time.time() - t0
+
+    test_probs = test_probs_matrix[:, 1].tolist()
+    test_preds = [1 if p >= 0.5 else 0 for p in test_probs]
+
+    metrics = compute_classification_metrics(test_labels, test_preds, test_probs, train_time, infer_time)
+    config = {
+        "model": "Evidence-Grounded DeBERTa + NLI Fusion",
+        "base_model": "microsoft/deberta-v3-base",
+        "nli_model": "cross-encoder/nli-deberta-v3-small",
+        "input_type": "claim+gold_evidence+nli_scores",
+        "epochs": epochs,
+        "batch_size": batch_size,
+        "seed": RANDOM_SEED,
+        "train_size": len(train_data),
+        "val_size": len(val_data),
+        "test_size": len(test_data),
+    }
+
+    model.save(output_dir / "exp06_evidence_deberta" / "checkpoint")
+    _save_experiment(output_dir, "exp06_evidence_deberta", config, metrics, test_data, test_labels, test_preds, test_probs)
+    return metrics
 
 
 def run_exp7_hybrid_rf(train_data, test_data, output_dir: Path) -> Dict:
@@ -658,8 +804,12 @@ def main():
     parser = argparse.ArgumentParser(description="HaluEval Benchmark Evaluation")
     parser.add_argument("--sanity-check", action="store_true",
                         help="Run sanity check on 200 samples only")
+    parser.add_argument("--full", action="store_true",
+                        help="Run full dataset (10,000 samples)")
+    parser.add_argument("--sample-size", type=int, default=2000,
+                        help="Subset sample size for CPU execution (default: 2000)")
     parser.add_argument("--experiments", nargs="*", default=None,
-                        help="Specific experiments to run (e.g., exp01 exp02 exp07 exp08)")
+                        help="Specific experiments to run (e.g., exp01 exp02 exp03 exp04 exp05 exp06 exp07 exp08)")
     parser.add_argument("--epochs", type=int, default=3,
                         help="Number of fine-tuning epochs for Transformer experiments")
     parser.add_argument("--batch-size", type=int, default=16,
@@ -681,25 +831,32 @@ def main():
         json.dump(validation_report, f, indent=2)
     logger.info(f"Validation report saved to {PROCESSED_DIR / 'validation_report.json'}")
 
-    # ---- Subset for sanity check ----
+    # ---- Subset selection ----
     if args.sanity_check:
-        logger.info("SANITY CHECK MODE: Using 200 samples only")
-        rng = np.random.RandomState(RANDOM_SEED)
-        indices = rng.choice(len(valid_records), size=min(200, len(valid_records)), replace=False)
-        valid_records = [valid_records[i] for i in indices]
+        logger.info("SANITY CHECK MODE: Using 200 samples")
+        target_size = min(200, len(valid_records))
         run_label = "sanity_check"
-    else:
+    elif args.full:
+        logger.info("FULL DATASET MODE: Using all 10,000 samples")
+        target_size = len(valid_records)
         run_label = "full"
+    else:
+        target_size = min(args.sample_size, len(valid_records))
+        logger.info(f"SAMPLED SUBSET MODE: Using {target_size} samples")
+        run_label = f"sampled_{target_size}"
+
+    if target_size < len(valid_records):
+        rng = np.random.RandomState(RANDOM_SEED)
+        indices = rng.choice(len(valid_records), size=target_size, replace=False)
+        valid_records = [valid_records[i] for i in indices]
 
     # ---- Split ----
-    logger.info("Creating stratified train/test split...")
-    train_data, test_data, split_meta = create_stratified_split(valid_records)
+    logger.info("Creating stratified train/val/test split (70/15/15)...")
+    train_data, val_data, test_data, split_meta = create_stratified_split(valid_records)
 
     split_meta["run_type"] = run_label
     with open(PROCESSED_DIR / "split_indices.json", "w") as f:
-        # Don't save full indices for large datasets — just metadata
-        meta_save = {k: v for k, v in split_meta.items() if k not in ("train_indices", "test_indices")}
-        json.dump(meta_save, f, indent=2)
+        json.dump(split_meta, f, indent=2)
 
     # ---- Determine output directory ----
     output_dir = RESULTS_DIR / run_label
@@ -709,10 +866,10 @@ def main():
     all_experiments = {
         "exp01": ("exp01_tfidf_lr", lambda: run_exp1_tfidf_lr(train_data, test_data, output_dir)),
         "exp02": ("exp02_tfidf_rf", lambda: run_exp2_tfidf_rf(train_data, test_data, output_dir)),
-        "exp03": ("exp03_bert", lambda: run_exp3_bert(train_data, test_data, output_dir, args.epochs, args.batch_size)),
-        "exp04": ("exp04_deberta", lambda: run_exp4_deberta(train_data, test_data, output_dir, args.epochs, args.batch_size)),
-        "exp05": ("exp05_evidence_bert", lambda: run_exp5_evidence_bert(train_data, test_data, output_dir, args.epochs, args.batch_size)),
-        "exp06": ("exp06_evidence_deberta", lambda: run_exp6_evidence_deberta(train_data, test_data, output_dir, args.epochs, args.batch_size)),
+        "exp03": ("exp03_bert", lambda: run_exp3_bert(train_data, val_data, test_data, output_dir, args.epochs, args.batch_size)),
+        "exp04": ("exp04_deberta", lambda: run_exp4_deberta(train_data, val_data, test_data, output_dir, args.epochs, args.batch_size)),
+        "exp05": ("exp05_evidence_bert", lambda: run_exp5_evidence_bert(train_data, val_data, test_data, output_dir, args.epochs, args.batch_size)),
+        "exp06": ("exp06_evidence_deberta", lambda: run_exp6_evidence_deberta(train_data, val_data, test_data, output_dir, args.epochs, args.batch_size)),
         "exp07": ("exp07_hybrid_rf", lambda: run_exp7_hybrid_rf(train_data, test_data, output_dir)),
         "exp08": ("exp08_hybrid_v2", lambda: run_exp8_hybrid_v2(train_data, test_data, output_dir)),
     }

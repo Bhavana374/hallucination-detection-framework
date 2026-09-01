@@ -1,0 +1,54 @@
+{
+  "timestamp": "2026-09-01T18:34:22.350514",
+  "hardware": {
+    "torch_installed": true,
+    "torch_version": "2.6.0+cpu",
+    "device": "cpu",
+    "device_name": "CPU",
+    "gpu_memory_gb": null,
+    "transformers_version": "5.15.1",
+    "sentence_transformers_version": "6.0.0",
+    "hf_cache_dir": "C:\\Users\\shash\\.cache\\huggingface\\hub"
+  },
+  "bert": {
+    "model_id": "google-bert/bert-base-uncased",
+    "status": "OK",
+    "device": "cpu",
+    "logits": [
+      0.46089866757392883,
+      -0.36248016357421875
+    ],
+    "probs": [
+      0.6949530839920044,
+      0.3050469160079956
+    ]
+  },
+  "deberta": {
+    "model_id": "microsoft/deberta-v3-base",
+    "status": "OK",
+    "device": "cpu",
+    "logits": [
+      0.03961181640625,
+      0.1258544921875
+    ],
+    "probs": [
+      0.478515625,
+      0.521484375
+    ]
+  },
+  "nli": {
+    "model_id": "cross-encoder/nli-deberta-v3-small",
+    "status": "OK",
+    "device": "cpu",
+    "label_mapping": {
+      "0": "contradiction",
+      "1": "entailment",
+      "2": "neutral"
+    },
+    "scores": {
+      "contradiction": 0.9989,
+      "entailment": 0.0001,
+      "neutral": 0.0011
+    }
+  }
+}

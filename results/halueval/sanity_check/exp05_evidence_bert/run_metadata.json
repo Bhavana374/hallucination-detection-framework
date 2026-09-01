@@ -1,6 +1,6 @@
 {
   "experiment_id": "exp05_evidence_bert",
-  "timestamp": "2026-08-23T16:48:08Z",
+  "timestamp": "2026-09-01T16:09:36Z",
   "device": "cpu",
   "pytorch_version": "2.6.0+cpu",
   "cuda_available": false,

@@ -1,0 +1,53 @@
+{
+  "model": "Hybrid Random Forest V2",
+  "input_type": "claim+evidence+features",
+  "n_estimators": 100,
+  "n_features": 18,
+  "excluded_features": [
+    "claim_word_count",
+    "length_ratio"
+  ],
+  "feature_names": [
+    "entity_overlap_ratio",
+    "hedge_word_count",
+    "lexical_jaccard_similarity",
+    "missing_entity_count",
+    "missing_number_count",
+    "nli_entailment_ratio",
+    "nli_prob_contradiction",
+    "nli_prob_entailment",
+    "nli_prob_neutral",
+    "number_match_ratio",
+    "retrieval_score",
+    "semantic_cosine_sim",
+    "semantic_dot_product",
+    "semantic_embedding_magnitude_ratio",
+    "semantic_euclidean_dist",
+    "token_f1",
+    "token_precision",
+    "token_recall"
+  ],
+  "feature_importances": {
+    "token_precision": 0.3177025279661525,
+    "token_recall": 0.15021284875412266,
+    "lexical_jaccard_similarity": 0.09334514729270266,
+    "missing_entity_count": 0.08863356542347933,
+    "token_f1": 0.07549181803101782,
+    "entity_overlap_ratio": 0.06287110939265336,
+    "semantic_dot_product": 0.04064767403179049,
+    "nli_prob_neutral": 0.037596513633145,
+    "semantic_cosine_sim": 0.030809894938942723,
+    "semantic_euclidean_dist": 0.024526892667036383,
+    "nli_entailment_ratio": 0.023122036296897845,
+    "nli_prob_contradiction": 0.021238953922865345,
+    "nli_prob_entailment": 0.02089689547675415,
+    "semantic_embedding_magnitude_ratio": 0.008469337217779666,
+    "missing_number_count": 0.004055948799700987,
+    "number_match_ratio": 0.0003788361549591824,
+    "hedge_word_count": 0.0,
+    "retrieval_score": 0.0
+  },
+  "seed": 42,
+  "train_size": 142,
+  "test_size": 29
+}

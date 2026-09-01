@@ -1,0 +1,30 @@
+{
+  "model": "Standalone DeBERTa",
+  "model_name": "microsoft/deberta-v3-base",
+  "input_type": "claim_only",
+  "epochs": 2,
+  "batch_size": 8,
+  "learning_rate": 1.5e-05,
+  "max_length": 256,
+  "device": "cpu",
+  "seed": 42,
+  "train_size": 142,
+  "val_size": 29,
+  "test_size": 29,
+  "training_history": [
+    {
+      "epoch": 1,
+      "train_loss": NaN,
+      "train_acc": 0.5141,
+      "val_f1": 0.0,
+      "val_acc": 0.4828
+    },
+    {
+      "epoch": 2,
+      "train_loss": NaN,
+      "train_acc": 0.5,
+      "val_f1": 0.0,
+      "val_acc": 0.4828
+    }
+  ]
+}

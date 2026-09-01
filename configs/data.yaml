@@ -19,8 +19,8 @@ labels:
     factual: 0
     hallucinated: 1
   nli_mapping:
-    entailment: 0
-    contradiction: 1
+    contradiction: 0
+    entailment: 1
     neutral: 2
   classes_binary: ["Factual", "Hallucinated"]
   classes_nli: ["Entailment", "Contradiction", "Neutral"]

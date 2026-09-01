@@ -8,6 +8,6 @@
   ],
   "C": 1.0,
   "seed": 42,
-  "train_size": 161,
-  "test_size": 39
+  "train_size": 142,
+  "test_size": 29
 }

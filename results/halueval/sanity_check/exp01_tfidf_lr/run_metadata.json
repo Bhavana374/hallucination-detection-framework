@@ -1,6 +1,6 @@
 {
   "experiment_id": "exp01_tfidf_lr",
-  "timestamp": "2026-08-23T16:43:35Z",
+  "timestamp": "2026-09-01T16:02:10Z",
   "device": "cpu",
   "pytorch_version": "2.6.0+cpu",
   "cuda_available": false,

@@ -1,40 +1,30 @@
 index,answer_text,true_label,predicted_label,probability,is_correct
-0,"While both hospitals have excellent reputations, MedStar Georgetown University Hospital specializes in more advanced and specialized healthcare services than Sibley Memorial Hospital.",1,1,0.512102,1
-1,"Daimler AG",0,0,0.489309,1
-2,"the Pepsi-Cola company",0,0,0.488214,1
-3,"Cheltenham",0,1,0.524185,0
-4,"The Valachi hearings were named after Joseph ""Joey Bananas"" Bonanno, a prominent Italian-American Mafia member.",1,1,0.571583,1
-5,"Pixar Animation Studios",0,0,0.487226,1
-6,"XXL was founded before The General.",1,1,0.562183,1
-7,"Adam Clayton Powell is about civil rights leader.",1,0,0.488694,0
-8,"Gordon Burns",0,1,0.513693,0
-9,"The 2010 head coach of the SMU Mustangs football team is now coaching in the NFL.",1,1,0.515689,1
-10,"born January 19, 1954",0,0,0.458336,1
-11,"Giuseppe Fortunino Francesco Verdi",0,0,0.439614,1
-12,"Yang Yun-ho has never directed a film based on a Japanese book.",1,0,0.469163,0
-13,"Derry is the birthplace of Alan Shepard",0,0,0.494522,1
-14,"The film ""Romulus, My Father"" was released in 2009.",1,0,0.457454,0
-15,"Miranda Lambert has shared the stage with Candy Coburn's ""Pink Warrior.""",1,0,0.478181,0
-16,"Omagh bombing",0,0,0.478594,1
-17,"""I'm Not Jesus"" was written before 1993.",1,1,0.562361,1
-18,"Craig McCracken created the Cartoon Network cartoon.",1,1,0.509955,1
-19,"Justin Bieber",0,0,0.489635,1
-20,"1958 was the year.",1,0,0.432630,0
-21,"The Great Illusion",0,0,0.449511,1
-22,"Jaideva Singh",0,1,0.549897,0
-23,"victory odes",0,1,0.533721,0
-24,"Clay Weiner",0,0,0.472507,1
-25,"Octopus card",0,1,0.569058,0
-26,"Bigfoot",0,0,0.498846,1
-27,"Pylon and Bullet for My Valentine are two different types of musical entities.",1,0,0.481764,0
-28,"Jeffrey Scott Martin",0,1,0.561910,0
-29,"Rashad al-Shawwa was the mayor of a city established in 5th century BC.",1,1,0.551313,1
-30,"February 14, 2016",0,0,0.443705,1
-31,"Lambic is brewed in the Cantillon Brewery in Brussels, and it's a very old brewery.",1,1,0.563768,1
-32,"Robert Charles Heaton was born in Canada.",1,1,0.536332,1
-33,"Killing Joke is actually an American rock band.",1,0,0.482678,0
-34,"Enderby Outside was actually created by a Scottish writer.",1,0,0.494090,0
-35,"Most of South Dakota is west of the longest river in North America.",1,1,0.576922,1
-36,"The person who replaced Teymuraz Gabashvili as inaugural champion has won twelve singles titles on the ATP Tour.",1,0,0.451991,0
-37,"Jordan Mintz's whistleblowing was publicized in September 2001.",1,1,0.552129,1
-38,"Carrie Underwood",0,1,0.502439,0
+0,"While both hospitals have excellent reputations, MedStar Georgetown University Hospital specializes in more advanced and specialized healthcare services than Sibley Memorial Hospital.",1,1,0.999362,1
+1,"Killing Joke is actually an American rock band.",1,1,0.997094,1
+2,"victory odes",0,0,0.240672,1
+3,"The Great Illusion",0,0,0.029806,1
+4,"The Valachi hearings were named after Joseph ""Joey Bananas"" Bonanno, a prominent Italian-American Mafia member.",1,1,0.998719,1
+5,"Cheltenham",0,0,0.018196,1
+6,"XXL was founded before The General.",1,1,0.955846,1
+7,"Adam Clayton Powell is about civil rights leader.",1,1,0.988460,1
+8,"Bigfoot",0,0,0.014817,1
+9,"The 2010 head coach of the SMU Mustangs football team is now coaching in the NFL.",1,1,0.918996,1
+10,"Most of South Dakota is west of the longest river in North America.",1,1,0.996565,1
+11,"The person who replaced Teymuraz Gabashvili as inaugural champion has won twelve singles titles on the ATP Tour.",1,1,0.999625,1
+12,"Yang Yun-ho has never directed a film based on a Japanese book.",1,1,0.999545,1
+13,"Robert Charles Heaton was born in Canada.",1,1,0.998906,1
+14,"The film ""Romulus, My Father"" was released in 2009.",1,1,0.977878,1
+15,"February 14, 2016",0,0,0.058714,1
+16,"Rashad al-Shawwa was the mayor of a city established in 5th century BC.",1,1,0.999178,1
+17,"""I'm Not Jesus"" was written before 1993.",1,1,0.990193,1
+18,"Craig McCracken created the Cartoon Network cartoon.",1,1,0.994524,1
+19,"Jaideva Singh",0,0,0.010646,1
+20,"Clay Weiner",0,0,0.056454,1
+21,"Octopus card",0,0,0.075348,1
+22,"Omagh bombing",0,0,0.041995,1
+23,"Gordon Burns",0,0,0.032078,1
+24,"the Pepsi-Cola company",0,0,0.047559,1
+25,"Jeffrey Scott Martin",0,0,0.030341,1
+26,"Daimler AG",0,0,0.043523,1
+27,"Pylon and Bullet for My Valentine are two different types of musical entities.",1,1,0.999458,1
+28,"Derry is the birthplace of Alan Shepard",0,1,0.737069,0

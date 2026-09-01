@@ -7,6 +7,8 @@ from src.models.baselines.random_forest_baseline import TfidfRandomForestBaselin
 from src.models.bert.bert_classifier import BERTClassifier
 from src.models.deberta.deberta_classifier import DeBERTaClassifier
 from src.models.hybrid.hybrid_classifier import HybridClassifier
+from src.models.nli.nli_cross_encoder import NLICrossEncoder
+from src.models.evidence_grounded.evidence_grounded_classifier import EvidenceGroundedClassifier
 
 __all__ = [
     "TfidfLogisticRegressionBaseline",
@@ -14,4 +16,7 @@ __all__ = [
     "BERTClassifier",
     "DeBERTaClassifier",
     "HybridClassifier",
+    "NLICrossEncoder",
+    "EvidenceGroundedClassifier",
 ]
+

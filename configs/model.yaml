@@ -26,34 +26,36 @@ baselines:
 # 2. Transformer Architectures
 transformers:
   bert:
-    pretrained_name: "bert-base-uncased"
+    pretrained_name: "google-bert/bert-base-uncased"
     num_labels: 2
+    max_length: 256
     learning_rate: 2.0e-5
     weight_decay: 0.01
     warmup_ratio: 0.1
     batch_size: 16
     gradient_accumulation_steps: 2
     num_epochs: 3
-    fp16: true
+    fp16: false  # Disabled on CPU; set true only for CUDA
     max_grad_norm: 1.0
     early_stopping_patience: 2
   deberta:
     pretrained_name: "microsoft/deberta-v3-base"
     num_labels: 2
+    max_length: 256
     learning_rate: 1.5e-5
     weight_decay: 0.01
     warmup_ratio: 0.1
     batch_size: 16
     gradient_accumulation_steps: 2
     num_epochs: 3
-    fp16: true
+    fp16: false  # Disabled on CPU; set true only for CUDA
     max_grad_norm: 1.0
     early_stopping_patience: 2
 
 # 3. Evidence-Grounded NLI Transformers
 nli_models:
   bert_nli:
-    pretrained_name: "bert-base-uncased"
+    pretrained_name: "google-bert/bert-base-uncased"
     num_labels: 3  # Entailment, Contradiction, Neutral
     learning_rate: 2.0e-5
     max_length: 512
@@ -90,3 +92,11 @@ hybrid:
     - "evidence_token_count"
     - "token_length_ratio"
     - "uncertainty_marker_count"
+
+# 5. NLI Cross-Encoder (for Exp 5 & Exp 6 evidence scoring)
+nli_cross_encoder:
+  model_name: "cross-encoder/nli-deberta-v3-small"
+  labels:
+    - "entailment"
+    - "neutral"
+    - "contradiction"

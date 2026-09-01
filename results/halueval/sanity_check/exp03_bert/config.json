@@ -1,20 +1,30 @@
 {
   "model": "Standalone BERT",
-  "model_name": "bert-base-uncased",
+  "model_name": "google-bert/bert-base-uncased",
   "input_type": "claim_only",
-  "epochs": 1,
-  "batch_size": 16,
+  "epochs": 2,
+  "batch_size": 8,
   "learning_rate": 2e-05,
   "max_length": 256,
   "device": "cpu",
   "seed": 42,
-  "train_size": 161,
-  "test_size": 39,
+  "train_size": 142,
+  "val_size": 29,
+  "test_size": 29,
   "training_history": [
     {
       "epoch": 1,
-      "loss": 0.6184028814668241,
-      "accuracy": 0.7515527950310559
+      "train_loss": 0.7397,
+      "train_acc": 0.5,
+      "val_f1": 0.125,
+      "val_acc": 0.5172
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.7218,
+      "train_acc": 0.507,
+      "val_f1": 0.125,
+      "val_acc": 0.5172
     }
   ]
 }

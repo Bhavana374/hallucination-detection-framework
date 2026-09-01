@@ -67,9 +67,16 @@ class NLIFeatureExtractor:
                     logits = self.model(**inputs).logits
                     probs = torch.softmax(logits, dim=-1).squeeze(0).cpu().numpy()
                 
-                # DeBERTa NLI usually maps: 0 -> contradiction, 1 -> neutral, 2 -> entailment
-                if len(probs) == 3:
-                    p_contra, p_neut, p_ent = float(probs[0]), float(probs[1]), float(probs[2])
+                # Resolve label mapping dynamically from model config if available
+                id2label = getattr(self.model.config, "id2label", None)
+                if id2label:
+                    label_map = {v.lower(): int(k) for k, v in id2label.items()}
+                    p_ent = float(probs[label_map.get("entailment", 1)])
+                    p_contra = float(probs[label_map.get("contradiction", 0)])
+                    p_neut = float(probs[label_map.get("neutral", 2)])
+                elif len(probs) == 3:
+                    # Default cross-encoder/nli-deberta-v3-small mapping: 0 -> contradiction, 1 -> entailment, 2 -> neutral
+                    p_contra, p_ent, p_neut = float(probs[0]), float(probs[1]), float(probs[2])
                 else:
                     p_ent, p_contra, p_neut = float(probs[0]), float(probs[1]), 1.0 - float(probs[0] + probs[1])
 

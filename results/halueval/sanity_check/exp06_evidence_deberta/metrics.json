@@ -1,0 +1,25 @@
+{
+  "experiment_id": "exp06_evidence_deberta",
+  "timestamp": "2026-09-01T16:12:31Z",
+  "test_metrics": {
+    "sample_count": 29,
+    "accuracy": 0.8966,
+    "precision": 0.8333,
+    "recall": 1.0,
+    "f1_score": 0.9091,
+    "f1_macro": 0.8945,
+    "roc_auc": 0.9762,
+    "pr_auc": 0.9784,
+    "confusion_matrix": {
+      "tp": 15,
+      "tn": 11,
+      "fp": 3,
+      "fn": 0
+    },
+    "false_positive_rate": 0.2143,
+    "false_negative_rate": 0.0,
+    "training_time_sec": 141.9965,
+    "inference_time_sec": 23.0174,
+    "latency_per_sample_ms": 793.703
+  }
+}

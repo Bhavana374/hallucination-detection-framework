@@ -1,20 +1,12 @@
 {
-  "model": "Evidence-Grounded BERT",
-  "model_name": "bert-base-uncased",
-  "input_type": "claim+evidence",
-  "epochs": 1,
-  "batch_size": 16,
-  "learning_rate": 2e-05,
-  "max_length": 256,
-  "device": "cpu",
+  "model": "Evidence-Grounded BERT + NLI Fusion",
+  "base_model": "google-bert/bert-base-uncased",
+  "nli_model": "cross-encoder/nli-deberta-v3-small",
+  "input_type": "claim+gold_evidence+nli_scores",
+  "epochs": 2,
+  "batch_size": 8,
   "seed": 42,
-  "train_size": 161,
-  "test_size": 39,
-  "training_history": [
-    {
-      "epoch": 1,
-      "loss": 0.6986643623861467,
-      "accuracy": 0.546583850931677
-    }
-  ]
+  "train_size": 142,
+  "val_size": 29,
+  "test_size": 29
 }

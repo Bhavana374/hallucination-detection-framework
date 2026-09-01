@@ -92,6 +92,12 @@ models/classifiers/*
 !models/classifiers/.gitkeep
 models/final/*
 !models/final/.gitkeep
+*.safetensors
+*.bin
+*.pt
+*.pkl
+results/halueval/*/checkpoint/
+results/halueval/*/*/checkpoint/
 
 # Logs and raw run artifacts
 results/raw/*.log

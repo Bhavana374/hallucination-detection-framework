@@ -1,0 +1,23 @@
+============================================================
+EXPERIMENT: exp04_deberta
+Timestamp: 2026-09-01 16:08:24 UTC
+============================================================
+
+Accuracy:            0.4828
+Precision (Class 1): 0.0
+Recall (Class 1):    0.0
+F1-Score (Class 1):  0.0
+F1-Macro:            0.3256
+ROC-AUC:             None
+PR-AUC:              None
+
+Training Time:       310.227 s
+Inference Time:      20.2663 s
+Latency/Sample:      698.839 ms
+
+Confusion Matrix:
+  TP: 0
+  TN: 14
+  FP: 0
+  FN: 15
+============================================================

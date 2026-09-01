@@ -47,7 +47,7 @@ class BERTClassifier:
 
     def __init__(
         self,
-        model_name: str = "bert-base-uncased",
+        model_name: str = "google-bert/bert-base-uncased",
         num_labels: int = 2,
         max_length: int = 256,
         device: Optional[str] = None

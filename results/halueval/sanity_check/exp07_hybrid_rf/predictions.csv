@@ -1,40 +1,30 @@
 index,answer_text,true_label,predicted_label,probability,is_correct
-0,"While both hospitals have excellent reputations, MedStar Georgetown University Hospital specializes in more advanced and specialized healthcare services than Sibley Memorial Hospital.",1,1,0.940000,1
-1,"Daimler AG",0,0,0.000000,1
-2,"the Pepsi-Cola company",0,0,0.150000,1
-3,"Cheltenham",0,0,0.030000,1
+0,"While both hospitals have excellent reputations, MedStar Georgetown University Hospital specializes in more advanced and specialized healthcare services than Sibley Memorial Hospital.",1,1,0.980000,1
+1,"Killing Joke is actually an American rock band.",1,1,1.000000,1
+2,"victory odes",0,0,0.010000,1
+3,"The Great Illusion",0,0,0.010000,1
 4,"The Valachi hearings were named after Joseph ""Joey Bananas"" Bonanno, a prominent Italian-American Mafia member.",1,1,1.000000,1
-5,"Pixar Animation Studios",0,0,0.010000,1
-6,"XXL was founded before The General.",1,1,0.980000,1
-7,"Adam Clayton Powell is about civil rights leader.",1,1,0.590000,1
-8,"Gordon Burns",0,0,0.000000,1
-9,"The 2010 head coach of the SMU Mustangs football team is now coaching in the NFL.",1,1,0.960000,1
-10,"born January 19, 1954",0,0,0.080000,1
-11,"Giuseppe Fortunino Francesco Verdi",0,0,0.190000,1
+5,"Cheltenham",0,0,0.040000,1
+6,"XXL was founded before The General.",1,1,0.960000,1
+7,"Adam Clayton Powell is about civil rights leader.",1,1,0.610000,1
+8,"Bigfoot",0,0,0.010000,1
+9,"The 2010 head coach of the SMU Mustangs football team is now coaching in the NFL.",1,1,0.920000,1
+10,"Most of South Dakota is west of the longest river in North America.",1,1,0.980000,1
+11,"The person who replaced Teymuraz Gabashvili as inaugural champion has won twelve singles titles on the ATP Tour.",1,1,0.990000,1
 12,"Yang Yun-ho has never directed a film based on a Japanese book.",1,1,0.920000,1
-13,"Derry is the birthplace of Alan Shepard",0,0,0.350000,1
+13,"Robert Charles Heaton was born in Canada.",1,1,0.990000,1
 14,"The film ""Romulus, My Father"" was released in 2009.",1,1,1.000000,1
-15,"Miranda Lambert has shared the stage with Candy Coburn's ""Pink Warrior.""",1,1,0.720000,1
-16,"Omagh bombing",0,0,0.020000,1
-17,"""I'm Not Jesus"" was written before 1993.",1,1,0.900000,1
-18,"Craig McCracken created the Cartoon Network cartoon.",1,0,0.460000,0
-19,"Justin Bieber",0,0,0.010000,1
-20,"1958 was the year.",1,1,0.660000,1
-21,"The Great Illusion",0,0,0.050000,1
-22,"Jaideva Singh",0,0,0.000000,1
-23,"victory odes",0,0,0.010000,1
-24,"Clay Weiner",0,0,0.010000,1
-25,"Octopus card",0,0,0.030000,1
-26,"Bigfoot",0,0,0.020000,1
+15,"February 14, 2016",0,0,0.170000,1
+16,"Rashad al-Shawwa was the mayor of a city established in 5th century BC.",1,1,0.980000,1
+17,"""I'm Not Jesus"" was written before 1993.",1,1,0.960000,1
+18,"Craig McCracken created the Cartoon Network cartoon.",1,0,0.490000,0
+19,"Jaideva Singh",0,0,0.000000,1
+20,"Clay Weiner",0,0,0.000000,1
+21,"Octopus card",0,0,0.020000,1
+22,"Omagh bombing",0,0,0.020000,1
+23,"Gordon Burns",0,0,0.000000,1
+24,"the Pepsi-Cola company",0,0,0.250000,1
+25,"Jeffrey Scott Martin",0,0,0.020000,1
+26,"Daimler AG",0,0,0.000000,1
 27,"Pylon and Bullet for My Valentine are two different types of musical entities.",1,1,0.990000,1
-28,"Jeffrey Scott Martin",0,0,0.030000,1
-29,"Rashad al-Shawwa was the mayor of a city established in 5th century BC.",1,1,1.000000,1
-30,"February 14, 2016",0,0,0.180000,1
-31,"Lambic is brewed in the Cantillon Brewery in Brussels, and it's a very old brewery.",1,1,0.970000,1
-32,"Robert Charles Heaton was born in Canada.",1,1,1.000000,1
-33,"Killing Joke is actually an American rock band.",1,1,1.000000,1
-34,"Enderby Outside was actually created by a Scottish writer.",1,1,1.000000,1
-35,"Most of South Dakota is west of the longest river in North America.",1,1,1.000000,1
-36,"The person who replaced Teymuraz Gabashvili as inaugural champion has won twelve singles titles on the ATP Tour.",1,1,1.000000,1
-37,"Jordan Mintz's whistleblowing was publicized in September 2001.",1,1,1.000000,1
-38,"Carrie Underwood",0,0,0.020000,1
+28,"Derry is the birthplace of Alan Shepard",0,0,0.350000,1

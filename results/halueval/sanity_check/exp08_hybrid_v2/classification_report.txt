@@ -1,0 +1,23 @@
+============================================================
+EXPERIMENT: exp08_hybrid_v2
+Timestamp: 2026-09-01 16:13:58 UTC
+============================================================
+
+Accuracy:            0.9655
+Precision (Class 1): 1.0
+Recall (Class 1):    0.9333
+F1-Score (Class 1):  0.9655
+F1-Macro:            0.9655
+ROC-AUC:             0.9905
+PR-AUC:              0.9919
+
+Training Time:       30.2233 s
+Inference Time:      5.9629 s
+Latency/Sample:      205.616 ms
+
+Confusion Matrix:
+  TP: 14
+  TN: 14
+  FP: 0
+  FN: 1
+============================================================
